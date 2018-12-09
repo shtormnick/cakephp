@@ -9,6 +9,9 @@ Router::scope('/', function (RouteBuilder $routes) {
 
     $routes->connect('/pages/*', ['controller' => 'Pages', 'action' => 'display']);
 
+    $routes->connect('tests/:arg1/:arg2', ['controller' => 'Tests', 'action'=>
+        'args'],['pass' =>['arg1', 'arg2']]);
+
     $routes->connect('/redirectcontroller',['
          controller'=>'Redirects','action'=>'action1']);
 
