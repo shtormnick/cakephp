@@ -1,0 +1,897 @@
+2018-11-15 20:04:24 Warning: DebugKit not enabled. You need to either install pdo_sqlite, or define the "debug_kit" connection name.
+2018-11-15 20:04:42 Warning: DebugKit not enabled. You need to either install pdo_sqlite, or define the "debug_kit" connection name.
+2018-11-15 20:04:58 Warning: DebugKit not enabled. You need to either install pdo_sqlite, or define the "debug_kit" connection name.
+2018-11-15 20:07:32 Warning: DebugKit not enabled. You need to either install pdo_sqlite, or define the "debug_kit" connection name.
+2018-11-15 20:42:45 Warning: DebugKit not enabled. You need to either install pdo_sqlite, or define the "debug_kit" connection name.
+2018-11-18 22:51:12 Warning: DebugKit not enabled. You need to either install pdo_sqlite, or define the "debug_kit" connection name.
+2018-11-18 22:51:13 Error: [ParseError] syntax error, unexpected '<', expecting end of file
+Request URL: /
+Stack Trace:
+#0 /home/lorix/Programming/PHP/cakephp/WampServer/src/Application.php(75): Cake\Http\BaseApplication->routes(Object(Cake\Routing\RouteBuilder))
+#1 /home/lorix/Programming/PHP/cakephp/WampServer/vendor/cakephp/cakephp/src/Routing/Middleware/RoutingMiddleware.php(109): App\Application->routes(Object(Cake\Routing\RouteBuilder))
+#2 /home/lorix/Programming/PHP/cakephp/WampServer/vendor/cakephp/cakephp/src/Routing/Middleware/RoutingMiddleware.php(94): Cake\Routing\Middleware\RoutingMiddleware->prepareRouteCollection()
+#3 [internal function]: Cake\Routing\Middleware\RoutingMiddleware->Cake\Routing\Middleware\{closure}()
+#4 /home/lorix/Programming/PHP/cakephp/WampServer/vendor/cakephp/cakephp/src/Cache/Cache.php(632): call_user_func(Object(Closure))
+#5 /home/lorix/Programming/PHP/cakephp/WampServer/vendor/cakephp/cakephp/src/Routing/Middleware/RoutingMiddleware.php(95): Cake\Cache\Cache::remember('routeCollection', Object(Closure), '_cake_routes_')
+#6 /home/lorix/Programming/PHP/cakephp/WampServer/vendor/cakephp/cakephp/src/Routing/Middleware/RoutingMiddleware.php(81): Cake\Routing\Middleware\RoutingMiddleware->buildRouteCollection()
+#7 /home/lorix/Programming/PHP/cakephp/WampServer/vendor/cakephp/cakephp/src/Routing/Middleware/RoutingMiddleware.php(130): Cake\Routing\Middleware\RoutingMiddleware->loadRoutes()
+#8 /home/lorix/Programming/PHP/cakephp/WampServer/vendor/cakephp/cakephp/src/Http/Runner.php(65): Cake\Routing\Middleware\RoutingMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#9 /home/lorix/Programming/PHP/cakephp/WampServer/vendor/cakephp/cakephp/src/Routing/Middleware/AssetMiddleware.php(88): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#10 /home/lorix/Programming/PHP/cakephp/WampServer/vendor/cakephp/cakephp/src/Http/Runner.php(65): Cake\Routing\Middleware\AssetMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#11 /home/lorix/Programming/PHP/cakephp/WampServer/vendor/cakephp/cakephp/src/Error/Middleware/ErrorHandlerMiddleware.php(98): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#12 /home/lorix/Programming/PHP/cakephp/WampServer/vendor/cakephp/cakephp/src/Http/Runner.php(65): Cake\Error\Middleware\ErrorHandlerMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#13 /home/lorix/Programming/PHP/cakephp/WampServer/vendor/cakephp/cakephp/src/Http/Runner.php(51): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#14 /home/lorix/Programming/PHP/cakephp/WampServer/vendor/cakephp/cakephp/src/Http/Server.php(98): Cake\Http\Runner->run(Object(Cake\Http\MiddlewareQueue), Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#15 /home/lorix/Programming/PHP/cakephp/WampServer/webroot/index.php(40): Cake\Http\Server->run()
+#16 /home/lorix/Programming/PHP/cakephp/WampServer/index.php(16): require('/home/lorix/Pro...')
+#17 {main}
+
+
+2018-11-18 22:52:05 Warning: DebugKit not enabled. You need to either install pdo_sqlite, or define the "debug_kit" connection name.
+2018-11-18 22:52:05 Error: [ParseError] syntax error, unexpected '<', expecting end of file
+Request URL: /
+Stack Trace:
+#0 /home/lorix/Programming/PHP/cakephp/WampServer/src/Application.php(75): Cake\Http\BaseApplication->routes(Object(Cake\Routing\RouteBuilder))
+#1 /home/lorix/Programming/PHP/cakephp/WampServer/vendor/cakephp/cakephp/src/Routing/Middleware/RoutingMiddleware.php(109): App\Application->routes(Object(Cake\Routing\RouteBuilder))
+#2 /home/lorix/Programming/PHP/cakephp/WampServer/vendor/cakephp/cakephp/src/Routing/Middleware/RoutingMiddleware.php(94): Cake\Routing\Middleware\RoutingMiddleware->prepareRouteCollection()
+#3 [internal function]: Cake\Routing\Middleware\RoutingMiddleware->Cake\Routing\Middleware\{closure}()
+#4 /home/lorix/Programming/PHP/cakephp/WampServer/vendor/cakephp/cakephp/src/Cache/Cache.php(632): call_user_func(Object(Closure))
+#5 /home/lorix/Programming/PHP/cakephp/WampServer/vendor/cakephp/cakephp/src/Routing/Middleware/RoutingMiddleware.php(95): Cake\Cache\Cache::remember('routeCollection', Object(Closure), '_cake_routes_')
+#6 /home/lorix/Programming/PHP/cakephp/WampServer/vendor/cakephp/cakephp/src/Routing/Middleware/RoutingMiddleware.php(81): Cake\Routing\Middleware\RoutingMiddleware->buildRouteCollection()
+#7 /home/lorix/Programming/PHP/cakephp/WampServer/vendor/cakephp/cakephp/src/Routing/Middleware/RoutingMiddleware.php(130): Cake\Routing\Middleware\RoutingMiddleware->loadRoutes()
+#8 /home/lorix/Programming/PHP/cakephp/WampServer/vendor/cakephp/cakephp/src/Http/Runner.php(65): Cake\Routing\Middleware\RoutingMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#9 /home/lorix/Programming/PHP/cakephp/WampServer/vendor/cakephp/cakephp/src/Routing/Middleware/AssetMiddleware.php(88): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#10 /home/lorix/Programming/PHP/cakephp/WampServer/vendor/cakephp/cakephp/src/Http/Runner.php(65): Cake\Routing\Middleware\AssetMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#11 /home/lorix/Programming/PHP/cakephp/WampServer/vendor/cakephp/cakephp/src/Error/Middleware/ErrorHandlerMiddleware.php(98): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#12 /home/lorix/Programming/PHP/cakephp/WampServer/vendor/cakephp/cakephp/src/Http/Runner.php(65): Cake\Error\Middleware\ErrorHandlerMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#13 /home/lorix/Programming/PHP/cakephp/WampServer/vendor/cakephp/cakephp/src/Http/Runner.php(51): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#14 /home/lorix/Programming/PHP/cakephp/WampServer/vendor/cakephp/cakephp/src/Http/Server.php(98): Cake\Http\Runner->run(Object(Cake\Http\MiddlewareQueue), Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#15 /home/lorix/Programming/PHP/cakephp/WampServer/webroot/index.php(40): Cake\Http\Server->run()
+#16 /home/lorix/Programming/PHP/cakephp/WampServer/index.php(16): require('/home/lorix/Pro...')
+#17 {main}
+
+
+2018-11-18 22:52:08 Warning: DebugKit not enabled. You need to either install pdo_sqlite, or define the "debug_kit" connection name.
+2018-11-18 22:52:08 Error: [ParseError] syntax error, unexpected '<', expecting end of file
+Request URL: /
+Stack Trace:
+#0 /home/lorix/Programming/PHP/cakephp/WampServer/src/Application.php(75): Cake\Http\BaseApplication->routes(Object(Cake\Routing\RouteBuilder))
+#1 /home/lorix/Programming/PHP/cakephp/WampServer/vendor/cakephp/cakephp/src/Routing/Middleware/RoutingMiddleware.php(109): App\Application->routes(Object(Cake\Routing\RouteBuilder))
+#2 /home/lorix/Programming/PHP/cakephp/WampServer/vendor/cakephp/cakephp/src/Routing/Middleware/RoutingMiddleware.php(94): Cake\Routing\Middleware\RoutingMiddleware->prepareRouteCollection()
+#3 [internal function]: Cake\Routing\Middleware\RoutingMiddleware->Cake\Routing\Middleware\{closure}()
+#4 /home/lorix/Programming/PHP/cakephp/WampServer/vendor/cakephp/cakephp/src/Cache/Cache.php(632): call_user_func(Object(Closure))
+#5 /home/lorix/Programming/PHP/cakephp/WampServer/vendor/cakephp/cakephp/src/Routing/Middleware/RoutingMiddleware.php(95): Cake\Cache\Cache::remember('routeCollection', Object(Closure), '_cake_routes_')
+#6 /home/lorix/Programming/PHP/cakephp/WampServer/vendor/cakephp/cakephp/src/Routing/Middleware/RoutingMiddleware.php(81): Cake\Routing\Middleware\RoutingMiddleware->buildRouteCollection()
+#7 /home/lorix/Programming/PHP/cakephp/WampServer/vendor/cakephp/cakephp/src/Routing/Middleware/RoutingMiddleware.php(130): Cake\Routing\Middleware\RoutingMiddleware->loadRoutes()
+#8 /home/lorix/Programming/PHP/cakephp/WampServer/vendor/cakephp/cakephp/src/Http/Runner.php(65): Cake\Routing\Middleware\RoutingMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#9 /home/lorix/Programming/PHP/cakephp/WampServer/vendor/cakephp/cakephp/src/Routing/Middleware/AssetMiddleware.php(88): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#10 /home/lorix/Programming/PHP/cakephp/WampServer/vendor/cakephp/cakephp/src/Http/Runner.php(65): Cake\Routing\Middleware\AssetMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#11 /home/lorix/Programming/PHP/cakephp/WampServer/vendor/cakephp/cakephp/src/Error/Middleware/ErrorHandlerMiddleware.php(98): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#12 /home/lorix/Programming/PHP/cakephp/WampServer/vendor/cakephp/cakephp/src/Http/Runner.php(65): Cake\Error\Middleware\ErrorHandlerMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#13 /home/lorix/Programming/PHP/cakephp/WampServer/vendor/cakephp/cakephp/src/Http/Runner.php(51): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#14 /home/lorix/Programming/PHP/cakephp/WampServer/vendor/cakephp/cakephp/src/Http/Server.php(98): Cake\Http\Runner->run(Object(Cake\Http\MiddlewareQueue), Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#15 /home/lorix/Programming/PHP/cakephp/WampServer/webroot/index.php(40): Cake\Http\Server->run()
+#16 /home/lorix/Programming/PHP/cakephp/WampServer/index.php(16): require('/home/lorix/Pro...')
+#17 {main}
+
+
+2018-11-18 22:52:30 Warning: DebugKit not enabled. You need to either install pdo_sqlite, or define the "debug_kit" connection name.
+2018-11-18 22:52:30 Error: [ParseError] syntax error, unexpected '<', expecting end of file
+Request URL: /
+Stack Trace:
+#0 /home/lorix/Programming/PHP/cakephp/WampServer/src/Application.php(75): Cake\Http\BaseApplication->routes(Object(Cake\Routing\RouteBuilder))
+#1 /home/lorix/Programming/PHP/cakephp/WampServer/vendor/cakephp/cakephp/src/Routing/Middleware/RoutingMiddleware.php(109): App\Application->routes(Object(Cake\Routing\RouteBuilder))
+#2 /home/lorix/Programming/PHP/cakephp/WampServer/vendor/cakephp/cakephp/src/Routing/Middleware/RoutingMiddleware.php(94): Cake\Routing\Middleware\RoutingMiddleware->prepareRouteCollection()
+#3 [internal function]: Cake\Routing\Middleware\RoutingMiddleware->Cake\Routing\Middleware\{closure}()
+#4 /home/lorix/Programming/PHP/cakephp/WampServer/vendor/cakephp/cakephp/src/Cache/Cache.php(632): call_user_func(Object(Closure))
+#5 /home/lorix/Programming/PHP/cakephp/WampServer/vendor/cakephp/cakephp/src/Routing/Middleware/RoutingMiddleware.php(95): Cake\Cache\Cache::remember('routeCollection', Object(Closure), '_cake_routes_')
+#6 /home/lorix/Programming/PHP/cakephp/WampServer/vendor/cakephp/cakephp/src/Routing/Middleware/RoutingMiddleware.php(81): Cake\Routing\Middleware\RoutingMiddleware->buildRouteCollection()
+#7 /home/lorix/Programming/PHP/cakephp/WampServer/vendor/cakephp/cakephp/src/Routing/Middleware/RoutingMiddleware.php(130): Cake\Routing\Middleware\RoutingMiddleware->loadRoutes()
+#8 /home/lorix/Programming/PHP/cakephp/WampServer/vendor/cakephp/cakephp/src/Http/Runner.php(65): Cake\Routing\Middleware\RoutingMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#9 /home/lorix/Programming/PHP/cakephp/WampServer/vendor/cakephp/cakephp/src/Routing/Middleware/AssetMiddleware.php(88): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#10 /home/lorix/Programming/PHP/cakephp/WampServer/vendor/cakephp/cakephp/src/Http/Runner.php(65): Cake\Routing\Middleware\AssetMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#11 /home/lorix/Programming/PHP/cakephp/WampServer/vendor/cakephp/cakephp/src/Error/Middleware/ErrorHandlerMiddleware.php(98): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#12 /home/lorix/Programming/PHP/cakephp/WampServer/vendor/cakephp/cakephp/src/Http/Runner.php(65): Cake\Error\Middleware\ErrorHandlerMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#13 /home/lorix/Programming/PHP/cakephp/WampServer/vendor/cakephp/cakephp/src/Http/Runner.php(51): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#14 /home/lorix/Programming/PHP/cakephp/WampServer/vendor/cakephp/cakephp/src/Http/Server.php(98): Cake\Http\Runner->run(Object(Cake\Http\MiddlewareQueue), Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#15 /home/lorix/Programming/PHP/cakephp/WampServer/webroot/index.php(40): Cake\Http\Server->run()
+#16 /home/lorix/Programming/PHP/cakephp/WampServer/index.php(16): require('/home/lorix/Pro...')
+#17 {main}
+
+
+2018-11-18 22:52:39 Warning: DebugKit not enabled. You need to either install pdo_sqlite, or define the "debug_kit" connection name.
+2018-11-18 22:52:39 Error: [ParseError] syntax error, unexpected '<', expecting end of file
+Request URL: /
+Stack Trace:
+#0 /home/lorix/Programming/PHP/cakephp/WampServer/src/Application.php(75): Cake\Http\BaseApplication->routes(Object(Cake\Routing\RouteBuilder))
+#1 /home/lorix/Programming/PHP/cakephp/WampServer/vendor/cakephp/cakephp/src/Routing/Middleware/RoutingMiddleware.php(109): App\Application->routes(Object(Cake\Routing\RouteBuilder))
+#2 /home/lorix/Programming/PHP/cakephp/WampServer/vendor/cakephp/cakephp/src/Routing/Middleware/RoutingMiddleware.php(94): Cake\Routing\Middleware\RoutingMiddleware->prepareRouteCollection()
+#3 [internal function]: Cake\Routing\Middleware\RoutingMiddleware->Cake\Routing\Middleware\{closure}()
+#4 /home/lorix/Programming/PHP/cakephp/WampServer/vendor/cakephp/cakephp/src/Cache/Cache.php(632): call_user_func(Object(Closure))
+#5 /home/lorix/Programming/PHP/cakephp/WampServer/vendor/cakephp/cakephp/src/Routing/Middleware/RoutingMiddleware.php(95): Cake\Cache\Cache::remember('routeCollection', Object(Closure), '_cake_routes_')
+#6 /home/lorix/Programming/PHP/cakephp/WampServer/vendor/cakephp/cakephp/src/Routing/Middleware/RoutingMiddleware.php(81): Cake\Routing\Middleware\RoutingMiddleware->buildRouteCollection()
+#7 /home/lorix/Programming/PHP/cakephp/WampServer/vendor/cakephp/cakephp/src/Routing/Middleware/RoutingMiddleware.php(130): Cake\Routing\Middleware\RoutingMiddleware->loadRoutes()
+#8 /home/lorix/Programming/PHP/cakephp/WampServer/vendor/cakephp/cakephp/src/Http/Runner.php(65): Cake\Routing\Middleware\RoutingMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#9 /home/lorix/Programming/PHP/cakephp/WampServer/vendor/cakephp/cakephp/src/Routing/Middleware/AssetMiddleware.php(88): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#10 /home/lorix/Programming/PHP/cakephp/WampServer/vendor/cakephp/cakephp/src/Http/Runner.php(65): Cake\Routing\Middleware\AssetMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#11 /home/lorix/Programming/PHP/cakephp/WampServer/vendor/cakephp/cakephp/src/Error/Middleware/ErrorHandlerMiddleware.php(98): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#12 /home/lorix/Programming/PHP/cakephp/WampServer/vendor/cakephp/cakephp/src/Http/Runner.php(65): Cake\Error\Middleware\ErrorHandlerMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#13 /home/lorix/Programming/PHP/cakephp/WampServer/vendor/cakephp/cakephp/src/Http/Runner.php(51): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#14 /home/lorix/Programming/PHP/cakephp/WampServer/vendor/cakephp/cakephp/src/Http/Server.php(98): Cake\Http\Runner->run(Object(Cake\Http\MiddlewareQueue), Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#15 /home/lorix/Programming/PHP/cakephp/WampServer/webroot/index.php(40): Cake\Http\Server->run()
+#16 /home/lorix/Programming/PHP/cakephp/WampServer/index.php(16): require('/home/lorix/Pro...')
+#17 {main}
+
+
+2018-11-18 22:58:53 Warning: DebugKit not enabled. You need to either install pdo_sqlite, or define the "debug_kit" connection name.
+2018-11-18 22:58:53 Error: [ParseError] syntax error, unexpected '<', expecting end of file
+Request URL: /
+Stack Trace:
+#0 /home/lorix/Programming/PHP/cakephp/WampServer/src/Application.php(75): Cake\Http\BaseApplication->routes(Object(Cake\Routing\RouteBuilder))
+#1 /home/lorix/Programming/PHP/cakephp/WampServer/vendor/cakephp/cakephp/src/Routing/Middleware/RoutingMiddleware.php(109): App\Application->routes(Object(Cake\Routing\RouteBuilder))
+#2 /home/lorix/Programming/PHP/cakephp/WampServer/vendor/cakephp/cakephp/src/Routing/Middleware/RoutingMiddleware.php(94): Cake\Routing\Middleware\RoutingMiddleware->prepareRouteCollection()
+#3 [internal function]: Cake\Routing\Middleware\RoutingMiddleware->Cake\Routing\Middleware\{closure}()
+#4 /home/lorix/Programming/PHP/cakephp/WampServer/vendor/cakephp/cakephp/src/Cache/Cache.php(632): call_user_func(Object(Closure))
+#5 /home/lorix/Programming/PHP/cakephp/WampServer/vendor/cakephp/cakephp/src/Routing/Middleware/RoutingMiddleware.php(95): Cake\Cache\Cache::remember('routeCollection', Object(Closure), '_cake_routes_')
+#6 /home/lorix/Programming/PHP/cakephp/WampServer/vendor/cakephp/cakephp/src/Routing/Middleware/RoutingMiddleware.php(81): Cake\Routing\Middleware\RoutingMiddleware->buildRouteCollection()
+#7 /home/lorix/Programming/PHP/cakephp/WampServer/vendor/cakephp/cakephp/src/Routing/Middleware/RoutingMiddleware.php(130): Cake\Routing\Middleware\RoutingMiddleware->loadRoutes()
+#8 /home/lorix/Programming/PHP/cakephp/WampServer/vendor/cakephp/cakephp/src/Http/Runner.php(65): Cake\Routing\Middleware\RoutingMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#9 /home/lorix/Programming/PHP/cakephp/WampServer/vendor/cakephp/cakephp/src/Routing/Middleware/AssetMiddleware.php(88): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#10 /home/lorix/Programming/PHP/cakephp/WampServer/vendor/cakephp/cakephp/src/Http/Runner.php(65): Cake\Routing\Middleware\AssetMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#11 /home/lorix/Programming/PHP/cakephp/WampServer/vendor/cakephp/cakephp/src/Error/Middleware/ErrorHandlerMiddleware.php(98): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#12 /home/lorix/Programming/PHP/cakephp/WampServer/vendor/cakephp/cakephp/src/Http/Runner.php(65): Cake\Error\Middleware\ErrorHandlerMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#13 /home/lorix/Programming/PHP/cakephp/WampServer/vendor/cakephp/cakephp/src/Http/Runner.php(51): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#14 /home/lorix/Programming/PHP/cakephp/WampServer/vendor/cakephp/cakephp/src/Http/Server.php(98): Cake\Http\Runner->run(Object(Cake\Http\MiddlewareQueue), Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#15 /home/lorix/Programming/PHP/cakephp/WampServer/webroot/index.php(40): Cake\Http\Server->run()
+#16 /home/lorix/Programming/PHP/cakephp/WampServer/index.php(16): require('/home/lorix/Pro...')
+#17 {main}
+
+
+2018-11-18 23:01:31 Warning: DebugKit not enabled. You need to either install pdo_sqlite, or define the "debug_kit" connection name.
+2018-11-18 23:01:56 Warning: DebugKit not enabled. You need to either install pdo_sqlite, or define the "debug_kit" connection name.
+2018-11-18 23:02:41 Warning: DebugKit not enabled. You need to either install pdo_sqlite, or define the "debug_kit" connection name.
+2018-11-18 23:04:53 Warning: DebugKit not enabled. You need to either install pdo_sqlite, or define the "debug_kit" connection name.
+2018-11-18 23:04:54 Error: [Cake\Routing\Exception\MissingRouteException] A route matching "/" could not be found.
+Exception Attributes: array (
+  'url' => '/',
+)
+Request URL: /
+Stack Trace:
+#0 /home/lorix/Programming/PHP/cakephp/WampServer/vendor/cakephp/cakephp/src/Routing/Router.php(383): Cake\Routing\RouteCollection->parseRequest(Object(Cake\Http\ServerRequest))
+#1 /home/lorix/Programming/PHP/cakephp/WampServer/vendor/cakephp/cakephp/src/Routing/Middleware/RoutingMiddleware.php(140): Cake\Routing\Router::parseRequest(Object(Cake\Http\ServerRequest))
+#2 /home/lorix/Programming/PHP/cakephp/WampServer/vendor/cakephp/cakephp/src/Http/Runner.php(65): Cake\Routing\Middleware\RoutingMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#3 /home/lorix/Programming/PHP/cakephp/WampServer/vendor/cakephp/cakephp/src/Routing/Middleware/AssetMiddleware.php(88): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#4 /home/lorix/Programming/PHP/cakephp/WampServer/vendor/cakephp/cakephp/src/Http/Runner.php(65): Cake\Routing\Middleware\AssetMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#5 /home/lorix/Programming/PHP/cakephp/WampServer/vendor/cakephp/cakephp/src/Error/Middleware/ErrorHandlerMiddleware.php(98): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#6 /home/lorix/Programming/PHP/cakephp/WampServer/vendor/cakephp/cakephp/src/Http/Runner.php(65): Cake\Error\Middleware\ErrorHandlerMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#7 /home/lorix/Programming/PHP/cakephp/WampServer/vendor/cakephp/cakephp/src/Http/Runner.php(51): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#8 /home/lorix/Programming/PHP/cakephp/WampServer/vendor/cakephp/cakephp/src/Http/Server.php(98): Cake\Http\Runner->run(Object(Cake\Http\MiddlewareQueue), Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#9 /home/lorix/Programming/PHP/cakephp/WampServer/webroot/index.php(40): Cake\Http\Server->run()
+#10 /home/lorix/Programming/PHP/cakephp/WampServer/index.php(16): require('/home/lorix/Pro...')
+#11 {main}
+
+
+2018-11-18 23:06:47 Warning: DebugKit not enabled. You need to either install pdo_sqlite, or define the "debug_kit" connection name.
+2018-11-18 23:06:47 Error: [Cake\Routing\Exception\MissingRouteException] A route matching "/" could not be found.
+Exception Attributes: array (
+  'url' => '/',
+)
+Request URL: /
+Stack Trace:
+#0 /home/lorix/Programming/PHP/cakephp/WampServer/vendor/cakephp/cakephp/src/Routing/Router.php(383): Cake\Routing\RouteCollection->parseRequest(Object(Cake\Http\ServerRequest))
+#1 /home/lorix/Programming/PHP/cakephp/WampServer/vendor/cakephp/cakephp/src/Routing/Middleware/RoutingMiddleware.php(140): Cake\Routing\Router::parseRequest(Object(Cake\Http\ServerRequest))
+#2 /home/lorix/Programming/PHP/cakephp/WampServer/vendor/cakephp/cakephp/src/Http/Runner.php(65): Cake\Routing\Middleware\RoutingMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#3 /home/lorix/Programming/PHP/cakephp/WampServer/vendor/cakephp/cakephp/src/Routing/Middleware/AssetMiddleware.php(88): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#4 /home/lorix/Programming/PHP/cakephp/WampServer/vendor/cakephp/cakephp/src/Http/Runner.php(65): Cake\Routing\Middleware\AssetMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#5 /home/lorix/Programming/PHP/cakephp/WampServer/vendor/cakephp/cakephp/src/Error/Middleware/ErrorHandlerMiddleware.php(98): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#6 /home/lorix/Programming/PHP/cakephp/WampServer/vendor/cakephp/cakephp/src/Http/Runner.php(65): Cake\Error\Middleware\ErrorHandlerMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#7 /home/lorix/Programming/PHP/cakephp/WampServer/vendor/cakephp/cakephp/src/Http/Runner.php(51): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#8 /home/lorix/Programming/PHP/cakephp/WampServer/vendor/cakephp/cakephp/src/Http/Server.php(98): Cake\Http\Runner->run(Object(Cake\Http\MiddlewareQueue), Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#9 /home/lorix/Programming/PHP/cakephp/WampServer/webroot/index.php(40): Cake\Http\Server->run()
+#10 /home/lorix/Programming/PHP/cakephp/WampServer/index.php(16): require('/home/lorix/Pro...')
+#11 {main}
+
+
+2018-12-04 21:02:10 Error: [Cake\Routing\Exception\MissingRouteException] A route matching "/" could not be found.
+Exception Attributes: array (
+  'url' => '/',
+)
+Request URL: /
+Stack Trace:
+#0 /home/vagrant/code/vendor/cakephp/cakephp/src/Routing/Router.php(383): Cake\Routing\RouteCollection->parseRequest(Object(Cake\Http\ServerRequest))
+#1 /home/vagrant/code/vendor/cakephp/cakephp/src/Routing/Middleware/RoutingMiddleware.php(140): Cake\Routing\Router::parseRequest(Object(Cake\Http\ServerRequest))
+#2 /home/vagrant/code/vendor/cakephp/cakephp/src/Http/Runner.php(65): Cake\Routing\Middleware\RoutingMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#3 /home/vagrant/code/vendor/cakephp/cakephp/src/Routing/Middleware/AssetMiddleware.php(88): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#4 /home/vagrant/code/vendor/cakephp/cakephp/src/Http/Runner.php(65): Cake\Routing\Middleware\AssetMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#5 /home/vagrant/code/vendor/cakephp/cakephp/src/Error/Middleware/ErrorHandlerMiddleware.php(98): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#6 /home/vagrant/code/vendor/cakephp/cakephp/src/Http/Runner.php(65): Cake\Error\Middleware\ErrorHandlerMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#7 /home/vagrant/code/vendor/cakephp/debug_kit/src/Middleware/DebugKitMiddleware.php(53): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#8 /home/vagrant/code/vendor/cakephp/cakephp/src/Http/Runner.php(65): DebugKit\Middleware\DebugKitMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#9 /home/vagrant/code/vendor/cakephp/cakephp/src/Http/Runner.php(51): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#10 /home/vagrant/code/vendor/cakephp/cakephp/src/Http/Server.php(98): Cake\Http\Runner->run(Object(Cake\Http\MiddlewareQueue), Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#11 /home/vagrant/code/webroot/index.php(40): Cake\Http\Server->run()
+#12 {main}
+
+
+2018-12-09 13:40:38 Error: [Cake\Routing\Exception\MissingRouteException] A route matching "/" could not be found.
+Exception Attributes: array (
+  'url' => '/',
+)
+Request URL: /
+Stack Trace:
+#0 /home/vagrant/code/vendor/cakephp/cakephp/src/Routing/Router.php(383): Cake\Routing\RouteCollection->parseRequest(Object(Cake\Http\ServerRequest))
+#1 /home/vagrant/code/vendor/cakephp/cakephp/src/Routing/Middleware/RoutingMiddleware.php(140): Cake\Routing\Router::parseRequest(Object(Cake\Http\ServerRequest))
+#2 /home/vagrant/code/vendor/cakephp/cakephp/src/Http/Runner.php(65): Cake\Routing\Middleware\RoutingMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#3 /home/vagrant/code/vendor/cakephp/cakephp/src/Routing/Middleware/AssetMiddleware.php(88): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#4 /home/vagrant/code/vendor/cakephp/cakephp/src/Http/Runner.php(65): Cake\Routing\Middleware\AssetMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#5 /home/vagrant/code/vendor/cakephp/cakephp/src/Error/Middleware/ErrorHandlerMiddleware.php(98): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#6 /home/vagrant/code/vendor/cakephp/cakephp/src/Http/Runner.php(65): Cake\Error\Middleware\ErrorHandlerMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#7 /home/vagrant/code/vendor/cakephp/debug_kit/src/Middleware/DebugKitMiddleware.php(53): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#8 /home/vagrant/code/vendor/cakephp/cakephp/src/Http/Runner.php(65): DebugKit\Middleware\DebugKitMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#9 /home/vagrant/code/vendor/cakephp/cakephp/src/Http/Runner.php(51): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#10 /home/vagrant/code/vendor/cakephp/cakephp/src/Http/Server.php(98): Cake\Http\Runner->run(Object(Cake\Http\MiddlewareQueue), Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#11 /home/vagrant/code/webroot/index.php(40): Cake\Http\Server->run()
+#12 {main}
+
+
+2018-12-09 13:43:40 Error: [Cake\View\Exception\MissingTemplateException] Template file "Tests/index.ctp" is missing.
+Exception Attributes: array (
+  'file' => 'Tests/index.ctp',
+)
+Request URL: /
+Stack Trace:
+#0 /home/vagrant/code/vendor/cakephp/cakephp/src/View/View.php(799): Cake\View\View->_getViewFileName('Tests/index')
+#1 /home/vagrant/code/vendor/cakephp/cakephp/src/Controller/Controller.php(790): Cake\View\View->render(NULL, NULL)
+#2 /home/vagrant/code/vendor/cakephp/cakephp/src/Http/ActionDispatcher.php(126): Cake\Controller\Controller->render()
+#3 /home/vagrant/code/vendor/cakephp/cakephp/src/Http/ActionDispatcher.php(94): Cake\Http\ActionDispatcher->_invoke(Object(App\Controller\TestsController))
+#4 /home/vagrant/code/vendor/cakephp/cakephp/src/Http/BaseApplication.php(235): Cake\Http\ActionDispatcher->dispatch(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#5 /home/vagrant/code/vendor/cakephp/cakephp/src/Http/Runner.php(65): Cake\Http\BaseApplication->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#6 /home/vagrant/code/vendor/cakephp/cakephp/src/Routing/Middleware/RoutingMiddleware.php(156): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#7 /home/vagrant/code/vendor/cakephp/cakephp/src/Http/Runner.php(65): Cake\Routing\Middleware\RoutingMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#8 /home/vagrant/code/vendor/cakephp/cakephp/src/Routing/Middleware/AssetMiddleware.php(88): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#9 /home/vagrant/code/vendor/cakephp/cakephp/src/Http/Runner.php(65): Cake\Routing\Middleware\AssetMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#10 /home/vagrant/code/vendor/cakephp/cakephp/src/Error/Middleware/ErrorHandlerMiddleware.php(98): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#11 /home/vagrant/code/vendor/cakephp/cakephp/src/Http/Runner.php(65): Cake\Error\Middleware\ErrorHandlerMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#12 /home/vagrant/code/vendor/cakephp/debug_kit/src/Middleware/DebugKitMiddleware.php(53): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#13 /home/vagrant/code/vendor/cakephp/cakephp/src/Http/Runner.php(65): DebugKit\Middleware\DebugKitMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#14 /home/vagrant/code/vendor/cakephp/cakephp/src/Http/Runner.php(51): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#15 /home/vagrant/code/vendor/cakephp/cakephp/src/Http/Server.php(98): Cake\Http\Runner->run(Object(Cake\Http\MiddlewareQueue), Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#16 /home/vagrant/code/webroot/index.php(40): Cake\Http\Server->run()
+#17 {main}
+
+
+2018-12-09 13:45:34 Error: [Cake\View\Exception\MissingTemplateException] Template file "Tests/index.ctp" is missing.
+Exception Attributes: array (
+  'file' => 'Tests/index.ctp',
+)
+Request URL: /
+Stack Trace:
+#0 /home/vagrant/code/vendor/cakephp/cakephp/src/View/View.php(799): Cake\View\View->_getViewFileName('Tests/index')
+#1 /home/vagrant/code/vendor/cakephp/cakephp/src/Controller/Controller.php(790): Cake\View\View->render(NULL, NULL)
+#2 /home/vagrant/code/vendor/cakephp/cakephp/src/Http/ActionDispatcher.php(126): Cake\Controller\Controller->render()
+#3 /home/vagrant/code/vendor/cakephp/cakephp/src/Http/ActionDispatcher.php(94): Cake\Http\ActionDispatcher->_invoke(Object(App\Controller\TestsController))
+#4 /home/vagrant/code/vendor/cakephp/cakephp/src/Http/BaseApplication.php(235): Cake\Http\ActionDispatcher->dispatch(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#5 /home/vagrant/code/vendor/cakephp/cakephp/src/Http/Runner.php(65): Cake\Http\BaseApplication->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#6 /home/vagrant/code/vendor/cakephp/cakephp/src/Routing/Middleware/RoutingMiddleware.php(156): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#7 /home/vagrant/code/vendor/cakephp/cakephp/src/Http/Runner.php(65): Cake\Routing\Middleware\RoutingMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#8 /home/vagrant/code/vendor/cakephp/cakephp/src/Routing/Middleware/AssetMiddleware.php(88): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#9 /home/vagrant/code/vendor/cakephp/cakephp/src/Http/Runner.php(65): Cake\Routing\Middleware\AssetMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#10 /home/vagrant/code/vendor/cakephp/cakephp/src/Error/Middleware/ErrorHandlerMiddleware.php(98): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#11 /home/vagrant/code/vendor/cakephp/cakephp/src/Http/Runner.php(65): Cake\Error\Middleware\ErrorHandlerMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#12 /home/vagrant/code/vendor/cakephp/debug_kit/src/Middleware/DebugKitMiddleware.php(53): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#13 /home/vagrant/code/vendor/cakephp/cakephp/src/Http/Runner.php(65): DebugKit\Middleware\DebugKitMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#14 /home/vagrant/code/vendor/cakephp/cakephp/src/Http/Runner.php(51): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#15 /home/vagrant/code/vendor/cakephp/cakephp/src/Http/Server.php(98): Cake\Http\Runner->run(Object(Cake\Http\MiddlewareQueue), Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#16 /home/vagrant/code/webroot/index.php(40): Cake\Http\Server->run()
+#17 {main}
+
+
+2018-12-09 13:49:46 Error: [Cake\Routing\Exception\MissingRouteException] A route matching "/" could not be found.
+Exception Attributes: array (
+  'url' => '/',
+)
+Request URL: /
+Stack Trace:
+#0 /home/vagrant/code/vendor/cakephp/cakephp/src/Routing/Router.php(383): Cake\Routing\RouteCollection->parseRequest(Object(Cake\Http\ServerRequest))
+#1 /home/vagrant/code/vendor/cakephp/cakephp/src/Routing/Middleware/RoutingMiddleware.php(140): Cake\Routing\Router::parseRequest(Object(Cake\Http\ServerRequest))
+#2 /home/vagrant/code/vendor/cakephp/cakephp/src/Http/Runner.php(65): Cake\Routing\Middleware\RoutingMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#3 /home/vagrant/code/vendor/cakephp/cakephp/src/Routing/Middleware/AssetMiddleware.php(88): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#4 /home/vagrant/code/vendor/cakephp/cakephp/src/Http/Runner.php(65): Cake\Routing\Middleware\AssetMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#5 /home/vagrant/code/vendor/cakephp/cakephp/src/Error/Middleware/ErrorHandlerMiddleware.php(98): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#6 /home/vagrant/code/vendor/cakephp/cakephp/src/Http/Runner.php(65): Cake\Error\Middleware\ErrorHandlerMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#7 /home/vagrant/code/vendor/cakephp/debug_kit/src/Middleware/DebugKitMiddleware.php(53): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#8 /home/vagrant/code/vendor/cakephp/cakephp/src/Http/Runner.php(65): DebugKit\Middleware\DebugKitMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#9 /home/vagrant/code/vendor/cakephp/cakephp/src/Http/Runner.php(51): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#10 /home/vagrant/code/vendor/cakephp/cakephp/src/Http/Server.php(98): Cake\Http\Runner->run(Object(Cake\Http\MiddlewareQueue), Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#11 /home/vagrant/code/webroot/index.php(40): Cake\Http\Server->run()
+#12 {main}
+
+
+2018-12-09 14:03:36 Error: [Cake\Routing\Exception\MissingRouteException] A route matching "/Generates" could not be found.
+Exception Attributes: array (
+  'url' => '/Generates',
+)
+Request URL: /Generates
+Stack Trace:
+#0 /home/vagrant/code/vendor/cakephp/cakephp/src/Routing/Router.php(383): Cake\Routing\RouteCollection->parseRequest(Object(Cake\Http\ServerRequest))
+#1 /home/vagrant/code/vendor/cakephp/cakephp/src/Routing/Middleware/RoutingMiddleware.php(140): Cake\Routing\Router::parseRequest(Object(Cake\Http\ServerRequest))
+#2 /home/vagrant/code/vendor/cakephp/cakephp/src/Http/Runner.php(65): Cake\Routing\Middleware\RoutingMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#3 /home/vagrant/code/vendor/cakephp/cakephp/src/Routing/Middleware/AssetMiddleware.php(88): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#4 /home/vagrant/code/vendor/cakephp/cakephp/src/Http/Runner.php(65): Cake\Routing\Middleware\AssetMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#5 /home/vagrant/code/vendor/cakephp/cakephp/src/Error/Middleware/ErrorHandlerMiddleware.php(98): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#6 /home/vagrant/code/vendor/cakephp/cakephp/src/Http/Runner.php(65): Cake\Error\Middleware\ErrorHandlerMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#7 /home/vagrant/code/vendor/cakephp/debug_kit/src/Middleware/DebugKitMiddleware.php(53): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#8 /home/vagrant/code/vendor/cakephp/cakephp/src/Http/Runner.php(65): DebugKit\Middleware\DebugKitMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#9 /home/vagrant/code/vendor/cakephp/cakephp/src/Http/Runner.php(51): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#10 /home/vagrant/code/vendor/cakephp/cakephp/src/Http/Server.php(98): Cake\Http\Runner->run(Object(Cake\Http\MiddlewareQueue), Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#11 /home/vagrant/code/webroot/index.php(40): Cake\Http\Server->run()
+#12 {main}
+
+
+2018-12-09 14:04:04 Error: [Cake\Routing\Exception\MissingRouteException] A route matching "/CakePHP/Generates" could not be found.
+Exception Attributes: array (
+  'url' => '/CakePHP/Generates',
+)
+Request URL: /CakePHP/Generates
+Stack Trace:
+#0 /home/vagrant/code/vendor/cakephp/cakephp/src/Routing/Router.php(383): Cake\Routing\RouteCollection->parseRequest(Object(Cake\Http\ServerRequest))
+#1 /home/vagrant/code/vendor/cakephp/cakephp/src/Routing/Middleware/RoutingMiddleware.php(140): Cake\Routing\Router::parseRequest(Object(Cake\Http\ServerRequest))
+#2 /home/vagrant/code/vendor/cakephp/cakephp/src/Http/Runner.php(65): Cake\Routing\Middleware\RoutingMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#3 /home/vagrant/code/vendor/cakephp/cakephp/src/Routing/Middleware/AssetMiddleware.php(88): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#4 /home/vagrant/code/vendor/cakephp/cakephp/src/Http/Runner.php(65): Cake\Routing\Middleware\AssetMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#5 /home/vagrant/code/vendor/cakephp/cakephp/src/Error/Middleware/ErrorHandlerMiddleware.php(98): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#6 /home/vagrant/code/vendor/cakephp/cakephp/src/Http/Runner.php(65): Cake\Error\Middleware\ErrorHandlerMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#7 /home/vagrant/code/vendor/cakephp/debug_kit/src/Middleware/DebugKitMiddleware.php(53): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#8 /home/vagrant/code/vendor/cakephp/cakephp/src/Http/Runner.php(65): DebugKit\Middleware\DebugKitMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#9 /home/vagrant/code/vendor/cakephp/cakephp/src/Http/Runner.php(51): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#10 /home/vagrant/code/vendor/cakephp/cakephp/src/Http/Server.php(98): Cake\Http\Runner->run(Object(Cake\Http\MiddlewareQueue), Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#11 /home/vagrant/code/webroot/index.php(40): Cake\Http\Server->run()
+#12 {main}
+
+
+2018-12-09 14:04:31 Error: [Cake\Routing\Exception\MissingRouteException] A route matching "/CakePHP/generates" could not be found.
+Exception Attributes: array (
+  'url' => '/CakePHP/generates',
+)
+Request URL: /CakePHP/generates
+Stack Trace:
+#0 /home/vagrant/code/vendor/cakephp/cakephp/src/Routing/Router.php(383): Cake\Routing\RouteCollection->parseRequest(Object(Cake\Http\ServerRequest))
+#1 /home/vagrant/code/vendor/cakephp/cakephp/src/Routing/Middleware/RoutingMiddleware.php(140): Cake\Routing\Router::parseRequest(Object(Cake\Http\ServerRequest))
+#2 /home/vagrant/code/vendor/cakephp/cakephp/src/Http/Runner.php(65): Cake\Routing\Middleware\RoutingMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#3 /home/vagrant/code/vendor/cakephp/cakephp/src/Routing/Middleware/AssetMiddleware.php(88): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#4 /home/vagrant/code/vendor/cakephp/cakephp/src/Http/Runner.php(65): Cake\Routing\Middleware\AssetMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#5 /home/vagrant/code/vendor/cakephp/cakephp/src/Error/Middleware/ErrorHandlerMiddleware.php(98): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#6 /home/vagrant/code/vendor/cakephp/cakephp/src/Http/Runner.php(65): Cake\Error\Middleware\ErrorHandlerMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#7 /home/vagrant/code/vendor/cakephp/debug_kit/src/Middleware/DebugKitMiddleware.php(53): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#8 /home/vagrant/code/vendor/cakephp/cakephp/src/Http/Runner.php(65): DebugKit\Middleware\DebugKitMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#9 /home/vagrant/code/vendor/cakephp/cakephp/src/Http/Runner.php(51): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#10 /home/vagrant/code/vendor/cakephp/cakephp/src/Http/Server.php(98): Cake\Http\Runner->run(Object(Cake\Http\MiddlewareQueue), Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#11 /home/vagrant/code/webroot/index.php(40): Cake\Http\Server->run()
+#12 {main}
+
+
+2018-12-09 14:04:42 Error: [Cake\Routing\Exception\MissingRouteException] A route matching "/generates" could not be found.
+Exception Attributes: array (
+  'url' => '/generates',
+)
+Request URL: /generates
+Stack Trace:
+#0 /home/vagrant/code/vendor/cakephp/cakephp/src/Routing/Router.php(383): Cake\Routing\RouteCollection->parseRequest(Object(Cake\Http\ServerRequest))
+#1 /home/vagrant/code/vendor/cakephp/cakephp/src/Routing/Middleware/RoutingMiddleware.php(140): Cake\Routing\Router::parseRequest(Object(Cake\Http\ServerRequest))
+#2 /home/vagrant/code/vendor/cakephp/cakephp/src/Http/Runner.php(65): Cake\Routing\Middleware\RoutingMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#3 /home/vagrant/code/vendor/cakephp/cakephp/src/Routing/Middleware/AssetMiddleware.php(88): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#4 /home/vagrant/code/vendor/cakephp/cakephp/src/Http/Runner.php(65): Cake\Routing\Middleware\AssetMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#5 /home/vagrant/code/vendor/cakephp/cakephp/src/Error/Middleware/ErrorHandlerMiddleware.php(98): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#6 /home/vagrant/code/vendor/cakephp/cakephp/src/Http/Runner.php(65): Cake\Error\Middleware\ErrorHandlerMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#7 /home/vagrant/code/vendor/cakephp/debug_kit/src/Middleware/DebugKitMiddleware.php(53): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#8 /home/vagrant/code/vendor/cakephp/cakephp/src/Http/Runner.php(65): DebugKit\Middleware\DebugKitMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#9 /home/vagrant/code/vendor/cakephp/cakephp/src/Http/Runner.php(51): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#10 /home/vagrant/code/vendor/cakephp/cakephp/src/Http/Server.php(98): Cake\Http\Runner->run(Object(Cake\Http\MiddlewareQueue), Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#11 /home/vagrant/code/webroot/index.php(40): Cake\Http\Server->run()
+#12 {main}
+
+
+2018-12-09 14:05:29 Error: [Cake\Routing\Exception\MissingRouteException] A route matching "/CakePHP/generate" could not be found.
+Exception Attributes: array (
+  'url' => '/CakePHP/generate',
+)
+Request URL: /CakePHP/generate
+Stack Trace:
+#0 /home/vagrant/code/vendor/cakephp/cakephp/src/Routing/Router.php(383): Cake\Routing\RouteCollection->parseRequest(Object(Cake\Http\ServerRequest))
+#1 /home/vagrant/code/vendor/cakephp/cakephp/src/Routing/Middleware/RoutingMiddleware.php(140): Cake\Routing\Router::parseRequest(Object(Cake\Http\ServerRequest))
+#2 /home/vagrant/code/vendor/cakephp/cakephp/src/Http/Runner.php(65): Cake\Routing\Middleware\RoutingMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#3 /home/vagrant/code/vendor/cakephp/cakephp/src/Routing/Middleware/AssetMiddleware.php(88): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#4 /home/vagrant/code/vendor/cakephp/cakephp/src/Http/Runner.php(65): Cake\Routing\Middleware\AssetMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#5 /home/vagrant/code/vendor/cakephp/cakephp/src/Error/Middleware/ErrorHandlerMiddleware.php(98): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#6 /home/vagrant/code/vendor/cakephp/cakephp/src/Http/Runner.php(65): Cake\Error\Middleware\ErrorHandlerMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#7 /home/vagrant/code/vendor/cakephp/debug_kit/src/Middleware/DebugKitMiddleware.php(53): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#8 /home/vagrant/code/vendor/cakephp/cakephp/src/Http/Runner.php(65): DebugKit\Middleware\DebugKitMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#9 /home/vagrant/code/vendor/cakephp/cakephp/src/Http/Runner.php(51): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#10 /home/vagrant/code/vendor/cakephp/cakephp/src/Http/Server.php(98): Cake\Http\Runner->run(Object(Cake\Http\MiddlewareQueue), Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#11 /home/vagrant/code/webroot/index.php(40): Cake\Http\Server->run()
+#12 {main}
+
+
+2018-12-09 14:07:12 Error: [Cake\Routing\Exception\MissingRouteException] A route matching "/generates" could not be found.
+Exception Attributes: array (
+  'url' => '/generates',
+)
+Request URL: /generates
+Stack Trace:
+#0 /home/vagrant/code/vendor/cakephp/cakephp/src/Routing/Router.php(383): Cake\Routing\RouteCollection->parseRequest(Object(Cake\Http\ServerRequest))
+#1 /home/vagrant/code/vendor/cakephp/cakephp/src/Routing/Middleware/RoutingMiddleware.php(140): Cake\Routing\Router::parseRequest(Object(Cake\Http\ServerRequest))
+#2 /home/vagrant/code/vendor/cakephp/cakephp/src/Http/Runner.php(65): Cake\Routing\Middleware\RoutingMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#3 /home/vagrant/code/vendor/cakephp/cakephp/src/Routing/Middleware/AssetMiddleware.php(88): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#4 /home/vagrant/code/vendor/cakephp/cakephp/src/Http/Runner.php(65): Cake\Routing\Middleware\AssetMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#5 /home/vagrant/code/vendor/cakephp/cakephp/src/Error/Middleware/ErrorHandlerMiddleware.php(98): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#6 /home/vagrant/code/vendor/cakephp/cakephp/src/Http/Runner.php(65): Cake\Error\Middleware\ErrorHandlerMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#7 /home/vagrant/code/vendor/cakephp/debug_kit/src/Middleware/DebugKitMiddleware.php(53): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#8 /home/vagrant/code/vendor/cakephp/cakephp/src/Http/Runner.php(65): DebugKit\Middleware\DebugKitMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#9 /home/vagrant/code/vendor/cakephp/cakephp/src/Http/Runner.php(51): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#10 /home/vagrant/code/vendor/cakephp/cakephp/src/Http/Server.php(98): Cake\Http\Runner->run(Object(Cake\Http\MiddlewareQueue), Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#11 /home/vagrant/code/webroot/index.php(40): Cake\Http\Server->run()
+#12 {main}
+
+
+2018-12-09 14:07:49 Error: [Cake\Routing\Exception\MissingRouteException] A route matching "/CakePHP/tests/Virat/Kunal" could not be found.
+Exception Attributes: array (
+  'url' => '/CakePHP/tests/Virat/Kunal',
+)
+Request URL: /CakePHP/tests/Virat/Kunal
+Stack Trace:
+#0 /home/vagrant/code/vendor/cakephp/cakephp/src/Routing/Router.php(383): Cake\Routing\RouteCollection->parseRequest(Object(Cake\Http\ServerRequest))
+#1 /home/vagrant/code/vendor/cakephp/cakephp/src/Routing/Middleware/RoutingMiddleware.php(140): Cake\Routing\Router::parseRequest(Object(Cake\Http\ServerRequest))
+#2 /home/vagrant/code/vendor/cakephp/cakephp/src/Http/Runner.php(65): Cake\Routing\Middleware\RoutingMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#3 /home/vagrant/code/vendor/cakephp/cakephp/src/Routing/Middleware/AssetMiddleware.php(88): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#4 /home/vagrant/code/vendor/cakephp/cakephp/src/Http/Runner.php(65): Cake\Routing\Middleware\AssetMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#5 /home/vagrant/code/vendor/cakephp/cakephp/src/Error/Middleware/ErrorHandlerMiddleware.php(98): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#6 /home/vagrant/code/vendor/cakephp/cakephp/src/Http/Runner.php(65): Cake\Error\Middleware\ErrorHandlerMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#7 /home/vagrant/code/vendor/cakephp/debug_kit/src/Middleware/DebugKitMiddleware.php(53): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#8 /home/vagrant/code/vendor/cakephp/cakephp/src/Http/Runner.php(65): DebugKit\Middleware\DebugKitMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#9 /home/vagrant/code/vendor/cakephp/cakephp/src/Http/Runner.php(51): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#10 /home/vagrant/code/vendor/cakephp/cakephp/src/Http/Server.php(98): Cake\Http\Runner->run(Object(Cake\Http\MiddlewareQueue), Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#11 /home/vagrant/code/webroot/index.php(40): Cake\Http\Server->run()
+#12 {main}
+
+
+2018-12-09 14:07:56 Error: [Cake\Routing\Exception\MissingRouteException] A route matching "/tests/Virat/Kunal" could not be found.
+Exception Attributes: array (
+  'url' => '/tests/Virat/Kunal',
+)
+Request URL: /tests/Virat/Kunal
+Stack Trace:
+#0 /home/vagrant/code/vendor/cakephp/cakephp/src/Routing/Router.php(383): Cake\Routing\RouteCollection->parseRequest(Object(Cake\Http\ServerRequest))
+#1 /home/vagrant/code/vendor/cakephp/cakephp/src/Routing/Middleware/RoutingMiddleware.php(140): Cake\Routing\Router::parseRequest(Object(Cake\Http\ServerRequest))
+#2 /home/vagrant/code/vendor/cakephp/cakephp/src/Http/Runner.php(65): Cake\Routing\Middleware\RoutingMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#3 /home/vagrant/code/vendor/cakephp/cakephp/src/Routing/Middleware/AssetMiddleware.php(88): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#4 /home/vagrant/code/vendor/cakephp/cakephp/src/Http/Runner.php(65): Cake\Routing\Middleware\AssetMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#5 /home/vagrant/code/vendor/cakephp/cakephp/src/Error/Middleware/ErrorHandlerMiddleware.php(98): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#6 /home/vagrant/code/vendor/cakephp/cakephp/src/Http/Runner.php(65): Cake\Error\Middleware\ErrorHandlerMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#7 /home/vagrant/code/vendor/cakephp/debug_kit/src/Middleware/DebugKitMiddleware.php(53): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#8 /home/vagrant/code/vendor/cakephp/cakephp/src/Http/Runner.php(65): DebugKit\Middleware\DebugKitMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#9 /home/vagrant/code/vendor/cakephp/cakephp/src/Http/Runner.php(51): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#10 /home/vagrant/code/vendor/cakephp/cakephp/src/Http/Server.php(98): Cake\Http\Runner->run(Object(Cake\Http\MiddlewareQueue), Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#11 /home/vagrant/code/webroot/index.php(40): Cake\Http\Server->run()
+#12 {main}
+
+
+2018-12-09 14:08:05 Error: [Cake\Routing\Exception\MissingRouteException] A route matching "/tests/Virat/Kunal" could not be found.
+Exception Attributes: array (
+  'url' => '/tests/Virat/Kunal',
+)
+Request URL: /tests/Virat/Kunal
+Stack Trace:
+#0 /home/vagrant/code/vendor/cakephp/cakephp/src/Routing/Router.php(383): Cake\Routing\RouteCollection->parseRequest(Object(Cake\Http\ServerRequest))
+#1 /home/vagrant/code/vendor/cakephp/cakephp/src/Routing/Middleware/RoutingMiddleware.php(140): Cake\Routing\Router::parseRequest(Object(Cake\Http\ServerRequest))
+#2 /home/vagrant/code/vendor/cakephp/cakephp/src/Http/Runner.php(65): Cake\Routing\Middleware\RoutingMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#3 /home/vagrant/code/vendor/cakephp/cakephp/src/Routing/Middleware/AssetMiddleware.php(88): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#4 /home/vagrant/code/vendor/cakephp/cakephp/src/Http/Runner.php(65): Cake\Routing\Middleware\AssetMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#5 /home/vagrant/code/vendor/cakephp/cakephp/src/Error/Middleware/ErrorHandlerMiddleware.php(98): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#6 /home/vagrant/code/vendor/cakephp/cakephp/src/Http/Runner.php(65): Cake\Error\Middleware\ErrorHandlerMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#7 /home/vagrant/code/vendor/cakephp/debug_kit/src/Middleware/DebugKitMiddleware.php(53): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#8 /home/vagrant/code/vendor/cakephp/cakephp/src/Http/Runner.php(65): DebugKit\Middleware\DebugKitMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#9 /home/vagrant/code/vendor/cakephp/cakephp/src/Http/Runner.php(51): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#10 /home/vagrant/code/vendor/cakephp/cakephp/src/Http/Server.php(98): Cake\Http\Runner->run(Object(Cake\Http\MiddlewareQueue), Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#11 /home/vagrant/code/webroot/index.php(40): Cake\Http\Server->run()
+#12 {main}
+
+
+2018-12-09 14:20:53 Error: [Cake\Routing\Exception\MissingRouteException] A route matching "/" could not be found.
+Exception Attributes: array (
+  'url' => '/',
+)
+Request URL: /
+Stack Trace:
+#0 /home/vagrant/code/vendor/cakephp/cakephp/src/Routing/Router.php(383): Cake\Routing\RouteCollection->parseRequest(Object(Cake\Http\ServerRequest))
+#1 /home/vagrant/code/vendor/cakephp/cakephp/src/Routing/Middleware/RoutingMiddleware.php(140): Cake\Routing\Router::parseRequest(Object(Cake\Http\ServerRequest))
+#2 /home/vagrant/code/vendor/cakephp/cakephp/src/Http/Runner.php(65): Cake\Routing\Middleware\RoutingMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#3 /home/vagrant/code/vendor/cakephp/cakephp/src/Routing/Middleware/AssetMiddleware.php(88): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#4 /home/vagrant/code/vendor/cakephp/cakephp/src/Http/Runner.php(65): Cake\Routing\Middleware\AssetMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#5 /home/vagrant/code/vendor/cakephp/cakephp/src/Error/Middleware/ErrorHandlerMiddleware.php(98): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#6 /home/vagrant/code/vendor/cakephp/cakephp/src/Http/Runner.php(65): Cake\Error\Middleware\ErrorHandlerMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#7 /home/vagrant/code/vendor/cakephp/debug_kit/src/Middleware/DebugKitMiddleware.php(53): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#8 /home/vagrant/code/vendor/cakephp/cakephp/src/Http/Runner.php(65): DebugKit\Middleware\DebugKitMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#9 /home/vagrant/code/vendor/cakephp/cakephp/src/Http/Runner.php(51): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#10 /home/vagrant/code/vendor/cakephp/cakephp/src/Http/Server.php(98): Cake\Http\Runner->run(Object(Cake\Http\MiddlewareQueue), Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#11 /home/vagrant/code/webroot/index.php(40): Cake\Http\Server->run()
+#12 {main}
+
+
+2018-12-09 14:21:16 Error: [ArgumentCountError] Too few arguments to function App\Controller\TestsController::index(), 0 passed in /home/vagrant/code/vendor/cakephp/cakephp/src/Controller/Controller.php on line 609 and exactly 2 expected
+Request URL: /generate2
+Stack Trace:
+#0 /home/vagrant/code/vendor/cakephp/cakephp/src/Controller/Controller.php(609): App\Controller\TestsController->index()
+#1 /home/vagrant/code/vendor/cakephp/cakephp/src/Http/ActionDispatcher.php(120): Cake\Controller\Controller->invokeAction()
+#2 /home/vagrant/code/vendor/cakephp/cakephp/src/Http/ActionDispatcher.php(94): Cake\Http\ActionDispatcher->_invoke(Object(App\Controller\TestsController))
+#3 /home/vagrant/code/vendor/cakephp/cakephp/src/Http/BaseApplication.php(235): Cake\Http\ActionDispatcher->dispatch(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#4 /home/vagrant/code/vendor/cakephp/cakephp/src/Http/Runner.php(65): Cake\Http\BaseApplication->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#5 /home/vagrant/code/vendor/cakephp/cakephp/src/Routing/Middleware/RoutingMiddleware.php(156): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#6 /home/vagrant/code/vendor/cakephp/cakephp/src/Http/Runner.php(65): Cake\Routing\Middleware\RoutingMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#7 /home/vagrant/code/vendor/cakephp/cakephp/src/Routing/Middleware/AssetMiddleware.php(88): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#8 /home/vagrant/code/vendor/cakephp/cakephp/src/Http/Runner.php(65): Cake\Routing\Middleware\AssetMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#9 /home/vagrant/code/vendor/cakephp/cakephp/src/Error/Middleware/ErrorHandlerMiddleware.php(98): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#10 /home/vagrant/code/vendor/cakephp/cakephp/src/Http/Runner.php(65): Cake\Error\Middleware\ErrorHandlerMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#11 /home/vagrant/code/vendor/cakephp/debug_kit/src/Middleware/DebugKitMiddleware.php(53): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#12 /home/vagrant/code/vendor/cakephp/cakephp/src/Http/Runner.php(65): DebugKit\Middleware\DebugKitMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#13 /home/vagrant/code/vendor/cakephp/cakephp/src/Http/Runner.php(51): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#14 /home/vagrant/code/vendor/cakephp/cakephp/src/Http/Server.php(98): Cake\Http\Runner->run(Object(Cake\Http\MiddlewareQueue), Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#15 /home/vagrant/code/webroot/index.php(40): Cake\Http\Server->run()
+#16 {main}
+
+
+2018-12-09 14:30:58 Error: [Cake\Routing\Exception\MissingControllerException] Controller class RedirectController could not be found.
+Exception Attributes: array (
+  'class' => 'RedirectController',
+  'plugin' => false,
+  'prefix' => false,
+  '_ext' => false,
+)
+Request URL: /redirect-controller
+Stack Trace:
+#0 /home/vagrant/code/vendor/cakephp/cakephp/src/Http/ControllerFactory.php(39): Cake\Http\ControllerFactory->missingController(Object(Cake\Http\ServerRequest))
+#1 /home/vagrant/code/vendor/cakephp/cakephp/src/Http/ActionDispatcher.php(91): Cake\Http\ControllerFactory->create(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#2 /home/vagrant/code/vendor/cakephp/cakephp/src/Http/BaseApplication.php(235): Cake\Http\ActionDispatcher->dispatch(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#3 /home/vagrant/code/vendor/cakephp/cakephp/src/Http/Runner.php(65): Cake\Http\BaseApplication->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#4 /home/vagrant/code/vendor/cakephp/cakephp/src/Routing/Middleware/RoutingMiddleware.php(156): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#5 /home/vagrant/code/vendor/cakephp/cakephp/src/Http/Runner.php(65): Cake\Routing\Middleware\RoutingMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#6 /home/vagrant/code/vendor/cakephp/cakephp/src/Routing/Middleware/AssetMiddleware.php(88): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#7 /home/vagrant/code/vendor/cakephp/cakephp/src/Http/Runner.php(65): Cake\Routing\Middleware\AssetMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#8 /home/vagrant/code/vendor/cakephp/cakephp/src/Error/Middleware/ErrorHandlerMiddleware.php(98): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#9 /home/vagrant/code/vendor/cakephp/cakephp/src/Http/Runner.php(65): Cake\Error\Middleware\ErrorHandlerMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#10 /home/vagrant/code/vendor/cakephp/debug_kit/src/Middleware/DebugKitMiddleware.php(53): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#11 /home/vagrant/code/vendor/cakephp/cakephp/src/Http/Runner.php(65): DebugKit\Middleware\DebugKitMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#12 /home/vagrant/code/vendor/cakephp/cakephp/src/Http/Runner.php(51): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#13 /home/vagrant/code/vendor/cakephp/cakephp/src/Http/Server.php(98): Cake\Http\Runner->run(Object(Cake\Http\MiddlewareQueue), Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#14 /home/vagrant/code/webroot/index.php(40): Cake\Http\Server->run()
+#15 {main}
+
+
+2018-12-09 14:32:47 Error: [Cake\Routing\Exception\MissingControllerException] Controller class RedirectController could not be found.
+Exception Attributes: array (
+  'class' => 'RedirectController',
+  'plugin' => false,
+  'prefix' => false,
+  '_ext' => false,
+)
+Request URL: /redirect-controller
+Stack Trace:
+#0 /home/vagrant/code/vendor/cakephp/cakephp/src/Http/ControllerFactory.php(39): Cake\Http\ControllerFactory->missingController(Object(Cake\Http\ServerRequest))
+#1 /home/vagrant/code/vendor/cakephp/cakephp/src/Http/ActionDispatcher.php(91): Cake\Http\ControllerFactory->create(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#2 /home/vagrant/code/vendor/cakephp/cakephp/src/Http/BaseApplication.php(235): Cake\Http\ActionDispatcher->dispatch(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#3 /home/vagrant/code/vendor/cakephp/cakephp/src/Http/Runner.php(65): Cake\Http\BaseApplication->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#4 /home/vagrant/code/vendor/cakephp/cakephp/src/Routing/Middleware/RoutingMiddleware.php(156): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#5 /home/vagrant/code/vendor/cakephp/cakephp/src/Http/Runner.php(65): Cake\Routing\Middleware\RoutingMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#6 /home/vagrant/code/vendor/cakephp/cakephp/src/Routing/Middleware/AssetMiddleware.php(88): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#7 /home/vagrant/code/vendor/cakephp/cakephp/src/Http/Runner.php(65): Cake\Routing\Middleware\AssetMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#8 /home/vagrant/code/vendor/cakephp/cakephp/src/Error/Middleware/ErrorHandlerMiddleware.php(98): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#9 /home/vagrant/code/vendor/cakephp/cakephp/src/Http/Runner.php(65): Cake\Error\Middleware\ErrorHandlerMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#10 /home/vagrant/code/vendor/cakephp/debug_kit/src/Middleware/DebugKitMiddleware.php(53): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#11 /home/vagrant/code/vendor/cakephp/cakephp/src/Http/Runner.php(65): DebugKit\Middleware\DebugKitMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#12 /home/vagrant/code/vendor/cakephp/cakephp/src/Http/Runner.php(51): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#13 /home/vagrant/code/vendor/cakephp/cakephp/src/Http/Server.php(98): Cake\Http\Runner->run(Object(Cake\Http\MiddlewareQueue), Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#14 /home/vagrant/code/webroot/index.php(40): Cake\Http\Server->run()
+#15 {main}
+
+
+2018-12-09 14:32:59 Error: [Cake\Routing\Exception\MissingControllerException] Controller class Redirect could not be found.
+Exception Attributes: array (
+  'class' => 'Redirect',
+  'plugin' => false,
+  'prefix' => false,
+  '_ext' => false,
+)
+Request URL: /redirect
+Stack Trace:
+#0 /home/vagrant/code/vendor/cakephp/cakephp/src/Http/ControllerFactory.php(39): Cake\Http\ControllerFactory->missingController(Object(Cake\Http\ServerRequest))
+#1 /home/vagrant/code/vendor/cakephp/cakephp/src/Http/ActionDispatcher.php(91): Cake\Http\ControllerFactory->create(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#2 /home/vagrant/code/vendor/cakephp/cakephp/src/Http/BaseApplication.php(235): Cake\Http\ActionDispatcher->dispatch(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#3 /home/vagrant/code/vendor/cakephp/cakephp/src/Http/Runner.php(65): Cake\Http\BaseApplication->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#4 /home/vagrant/code/vendor/cakephp/cakephp/src/Routing/Middleware/RoutingMiddleware.php(156): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#5 /home/vagrant/code/vendor/cakephp/cakephp/src/Http/Runner.php(65): Cake\Routing\Middleware\RoutingMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#6 /home/vagrant/code/vendor/cakephp/cakephp/src/Routing/Middleware/AssetMiddleware.php(88): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#7 /home/vagrant/code/vendor/cakephp/cakephp/src/Http/Runner.php(65): Cake\Routing\Middleware\AssetMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#8 /home/vagrant/code/vendor/cakephp/cakephp/src/Error/Middleware/ErrorHandlerMiddleware.php(98): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#9 /home/vagrant/code/vendor/cakephp/cakephp/src/Http/Runner.php(65): Cake\Error\Middleware\ErrorHandlerMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#10 /home/vagrant/code/vendor/cakephp/debug_kit/src/Middleware/DebugKitMiddleware.php(53): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#11 /home/vagrant/code/vendor/cakephp/cakephp/src/Http/Runner.php(65): DebugKit\Middleware\DebugKitMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#12 /home/vagrant/code/vendor/cakephp/cakephp/src/Http/Runner.php(51): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#13 /home/vagrant/code/vendor/cakephp/cakephp/src/Http/Server.php(98): Cake\Http\Runner->run(Object(Cake\Http\MiddlewareQueue), Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#14 /home/vagrant/code/webroot/index.php(40): Cake\Http\Server->run()
+#15 {main}
+
+
+2018-12-09 14:33:48 Error: Fatal Error (256): [ParseError] syntax error, unexpected ''])) {' (T_CONSTANT_ENCAPSED_STRING), expecting ']'
+#0 /home/vagrant/code/vendor/composer/ClassLoader.php(301): Composer\Autoload\includeFile('/home/vagrant/c...')
+#1 [internal function]: Composer\Autoload\ClassLoader->loadClass('App\\Controller\\...')
+#2 /home/vagrant/code/src/Controller/ErrorController.php(24): spl_autoload_call('App\\Controller\\...')
+#3 /home/vagrant/code/vendor/composer/ClassLoader.php(412): include('/home/vagrant/c...')
+#4 /home/vagrant/code/vendor/composer/ClassLoader.php(301): Composer\Autoload\includeFile('/home/vagrant/c...')
+#5 [internal function]: Composer\Autoload\ClassLoader->loadClass('App\\Controller\\...')
+#6 [internal function]: spl_autoload_call('App\\Controller\\...')
+#7 /home/vagrant/code/vendor/cakephp/cakephp/src/Core/App.php(152): class_exists('App\\Controller\\...')
+#8 /home/vagrant/code/vendor/cakephp/cakephp/src/Core/App.php(64): Cake\Core\App::_classExistsInBase('\\Controller\\Err...', 'App')
+#9 /home/vagrant/code/vendor/cakephp/cakephp/src/Error/ExceptionRenderer.php(124): Cake\Core\App::className('Error', 'Controller', 'Controller')
+#10 /home/vagrant/code/vendor/cakephp/cakephp/src/Error/ExceptionRenderer.php(91): Cake\Error\ExceptionRenderer->_getController()
+#11 /home/vagrant/code/vendor/cakephp/cakephp/src/Error/ErrorHandler.php(136): Cake\Error\ExceptionRenderer->__construct(Object(Cake\Error\PHP7ErrorException))
+#12 /home/vagrant/code/vendor/cakephp/cakephp/src/Error/BaseErrorHandler.php(193): Cake\Error\ErrorHandler->_displayException(Object(Cake\Error\PHP7ErrorException))
+#13 /home/vagrant/code/vendor/cakephp/cakephp/src/Error/BaseErrorHandler.php(177): Cake\Error\BaseErrorHandler->handleException(Object(Cake\Error\PHP7ErrorException))
+#14 [internal function]: Cake\Error\BaseErrorHandler->wrapAndHandleException(Object(Cake\Error\PHP7ErrorException))
+#15 {main} in [/home/vagrant/code/vendor/cakephp/cakephp/src/Error/ErrorHandler.php, line 180]
+
+
+2018-12-09 14:33:48 Error: Fatal Error (256): [ParseError] syntax error, unexpected ''])) {' (T_CONSTANT_ENCAPSED_STRING), expecting ']'
+#0 /home/vagrant/code/vendor/composer/ClassLoader.php(301): Composer\Autoload\includeFile('/home/vagrant/c...')
+#1 [internal function]: Composer\Autoload\ClassLoader->loadClass('App\\Controller\\...')
+#2 /home/vagrant/code/src/Controller/ErrorController.php(24): spl_autoload_call('App\\Controller\\...')
+#3 /home/vagrant/code/vendor/composer/ClassLoader.php(412): include('/home/vagrant/c...')
+#4 /home/vagrant/code/vendor/composer/ClassLoader.php(301): Composer\Autoload\includeFile('/home/vagrant/c...')
+#5 [internal function]: Composer\Autoload\ClassLoader->loadClass('App\\Controller\\...')
+#6 [internal function]: spl_autoload_call('App\\Controller\\...')
+#7 /home/vagrant/code/vendor/cakephp/cakephp/src/Core/App.php(152): class_exists('App\\Controller\\...')
+#8 /home/vagrant/code/vendor/cakephp/cakephp/src/Core/App.php(64): Cake\Core\App::_classExistsInBase('\\Controller\\Err...', 'App')
+#9 /home/vagrant/code/vendor/cakephp/cakephp/src/Error/ExceptionRenderer.php(124): Cake\Core\App::className('Error', 'Controller', 'Controller')
+#10 /home/vagrant/code/vendor/cakephp/cakephp/src/Error/ExceptionRenderer.php(91): Cake\Error\ExceptionRenderer->_getController()
+#11 /home/vagrant/code/vendor/cakephp/cakephp/src/Error/ErrorHandler.php(136): Cake\Error\ExceptionRenderer->__construct(Object(Cake\Error\FatalErrorException))
+#12 /home/vagrant/code/vendor/cakephp/cakephp/src/Error/BaseErrorHandler.php(193): Cake\Error\ErrorHandler->_displayException(Object(Cake\Error\FatalErrorException))
+#13 /home/vagrant/code/vendor/cakephp/cakephp/src/Error/BaseErrorHandler.php(231): Cake\Error\BaseErrorHandler->handleException(Object(Cake\Error\FatalErrorException))
+#14 /home/vagrant/code/vendor/cakephp/cakephp/src/Error/BaseErrorHandler.php(139): Cake\Error\BaseErrorHandler->handleFatalError(256, '[ParseError] sy...', '/home/vagrant/c...', 180)
+#15 /home/vagrant/code/vendor/cakephp/debug_kit/config/bootstrap.php(42): Cake\Error\BaseErrorHandler->handleError(256, '[ParseError] sy...', '/home/vagrant/c...', 180, Array)
+#16 [internal function]: Cake\Core\BasePlugin->{closure}(256, '[ParseError] sy...', '/home/vagrant/c...', 180, Array)
+#17 /home/vagrant/code/vendor/cakephp/cakephp/src/Error/ErrorHandler.php(180): trigger_error('[ParseError] sy...', 256)
+#18 /home/vagrant/code/vendor/cakephp/cakephp/src/Error/ErrorHandler.php(141): Cake\Error\ErrorHandler->_logInternalError(Object(ParseError))
+#19 /home/vagrant/code/vendor/cakephp/cakephp/src/Error/BaseErrorHandler.php(193): Cake\Error\ErrorHandler->_displayException(Object(ParseError))
+#20 /home/vagrant/code/vendor/cakephp/cakephp/src/Error/BaseErrorHandler.php(177): Cake\Error\BaseErrorHandler->handleException(Object(Cake\Error\PHP7ErrorException))
+#21 [internal function]: Cake\Error\BaseErrorHandler->wrapAndHandleException(Object(Cake\Error\PHP7ErrorException))
+#22 {main} in [/home/vagrant/code/vendor/cakephp/cakephp/src/Error/ErrorHandler.php, line 180]
+
+
+2018-12-09 14:33:48 Error: Fatal Error (256): [ParseError] syntax error, unexpected ''])) {' (T_CONSTANT_ENCAPSED_STRING), expecting ']'
+#0 /home/vagrant/code/vendor/composer/ClassLoader.php(301): Composer\Autoload\includeFile('/home/vagrant/c...')
+#1 [internal function]: Composer\Autoload\ClassLoader->loadClass('App\\Controller\\...')
+#2 /home/vagrant/code/src/Controller/ErrorController.php(24): spl_autoload_call('App\\Controller\\...')
+#3 /home/vagrant/code/vendor/composer/ClassLoader.php(412): include('/home/vagrant/c...')
+#4 /home/vagrant/code/vendor/composer/ClassLoader.php(301): Composer\Autoload\includeFile('/home/vagrant/c...')
+#5 [internal function]: Composer\Autoload\ClassLoader->loadClass('App\\Controller\\...')
+#6 [internal function]: spl_autoload_call('App\\Controller\\...')
+#7 /home/vagrant/code/vendor/cakephp/cakephp/src/Core/App.php(152): class_exists('App\\Controller\\...')
+#8 /home/vagrant/code/vendor/cakephp/cakephp/src/Core/App.php(64): Cake\Core\App::_classExistsInBase('\\Controller\\Err...', 'App')
+#9 /home/vagrant/code/vendor/cakep in [/home/vagrant/code/vendor/cakephp/cakephp/src/Error/ErrorHandler.php, line 180]
+
+
+2018-12-09 16:31:29 Error: Fatal Error (256): [ParseError] syntax error, unexpected ''])) {' (T_CONSTANT_ENCAPSED_STRING), expecting ']'
+#0 /home/vagrant/code/vendor/composer/ClassLoader.php(301): Composer\Autoload\includeFile('/home/vagrant/c...')
+#1 [internal function]: Composer\Autoload\ClassLoader->loadClass('App\\Controller\\...')
+#2 /home/vagrant/code/src/Controller/ErrorController.php(24): spl_autoload_call('App\\Controller\\...')
+#3 /home/vagrant/code/vendor/composer/ClassLoader.php(412): include('/home/vagrant/c...')
+#4 /home/vagrant/code/vendor/composer/ClassLoader.php(301): Composer\Autoload\includeFile('/home/vagrant/c...')
+#5 [internal function]: Composer\Autoload\ClassLoader->loadClass('App\\Controller\\...')
+#6 [internal function]: spl_autoload_call('App\\Controller\\...')
+#7 /home/vagrant/code/vendor/cakephp/cakephp/src/Core/App.php(152): class_exists('App\\Controller\\...')
+#8 /home/vagrant/code/vendor/cakephp/cakephp/src/Core/App.php(64): Cake\Core\App::_classExistsInBase('\\Controller\\Err...', 'App')
+#9 /home/vagrant/code/vendor/cakephp/cakephp/src/Error/ExceptionRenderer.php(124): Cake\Core\App::className('Error', 'Controller', 'Controller')
+#10 /home/vagrant/code/vendor/cakephp/cakephp/src/Error/ExceptionRenderer.php(91): Cake\Error\ExceptionRenderer->_getController()
+#11 /home/vagrant/code/vendor/cakephp/cakephp/src/Error/ErrorHandler.php(136): Cake\Error\ExceptionRenderer->__construct(Object(Cake\Error\PHP7ErrorException))
+#12 /home/vagrant/code/vendor/cakephp/cakephp/src/Error/BaseErrorHandler.php(193): Cake\Error\ErrorHandler->_displayException(Object(Cake\Error\PHP7ErrorException))
+#13 /home/vagrant/code/vendor/cakephp/cakephp/src/Error/BaseErrorHandler.php(177): Cake\Error\BaseErrorHandler->handleException(Object(Cake\Error\PHP7ErrorException))
+#14 [internal function]: Cake\Error\BaseErrorHandler->wrapAndHandleException(Object(Cake\Error\PHP7ErrorException))
+#15 {main} in [/home/vagrant/code/vendor/cakephp/cakephp/src/Error/ErrorHandler.php, line 180]
+
+
+2018-12-09 16:31:30 Error: Fatal Error (256): [ParseError] syntax error, unexpected ''])) {' (T_CONSTANT_ENCAPSED_STRING), expecting ']'
+#0 /home/vagrant/code/vendor/composer/ClassLoader.php(301): Composer\Autoload\includeFile('/home/vagrant/c...')
+#1 [internal function]: Composer\Autoload\ClassLoader->loadClass('App\\Controller\\...')
+#2 /home/vagrant/code/src/Controller/ErrorController.php(24): spl_autoload_call('App\\Controller\\...')
+#3 /home/vagrant/code/vendor/composer/ClassLoader.php(412): include('/home/vagrant/c...')
+#4 /home/vagrant/code/vendor/composer/ClassLoader.php(301): Composer\Autoload\includeFile('/home/vagrant/c...')
+#5 [internal function]: Composer\Autoload\ClassLoader->loadClass('App\\Controller\\...')
+#6 [internal function]: spl_autoload_call('App\\Controller\\...')
+#7 /home/vagrant/code/vendor/cakephp/cakephp/src/Core/App.php(152): class_exists('App\\Controller\\...')
+#8 /home/vagrant/code/vendor/cakephp/cakephp/src/Core/App.php(64): Cake\Core\App::_classExistsInBase('\\Controller\\Err...', 'App')
+#9 /home/vagrant/code/vendor/cakephp/cakephp/src/Error/ExceptionRenderer.php(124): Cake\Core\App::className('Error', 'Controller', 'Controller')
+#10 /home/vagrant/code/vendor/cakephp/cakephp/src/Error/ExceptionRenderer.php(91): Cake\Error\ExceptionRenderer->_getController()
+#11 /home/vagrant/code/vendor/cakephp/cakephp/src/Error/ErrorHandler.php(136): Cake\Error\ExceptionRenderer->__construct(Object(Cake\Error\FatalErrorException))
+#12 /home/vagrant/code/vendor/cakephp/cakephp/src/Error/BaseErrorHandler.php(193): Cake\Error\ErrorHandler->_displayException(Object(Cake\Error\FatalErrorException))
+#13 /home/vagrant/code/vendor/cakephp/cakephp/src/Error/BaseErrorHandler.php(231): Cake\Error\BaseErrorHandler->handleException(Object(Cake\Error\FatalErrorException))
+#14 /home/vagrant/code/vendor/cakephp/cakephp/src/Error/BaseErrorHandler.php(139): Cake\Error\BaseErrorHandler->handleFatalError(256, '[ParseError] sy...', '/home/vagrant/c...', 180)
+#15 /home/vagrant/code/vendor/cakephp/debug_kit/config/bootstrap.php(42): Cake\Error\BaseErrorHandler->handleError(256, '[ParseError] sy...', '/home/vagrant/c...', 180, Array)
+#16 [internal function]: Cake\Core\BasePlugin->{closure}(256, '[ParseError] sy...', '/home/vagrant/c...', 180, Array)
+#17 /home/vagrant/code/vendor/cakephp/cakephp/src/Error/ErrorHandler.php(180): trigger_error('[ParseError] sy...', 256)
+#18 /home/vagrant/code/vendor/cakephp/cakephp/src/Error/ErrorHandler.php(141): Cake\Error\ErrorHandler->_logInternalError(Object(ParseError))
+#19 /home/vagrant/code/vendor/cakephp/cakephp/src/Error/BaseErrorHandler.php(193): Cake\Error\ErrorHandler->_displayException(Object(ParseError))
+#20 /home/vagrant/code/vendor/cakephp/cakephp/src/Error/BaseErrorHandler.php(177): Cake\Error\BaseErrorHandler->handleException(Object(Cake\Error\PHP7ErrorException))
+#21 [internal function]: Cake\Error\BaseErrorHandler->wrapAndHandleException(Object(Cake\Error\PHP7ErrorException))
+#22 {main} in [/home/vagrant/code/vendor/cakephp/cakephp/src/Error/ErrorHandler.php, line 180]
+
+
+2018-12-09 16:31:30 Error: Fatal Error (256): [ParseError] syntax error, unexpected ''])) {' (T_CONSTANT_ENCAPSED_STRING), expecting ']'
+#0 /home/vagrant/code/vendor/composer/ClassLoader.php(301): Composer\Autoload\includeFile('/home/vagrant/c...')
+#1 [internal function]: Composer\Autoload\ClassLoader->loadClass('App\\Controller\\...')
+#2 /home/vagrant/code/src/Controller/ErrorController.php(24): spl_autoload_call('App\\Controller\\...')
+#3 /home/vagrant/code/vendor/composer/ClassLoader.php(412): include('/home/vagrant/c...')
+#4 /home/vagrant/code/vendor/composer/ClassLoader.php(301): Composer\Autoload\includeFile('/home/vagrant/c...')
+#5 [internal function]: Composer\Autoload\ClassLoader->loadClass('App\\Controller\\...')
+#6 [internal function]: spl_autoload_call('App\\Controller\\...')
+#7 /home/vagrant/code/vendor/cakephp/cakephp/src/Core/App.php(152): class_exists('App\\Controller\\...')
+#8 /home/vagrant/code/vendor/cakephp/cakephp/src/Core/App.php(64): Cake\Core\App::_classExistsInBase('\\Controller\\Err...', 'App')
+#9 /home/vagrant/code/vendor/cakep in [/home/vagrant/code/vendor/cakephp/cakephp/src/Error/ErrorHandler.php, line 180]
+
+
+2018-12-09 17:16:36 Error: Fatal Error (256): [ParseError] syntax error, unexpected ''])) {' (T_CONSTANT_ENCAPSED_STRING), expecting ']'
+#0 /home/vagrant/code/vendor/composer/ClassLoader.php(301): Composer\Autoload\includeFile('/home/vagrant/c...')
+#1 [internal function]: Composer\Autoload\ClassLoader->loadClass('App\\Controller\\...')
+#2 /home/vagrant/code/src/Controller/ErrorController.php(24): spl_autoload_call('App\\Controller\\...')
+#3 /home/vagrant/code/vendor/composer/ClassLoader.php(412): include('/home/vagrant/c...')
+#4 /home/vagrant/code/vendor/composer/ClassLoader.php(301): Composer\Autoload\includeFile('/home/vagrant/c...')
+#5 [internal function]: Composer\Autoload\ClassLoader->loadClass('App\\Controller\\...')
+#6 [internal function]: spl_autoload_call('App\\Controller\\...')
+#7 /home/vagrant/code/vendor/cakephp/cakephp/src/Core/App.php(152): class_exists('App\\Controller\\...')
+#8 /home/vagrant/code/vendor/cakephp/cakephp/src/Core/App.php(64): Cake\Core\App::_classExistsInBase('\\Controller\\Err...', 'App')
+#9 /home/vagrant/code/vendor/cakephp/cakephp/src/Error/ExceptionRenderer.php(124): Cake\Core\App::className('Error', 'Controller', 'Controller')
+#10 /home/vagrant/code/vendor/cakephp/cakephp/src/Error/ExceptionRenderer.php(91): Cake\Error\ExceptionRenderer->_getController()
+#11 /home/vagrant/code/vendor/cakephp/cakephp/src/Error/ErrorHandler.php(136): Cake\Error\ExceptionRenderer->__construct(Object(Cake\Error\PHP7ErrorException))
+#12 /home/vagrant/code/vendor/cakephp/cakephp/src/Error/BaseErrorHandler.php(193): Cake\Error\ErrorHandler->_displayException(Object(Cake\Error\PHP7ErrorException))
+#13 /home/vagrant/code/vendor/cakephp/cakephp/src/Error/BaseErrorHandler.php(177): Cake\Error\BaseErrorHandler->handleException(Object(Cake\Error\PHP7ErrorException))
+#14 [internal function]: Cake\Error\BaseErrorHandler->wrapAndHandleException(Object(Cake\Error\PHP7ErrorException))
+#15 {main} in [/home/vagrant/code/vendor/cakephp/cakephp/src/Error/ErrorHandler.php, line 180]
+
+
+2018-12-09 17:16:36 Error: Fatal Error (256): [ParseError] syntax error, unexpected ''])) {' (T_CONSTANT_ENCAPSED_STRING), expecting ']'
+#0 /home/vagrant/code/vendor/composer/ClassLoader.php(301): Composer\Autoload\includeFile('/home/vagrant/c...')
+#1 [internal function]: Composer\Autoload\ClassLoader->loadClass('App\\Controller\\...')
+#2 /home/vagrant/code/src/Controller/ErrorController.php(24): spl_autoload_call('App\\Controller\\...')
+#3 /home/vagrant/code/vendor/composer/ClassLoader.php(412): include('/home/vagrant/c...')
+#4 /home/vagrant/code/vendor/composer/ClassLoader.php(301): Composer\Autoload\includeFile('/home/vagrant/c...')
+#5 [internal function]: Composer\Autoload\ClassLoader->loadClass('App\\Controller\\...')
+#6 [internal function]: spl_autoload_call('App\\Controller\\...')
+#7 /home/vagrant/code/vendor/cakephp/cakephp/src/Core/App.php(152): class_exists('App\\Controller\\...')
+#8 /home/vagrant/code/vendor/cakephp/cakephp/src/Core/App.php(64): Cake\Core\App::_classExistsInBase('\\Controller\\Err...', 'App')
+#9 /home/vagrant/code/vendor/cakephp/cakephp/src/Error/ExceptionRenderer.php(124): Cake\Core\App::className('Error', 'Controller', 'Controller')
+#10 /home/vagrant/code/vendor/cakephp/cakephp/src/Error/ExceptionRenderer.php(91): Cake\Error\ExceptionRenderer->_getController()
+#11 /home/vagrant/code/vendor/cakephp/cakephp/src/Error/ErrorHandler.php(136): Cake\Error\ExceptionRenderer->__construct(Object(Cake\Error\FatalErrorException))
+#12 /home/vagrant/code/vendor/cakephp/cakephp/src/Error/BaseErrorHandler.php(193): Cake\Error\ErrorHandler->_displayException(Object(Cake\Error\FatalErrorException))
+#13 /home/vagrant/code/vendor/cakephp/cakephp/src/Error/BaseErrorHandler.php(231): Cake\Error\BaseErrorHandler->handleException(Object(Cake\Error\FatalErrorException))
+#14 /home/vagrant/code/vendor/cakephp/cakephp/src/Error/BaseErrorHandler.php(139): Cake\Error\BaseErrorHandler->handleFatalError(256, '[ParseError] sy...', '/home/vagrant/c...', 180)
+#15 /home/vagrant/code/vendor/cakephp/debug_kit/config/bootstrap.php(42): Cake\Error\BaseErrorHandler->handleError(256, '[ParseError] sy...', '/home/vagrant/c...', 180, Array)
+#16 [internal function]: Cake\Core\BasePlugin->{closure}(256, '[ParseError] sy...', '/home/vagrant/c...', 180, Array)
+#17 /home/vagrant/code/vendor/cakephp/cakephp/src/Error/ErrorHandler.php(180): trigger_error('[ParseError] sy...', 256)
+#18 /home/vagrant/code/vendor/cakephp/cakephp/src/Error/ErrorHandler.php(141): Cake\Error\ErrorHandler->_logInternalError(Object(ParseError))
+#19 /home/vagrant/code/vendor/cakephp/cakephp/src/Error/BaseErrorHandler.php(193): Cake\Error\ErrorHandler->_displayException(Object(ParseError))
+#20 /home/vagrant/code/vendor/cakephp/cakephp/src/Error/BaseErrorHandler.php(177): Cake\Error\BaseErrorHandler->handleException(Object(Cake\Error\PHP7ErrorException))
+#21 [internal function]: Cake\Error\BaseErrorHandler->wrapAndHandleException(Object(Cake\Error\PHP7ErrorException))
+#22 {main} in [/home/vagrant/code/vendor/cakephp/cakephp/src/Error/ErrorHandler.php, line 180]
+
+
+2018-12-09 17:16:36 Error: Fatal Error (256): [ParseError] syntax error, unexpected ''])) {' (T_CONSTANT_ENCAPSED_STRING), expecting ']'
+#0 /home/vagrant/code/vendor/composer/ClassLoader.php(301): Composer\Autoload\includeFile('/home/vagrant/c...')
+#1 [internal function]: Composer\Autoload\ClassLoader->loadClass('App\\Controller\\...')
+#2 /home/vagrant/code/src/Controller/ErrorController.php(24): spl_autoload_call('App\\Controller\\...')
+#3 /home/vagrant/code/vendor/composer/ClassLoader.php(412): include('/home/vagrant/c...')
+#4 /home/vagrant/code/vendor/composer/ClassLoader.php(301): Composer\Autoload\includeFile('/home/vagrant/c...')
+#5 [internal function]: Composer\Autoload\ClassLoader->loadClass('App\\Controller\\...')
+#6 [internal function]: spl_autoload_call('App\\Controller\\...')
+#7 /home/vagrant/code/vendor/cakephp/cakephp/src/Core/App.php(152): class_exists('App\\Controller\\...')
+#8 /home/vagrant/code/vendor/cakephp/cakephp/src/Core/App.php(64): Cake\Core\App::_classExistsInBase('\\Controller\\Err...', 'App')
+#9 /home/vagrant/code/vendor/cakep in [/home/vagrant/code/vendor/cakephp/cakephp/src/Error/ErrorHandler.php, line 180]
+
+
+2018-12-09 17:16:46 Error: Fatal Error (256): [ParseError] syntax error, unexpected ''])) {' (T_CONSTANT_ENCAPSED_STRING), expecting ']'
+#0 /home/vagrant/code/vendor/composer/ClassLoader.php(301): Composer\Autoload\includeFile('/home/vagrant/c...')
+#1 [internal function]: Composer\Autoload\ClassLoader->loadClass('App\\Controller\\...')
+#2 /home/vagrant/code/src/Controller/ErrorController.php(24): spl_autoload_call('App\\Controller\\...')
+#3 /home/vagrant/code/vendor/composer/ClassLoader.php(412): include('/home/vagrant/c...')
+#4 /home/vagrant/code/vendor/composer/ClassLoader.php(301): Composer\Autoload\includeFile('/home/vagrant/c...')
+#5 [internal function]: Composer\Autoload\ClassLoader->loadClass('App\\Controller\\...')
+#6 [internal function]: spl_autoload_call('App\\Controller\\...')
+#7 /home/vagrant/code/vendor/cakephp/cakephp/src/Core/App.php(152): class_exists('App\\Controller\\...')
+#8 /home/vagrant/code/vendor/cakephp/cakephp/src/Core/App.php(64): Cake\Core\App::_classExistsInBase('\\Controller\\Err...', 'App')
+#9 /home/vagrant/code/vendor/cakephp/cakephp/src/Error/ExceptionRenderer.php(124): Cake\Core\App::className('Error', 'Controller', 'Controller')
+#10 /home/vagrant/code/vendor/cakephp/cakephp/src/Error/ExceptionRenderer.php(91): Cake\Error\ExceptionRenderer->_getController()
+#11 /home/vagrant/code/vendor/cakephp/cakephp/src/Error/ErrorHandler.php(136): Cake\Error\ExceptionRenderer->__construct(Object(Cake\Error\PHP7ErrorException))
+#12 /home/vagrant/code/vendor/cakephp/cakephp/src/Error/BaseErrorHandler.php(193): Cake\Error\ErrorHandler->_displayException(Object(Cake\Error\PHP7ErrorException))
+#13 /home/vagrant/code/vendor/cakephp/cakephp/src/Error/BaseErrorHandler.php(177): Cake\Error\BaseErrorHandler->handleException(Object(Cake\Error\PHP7ErrorException))
+#14 [internal function]: Cake\Error\BaseErrorHandler->wrapAndHandleException(Object(Cake\Error\PHP7ErrorException))
+#15 {main} in [/home/vagrant/code/vendor/cakephp/cakephp/src/Error/ErrorHandler.php, line 180]
+
+
+2018-12-09 17:16:46 Error: Fatal Error (256): [ParseError] syntax error, unexpected ''])) {' (T_CONSTANT_ENCAPSED_STRING), expecting ']'
+#0 /home/vagrant/code/vendor/composer/ClassLoader.php(301): Composer\Autoload\includeFile('/home/vagrant/c...')
+#1 [internal function]: Composer\Autoload\ClassLoader->loadClass('App\\Controller\\...')
+#2 /home/vagrant/code/src/Controller/ErrorController.php(24): spl_autoload_call('App\\Controller\\...')
+#3 /home/vagrant/code/vendor/composer/ClassLoader.php(412): include('/home/vagrant/c...')
+#4 /home/vagrant/code/vendor/composer/ClassLoader.php(301): Composer\Autoload\includeFile('/home/vagrant/c...')
+#5 [internal function]: Composer\Autoload\ClassLoader->loadClass('App\\Controller\\...')
+#6 [internal function]: spl_autoload_call('App\\Controller\\...')
+#7 /home/vagrant/code/vendor/cakephp/cakephp/src/Core/App.php(152): class_exists('App\\Controller\\...')
+#8 /home/vagrant/code/vendor/cakephp/cakephp/src/Core/App.php(64): Cake\Core\App::_classExistsInBase('\\Controller\\Err...', 'App')
+#9 /home/vagrant/code/vendor/cakephp/cakephp/src/Error/ExceptionRenderer.php(124): Cake\Core\App::className('Error', 'Controller', 'Controller')
+#10 /home/vagrant/code/vendor/cakephp/cakephp/src/Error/ExceptionRenderer.php(91): Cake\Error\ExceptionRenderer->_getController()
+#11 /home/vagrant/code/vendor/cakephp/cakephp/src/Error/ErrorHandler.php(136): Cake\Error\ExceptionRenderer->__construct(Object(Cake\Error\FatalErrorException))
+#12 /home/vagrant/code/vendor/cakephp/cakephp/src/Error/BaseErrorHandler.php(193): Cake\Error\ErrorHandler->_displayException(Object(Cake\Error\FatalErrorException))
+#13 /home/vagrant/code/vendor/cakephp/cakephp/src/Error/BaseErrorHandler.php(231): Cake\Error\BaseErrorHandler->handleException(Object(Cake\Error\FatalErrorException))
+#14 /home/vagrant/code/vendor/cakephp/cakephp/src/Error/BaseErrorHandler.php(139): Cake\Error\BaseErrorHandler->handleFatalError(256, '[ParseError] sy...', '/home/vagrant/c...', 180)
+#15 /home/vagrant/code/vendor/cakephp/debug_kit/config/bootstrap.php(42): Cake\Error\BaseErrorHandler->handleError(256, '[ParseError] sy...', '/home/vagrant/c...', 180, Array)
+#16 [internal function]: Cake\Core\BasePlugin->{closure}(256, '[ParseError] sy...', '/home/vagrant/c...', 180, Array)
+#17 /home/vagrant/code/vendor/cakephp/cakephp/src/Error/ErrorHandler.php(180): trigger_error('[ParseError] sy...', 256)
+#18 /home/vagrant/code/vendor/cakephp/cakephp/src/Error/ErrorHandler.php(141): Cake\Error\ErrorHandler->_logInternalError(Object(ParseError))
+#19 /home/vagrant/code/vendor/cakephp/cakephp/src/Error/BaseErrorHandler.php(193): Cake\Error\ErrorHandler->_displayException(Object(ParseError))
+#20 /home/vagrant/code/vendor/cakephp/cakephp/src/Error/BaseErrorHandler.php(177): Cake\Error\BaseErrorHandler->handleException(Object(Cake\Error\PHP7ErrorException))
+#21 [internal function]: Cake\Error\BaseErrorHandler->wrapAndHandleException(Object(Cake\Error\PHP7ErrorException))
+#22 {main} in [/home/vagrant/code/vendor/cakephp/cakephp/src/Error/ErrorHandler.php, line 180]
+
+
+2018-12-09 17:16:46 Error: Fatal Error (256): [ParseError] syntax error, unexpected ''])) {' (T_CONSTANT_ENCAPSED_STRING), expecting ']'
+#0 /home/vagrant/code/vendor/composer/ClassLoader.php(301): Composer\Autoload\includeFile('/home/vagrant/c...')
+#1 [internal function]: Composer\Autoload\ClassLoader->loadClass('App\\Controller\\...')
+#2 /home/vagrant/code/src/Controller/ErrorController.php(24): spl_autoload_call('App\\Controller\\...')
+#3 /home/vagrant/code/vendor/composer/ClassLoader.php(412): include('/home/vagrant/c...')
+#4 /home/vagrant/code/vendor/composer/ClassLoader.php(301): Composer\Autoload\includeFile('/home/vagrant/c...')
+#5 [internal function]: Composer\Autoload\ClassLoader->loadClass('App\\Controller\\...')
+#6 [internal function]: spl_autoload_call('App\\Controller\\...')
+#7 /home/vagrant/code/vendor/cakephp/cakephp/src/Core/App.php(152): class_exists('App\\Controller\\...')
+#8 /home/vagrant/code/vendor/cakephp/cakephp/src/Core/App.php(64): Cake\Core\App::_classExistsInBase('\\Controller\\Err...', 'App')
+#9 /home/vagrant/code/vendor/cakep in [/home/vagrant/code/vendor/cakephp/cakephp/src/Error/ErrorHandler.php, line 180]
+
+
+2018-12-09 17:18:19 Error: [Cake\Routing\Exception\MissingRouteException] A route matching "/" could not be found.
+Exception Attributes: array (
+  'url' => '/',
+)
+Request URL: /
+Stack Trace:
+#0 /home/vagrant/code/vendor/cakephp/cakephp/src/Routing/Router.php(383): Cake\Routing\RouteCollection->parseRequest(Object(Cake\Http\ServerRequest))
+#1 /home/vagrant/code/vendor/cakephp/cakephp/src/Routing/Middleware/RoutingMiddleware.php(140): Cake\Routing\Router::parseRequest(Object(Cake\Http\ServerRequest))
+#2 /home/vagrant/code/vendor/cakephp/cakephp/src/Http/Runner.php(65): Cake\Routing\Middleware\RoutingMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#3 /home/vagrant/code/vendor/cakephp/cakephp/src/Routing/Middleware/AssetMiddleware.php(88): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#4 /home/vagrant/code/vendor/cakephp/cakephp/src/Http/Runner.php(65): Cake\Routing\Middleware\AssetMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#5 /home/vagrant/code/vendor/cakephp/cakephp/src/Error/Middleware/ErrorHandlerMiddleware.php(98): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#6 /home/vagrant/code/vendor/cakephp/cakephp/src/Http/Runner.php(65): Cake\Error\Middleware\ErrorHandlerMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#7 /home/vagrant/code/vendor/cakephp/debug_kit/src/Middleware/DebugKitMiddleware.php(53): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#8 /home/vagrant/code/vendor/cakephp/cakephp/src/Http/Runner.php(65): DebugKit\Middleware\DebugKitMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#9 /home/vagrant/code/vendor/cakephp/cakephp/src/Http/Runner.php(51): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#10 /home/vagrant/code/vendor/cakephp/cakephp/src/Http/Server.php(98): Cake\Http\Runner->run(Object(Cake\Http\MiddlewareQueue), Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#11 /home/vagrant/code/webroot/index.php(40): Cake\Http\Server->run()
+#12 {main}
+
+
+2018-12-09 17:21:09 Error: [ArgumentCountError] Too few arguments to function App\Controller\TestsController::index(), 0 passed in /home/vagrant/code/vendor/cakephp/cakephp/src/Controller/Controller.php on line 609 and exactly 2 expected
+Request URL: /
+Stack Trace:
+#0 /home/vagrant/code/vendor/cakephp/cakephp/src/Controller/Controller.php(609): App\Controller\TestsController->index()
+#1 /home/vagrant/code/vendor/cakephp/cakephp/src/Http/ActionDispatcher.php(120): Cake\Controller\Controller->invokeAction()
+#2 /home/vagrant/code/vendor/cakephp/cakephp/src/Http/ActionDispatcher.php(94): Cake\Http\ActionDispatcher->_invoke(Object(App\Controller\TestsController))
+#3 /home/vagrant/code/vendor/cakephp/cakephp/src/Http/BaseApplication.php(235): Cake\Http\ActionDispatcher->dispatch(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#4 /home/vagrant/code/vendor/cakephp/cakephp/src/Http/Runner.php(65): Cake\Http\BaseApplication->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#5 /home/vagrant/code/vendor/cakephp/cakephp/src/Routing/Middleware/RoutingMiddleware.php(156): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#6 /home/vagrant/code/vendor/cakephp/cakephp/src/Http/Runner.php(65): Cake\Routing\Middleware\RoutingMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#7 /home/vagrant/code/vendor/cakephp/cakephp/src/Routing/Middleware/AssetMiddleware.php(88): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#8 /home/vagrant/code/vendor/cakephp/cakephp/src/Http/Runner.php(65): Cake\Routing\Middleware\AssetMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#9 /home/vagrant/code/vendor/cakephp/cakephp/src/Error/Middleware/ErrorHandlerMiddleware.php(98): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#10 /home/vagrant/code/vendor/cakephp/cakephp/src/Http/Runner.php(65): Cake\Error\Middleware\ErrorHandlerMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#11 /home/vagrant/code/vendor/cakephp/debug_kit/src/Middleware/DebugKitMiddleware.php(53): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#12 /home/vagrant/code/vendor/cakephp/cakephp/src/Http/Runner.php(65): DebugKit\Middleware\DebugKitMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#13 /home/vagrant/code/vendor/cakephp/cakephp/src/Http/Runner.php(51): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#14 /home/vagrant/code/vendor/cakephp/cakephp/src/Http/Server.php(98): Cake\Http\Runner->run(Object(Cake\Http\MiddlewareQueue), Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#15 /home/vagrant/code/webroot/index.php(40): Cake\Http\Server->run()
+#16 {main}
+
+
