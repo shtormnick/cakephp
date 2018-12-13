@@ -19,14 +19,14 @@ try {
 
     $mail->SMTPAuth = true;                               // Enable SMTP authentication
 
-    //$mail->SMTPSecure = 'ssl';                          // secure transfer enabled REQUIRED for Gmail
-    //$mail->Port = 465;                                  // TCP port to connect to
-    $mail->SMTPSecure = 'tls';                            // Enable TLS encryption, `ssl` also accepted
-    $mail->Port = 587;                                    // TCP port to connect to
+    $mail->SMTPSecure = 'ssl';                          // secure transfer enabled REQUIRED for Gmail
+    $mail->Port = 465;                                  // TCP port to connect to
+    //$mail->SMTPSecure = 'tls';                            // Enable TLS encryption, `ssl` also accepted
+    //$mail->Port = 587;                                    // TCP port to connect to
 
     $mail->Host = 'smtp.gmail.com';                       // Specify main and backup SMTP servers
-    $mail->Username = 'foxred324@gmail.com';               // SMTP username
-    $mail->Password = 'loxred_636475SD';                         // SMTP password
+    $mail->Username = 'medtest.in.ua@gmail.com';               // SMTP username
+    $mail->Password = '********';                         // SMTP password
 
     //Recipients
     $mail->setFrom('foxred324@gmail.com', 'Jefry Stark');
