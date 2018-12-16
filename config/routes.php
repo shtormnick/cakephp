@@ -4,21 +4,8 @@ use Cake\Routing\RouteBuilder;
 use Cake\Routing\Router;
 
 Router::defaultRouteClass('DashedRoute');
-Router::scope('/', function (RouteBuilder $routes) {
-    $routes->connect('/', ['controller' => 'Tests', 'action' => 'index']);
-
-    $routes->connect('/pages/*', ['controller' => 'Pages', 'action' => 'display']);
-
-    $routes->connect('tests/:arg1/:arg2', ['controller' => 'Tests', 'action'=>
-        'args'],['pass' =>['arg1', 'arg2']]);
-
-    $routes->connect('/redirectcontroller',['
-         controller'=>'Redirects','action'=>'action1']);
-
-    $routes->connect('/redirectcontroller2',['
-         controller'=>'Redirects','action'=>'action2']);
-
-    $routes->fallbacks('DashedRoute');
-
+Router::scope('/', function (RouteBuilder $routes){
+    $routes->connect('/generate',['controller'=>'Generates','action'=>'index']);
 });
+
 Plugin::routes();
