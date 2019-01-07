@@ -18,6 +18,8 @@ Router::scope('/', function (RouteBuilder $routes) {
     $routes->connect('/redirectcontroller2',['
          controller'=>'Redirects','action'=>'action2']);
 
+    $routes->connect('/users/add', ['controller' => 'Users', 'action' => 'add']);
+
     $routes->fallbacks('DashedRoute');
 
 });
