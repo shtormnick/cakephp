@@ -20,6 +20,11 @@ Router::scope('/', function (RouteBuilder $routes) {
 
     $routes->connect('/users', ['controller' => 'Users', 'action' => 'index']);
 
+    $routes->connect('/users/edit', ['controller' => 'Users', 'action' => 'edit']);
+
+    $routes->connect('/users/delete', ['controller' => 'Users', 'action' => 'delete']);
+
+
     $routes->fallbacks('DashedRoute');
 
 });

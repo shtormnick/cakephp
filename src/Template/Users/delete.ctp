@@ -13,12 +13,11 @@
          echo "<tr><td>".$row->id."</td>";
     echo "<td>".$row->username."</td>";
     echo "<td>".$row->password."</td>";
-    echo "<td><a href = '".$this->Url->build
-            (["controller" => "Users","action" => "edit",$row->id]).
-            "'>Edit</a></td>";
-    echo "<td><a href = '".$this->Url->build
-            (["controller" => "Users","action" => "delete",$row->id]).
-            "'>Delete</a></td></tr>";
+    echo "<td><a href='".$this->Url->build
+         (["controller" => "Users","action" => "edit",$row->id])."'>Edit</a></td>";
+
+    echo "<td><a href='".$this->Url->build
+         (["controller" => "Users","action" -> "delete",$row->id])."'>Delete</a></td></tr>";
     endforeach;
     ?>
 </table>
