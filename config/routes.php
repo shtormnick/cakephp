@@ -18,6 +18,10 @@ Router::scope('/', function (RouteBuilder $routes) {
     $routes->connect('/redirectcontroller2',['
          controller'=>'Redirects','action'=>'action2']);
 
+    $routes->connect('locale',['controller'=>'Localizations','action'=>'index']);
+
+    $routes->connect('/email',['controller'=>'Emails','action'=>'index']);
+
     $routes->fallbacks('DashedRoute');
 
 });
