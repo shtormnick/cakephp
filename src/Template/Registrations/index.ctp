@@ -1,5 +1,7 @@
 <?php
    echo $this->Form->create("Registrations",array('url'=>'/register'));
+echo '<input name = "ssss" value="'.$ssss.'"/>';
+echo "<input name = \"ssss\" value=\"$ssss\"/>";
 echo $this->Form->input('username');
 echo $this->Form->input('password');
 echo $this->Form->input('password');
