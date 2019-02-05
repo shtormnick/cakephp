@@ -1,9 +1,9 @@
 <?php
    echo $this->Form->create("Localizations",array('url'=>'/locale'));
 echo $this->Form->radio("locale",[
-['value'=>'Eng','text'=>'English'],
-['value'=>'Rus','text'=>'Russian'],
-['value'=>'Ukr','text'=>'Ukrainian'],
+['value'=>'en_US','text'=>'English'],
+['value'=>'ru_RU','text'=>'Russian'],
+['value'=>'ua_UA','text'=>'Ukrainian'],
 ]);
 echo $this->Form->button('Change Language');
 echo $this->Form->end();
