@@ -8,12 +8,9 @@ class RegistrationsController extends AppController{
         $this->set('country',$country);
         $gender = array('Male','Female');
         $this->set('gender',$gender);
-        if (array_key_exists('ssss',$_POST)){
-            $this->set('ssss',$_POST['ssss']);
-        } else {
-            $this->set('ssss','');
-        }
-        var_dump($_POST);
+
+        var_dump($this->request->data('ssss'));
+        $this->set('ssss',$this->request->data('ssss'));
         //die;
         $ssw= "Hallo world ";
         $ddd= "sssd";
