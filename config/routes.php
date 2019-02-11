@@ -20,5 +20,10 @@ Router::scope('/', function (RouteBuilder $routes) {
 
     $routes->fallbacks('DashedRoute');
 
+    $routes->connect('cookie/write',['controller'=>'Cookies','action'=>'write_cookie']);
+    $routes->connect('cookie/read',['controller'=>'Cookies','action'=>'read_cookie']);
+    $routes->connect('cookie/check',['controller'=>'Cookies','action'=>'check_cookie']);
+    $routes->connect('cookie/delete',['controller'=>'Cookies','action'=>'delete_cookie']);
+
 });
 Plugin::routes();
