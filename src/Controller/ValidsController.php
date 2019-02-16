@@ -13,6 +13,9 @@ class ValidsController extends AppController{
         $validator->notEmpty('password', 'We need password.');
         $errors = $validator->errors($this->request->data());
         $this->set('errors',$errors);
+
+        var_dump($this->request->data());
+
     }
 }
 ?>
