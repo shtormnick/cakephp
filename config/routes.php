@@ -5,7 +5,7 @@ use Cake\Routing\Router;
 
 Router::defaultRouteClass('DashedRoute');
 Router::scope('/', function (RouteBuilder $routes) {
-
+    $routes->connect('/', ['controller' => 'Index', 'action' => 'index']);
     $routes->fallbacks('DashedRoute');
 
 });
