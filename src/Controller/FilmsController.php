@@ -35,6 +35,7 @@ class FilmsController extends AppController
             }
             $this->Flash->error(__('The film could not be saved. Please, try again.'));
         }
+        $this->set('film', $film);
         //$users = $this->Actors->Users->find('list', ['limit' => 200]);
         //$tags = $this->Actors->Tags->find('list', ['limit' => 200]);
         //$this->set(compact('actor', 'users', 'tags'));
@@ -51,6 +52,7 @@ class FilmsController extends AppController
             }
             $this->Flash->error(__('The film could not be saved. Please, try again.'));
         }
+        $this->set('film', $film);
         // $users = $this->Actors->Users->find('list', ['limit' => 200]);
         // $tags = $this->Actors->Tags->find('list', ['limit' => 200]);
         // $this->set(compact('actor', 'users', 'tags'));

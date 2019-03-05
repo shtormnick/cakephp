@@ -35,6 +35,7 @@ class ActorsController extends AppController
             }
             $this->Flash->error(__('The actor could not be saved. Please, try again.'));
         }
+        $this->set('actor', $actor);
         //$users = $this->Actors->Users->find('list', ['limit' => 200]);
         //$tags = $this->Actors->Tags->find('list', ['limit' => 200]);
         //$this->set(compact('actor', 'users', 'tags'));
@@ -51,9 +52,8 @@ class ActorsController extends AppController
             }
             $this->Flash->error(__('The actor could not be saved. Please, try again.'));
         }
-       // $users = $this->Actors->Users->find('list', ['limit' => 200]);
-       // $tags = $this->Actors->Tags->find('list', ['limit' => 200]);
-       // $this->set(compact('actor', 'users', 'tags'));
+        $this->set('actor', $actor);
+
     }
 
     public function delete($id = null)

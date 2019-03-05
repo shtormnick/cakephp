@@ -35,6 +35,7 @@ class CategoriesController extends AppController
             }
             $this->Flash->error(__('The category could not be saved. Please, try again.'));
         }
+        $this->set('category', $category);
         //$users = $this->Actors->Users->find('list', ['limit' => 200]);
         //$tags = $this->Actors->Tags->find('list', ['limit' => 200]);
         //$this->set(compact('actor', 'users', 'tags'));
@@ -51,6 +52,7 @@ class CategoriesController extends AppController
             }
             $this->Flash->error(__('The category could not be saved. Please, try again.'));
         }
+        $this->set('category', $category);
         // $users = $this->Actors->Users->find('list', ['limit' => 200]);
         // $tags = $this->Actors->Tags->find('list', ['limit' => 200]);
         // $this->set(compact('actor', 'users', 'tags'));

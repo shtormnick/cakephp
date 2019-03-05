@@ -35,9 +35,8 @@ class ProducersController extends AppController
             }
             $this->Flash->error(__('The producer could not be saved. Please, try again.'));
         }
-        //$users = $this->Actors->Users->find('list', ['limit' => 200]);
-        //$tags = $this->Actors->Tags->find('list', ['limit' => 200]);
-        //$this->set(compact('actor', 'users', 'tags'));
+        $this->set('producer', $producer);
+
     }
 
     public function edit($id = null)
@@ -51,9 +50,8 @@ class ProducersController extends AppController
             }
             $this->Flash->error(__('The producer could not be saved. Please, try again.'));
         }
-        // $users = $this->Actors->Users->find('list', ['limit' => 200]);
-        // $tags = $this->Actors->Tags->find('list', ['limit' => 200]);
-        // $this->set(compact('actor', 'users', 'tags'));
+        $this->set('producer', $producer);
+
     }
 
     public function delete($id = null)
