@@ -15,6 +15,9 @@ class FilmsTable extends Table
     public function initialize(array $config)
     {
         $this->addBehavior('Timestamp');
+        $this->belongsToMany('Actors');
+
+
     }
 
 }
