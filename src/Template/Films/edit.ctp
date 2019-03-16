@@ -1,6 +1,6 @@
 <?php
 $this->extend('/maine');
-$this->start('links')
+$this->start('links');
 ?>
 <li class="heading"><?= __('Actions') ?></li>
 <li><?= $this->Form->postLink(
@@ -20,7 +20,9 @@ $this->start('links')
     echo $this->Form->control('title');
     echo $this->Form->control('description');
     echo $this->Form->control('release_year');
+    echo $this->Form->control('actors._ids', ['options' => $actors]);
     ?>
 </fieldset>
 <?= $this->Form->button(__('Submit')) ?>
 <?= $this->Form->end() ?>
+

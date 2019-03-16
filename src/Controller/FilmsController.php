@@ -36,15 +36,14 @@ class FilmsController extends AppController
             $this->Flash->error(__('The film could not be saved. Please, try again.'));
         }
         $this->set('film', $film);
-        //$users = $this->Actors->Users->find('list', ['limit' => 200]);
-        //$tags = $this->Actors->Tags->find('list', ['limit' => 200]);
-        //$this->set(compact('actor', 'users', 'tags'));
+
     }
 
     public function edit($id = null)
     {
-        $film = $this->Films->get($id);
-        if ($this->request->is(['patch', 'post', 'put'])) {
+        $film = $this->Films->get($id,['contain' => ['Actors']]);
+        if ($this->request->is(['patch', 'post', 'put']))
+        {
             $film = $this->Films->patchEntity($film, $this->request->getData());
             if ($this->Films->save($film)) {
                 $this->Flash->success(__('The film has been saved.'));
@@ -53,9 +52,9 @@ class FilmsController extends AppController
             $this->Flash->error(__('The film could not be saved. Please, try again.'));
         }
         $this->set('film', $film);
-        // $users = $this->Actors->Users->find('list', ['limit' => 200]);
-        // $tags = $this->Actors->Tags->find('list', ['limit' => 200]);
-        // $this->set(compact('actor', 'users', 'tags'));
+        $actors = $this->Films->Actors->find('list', ['limit' => 200]);
+        $this->set('actors', $actors);
+
     }
 
 
@@ -70,4 +69,6 @@ class FilmsController extends AppController
         }
         return $this->redirect(['action' => 'index']);
     }
+
+
 }
