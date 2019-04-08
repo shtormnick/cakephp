@@ -13,7 +13,13 @@ class FilmsController extends AppController
 {
     public function index()
     {
+        $keyword = $this->request->query('keyword');
 
+        if(!empty($keyword)){
+            $this->paginate = [
+                'conditions'=>['title LIKE '=>'%'.$keyword.'%']
+            ];
+        }
         $films = $this->paginate($this->Films);
         $this->set(compact('films'));
     }

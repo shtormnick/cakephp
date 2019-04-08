@@ -13,6 +13,13 @@ class ActorsController extends AppController
 {
     public function index()
     {
+        $keyword = $this->request->query('keyword');
+
+        if(!empty($keyword)){
+            $this->paginate = [
+                'conditions'=>['first_name LIKE '=>'%'.$keyword.'%']
+            ];
+        }
 
         $actors = $this->paginate($this->Actors);
         $this->set(compact('actors'));
@@ -36,9 +43,7 @@ class ActorsController extends AppController
             $this->Flash->error(__('The actor could not be saved. Please, try again.'));
         }
         $this->set('actor', $actor);
-        //$users = $this->Actors->Users->find('list', ['limit' => 200]);
-        //$tags = $this->Actors->Tags->find('list', ['limit' => 200]);
-        //$this->set(compact('actor', 'users', 'tags'));
+
     }
 
     public function edit($id = null)

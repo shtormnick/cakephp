@@ -13,6 +13,13 @@ class ProducersController extends AppController
 {
     public function index()
     {
+        $keyword = $this->request->query('keyword');
+
+        if(!empty($keyword)){
+            $this->paginate = [
+                'conditions'=>['first_name LIKE '=>'%'.$keyword.'%']
+            ];
+        }
 
         $producers = $this->paginate($this->Producers);
         $this->set(compact('producers'));

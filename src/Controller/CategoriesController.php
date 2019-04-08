@@ -13,7 +13,13 @@ class CategoriesController extends AppController
 {
     public function index()
     {
+        $keyword = $this->request->query('keyword');
 
+        if(!empty($keyword)){
+            $this->paginate = [
+                'conditions'=>['name LIKE '=>'%'.$keyword.'%']
+            ];
+        }
         $categories = $this->paginate($this->Categories);
         $this->set(compact('categories'));
     }

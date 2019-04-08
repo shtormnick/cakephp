@@ -7,6 +7,12 @@
 
 <div class="films index large-9 medium-8 columns content">
     <h3><?= __('Films') ?></h3>
+    <div class="search index large-4 medium-3 column content">
+        <?= $this->Form->create("",['type'=>'get']) ?>
+        <?= $this->Form->control('keyword', ['default'=> $this->request->query('keyword')]); ?>
+        <button>Search</button>
+        <?= $this->Form->end() ?>
+    </div>
     <table cellpadding="0" cellspacing="0">
         <thead>
         <tr>

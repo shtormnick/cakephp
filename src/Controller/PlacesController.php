@@ -13,6 +13,13 @@ class PlacesController extends AppController
 {
     public function index()
     {
+        $keyword = $this->request->query('keyword');
+
+        if(!empty($keyword)){
+            $this->paginate = [
+                'conditions'=>['number LIKE '=>'%'.$keyword.'%']
+            ];
+        }
 
         $places = $this->paginate($this->Places);
         $this->set(compact('places'));

@@ -12,6 +12,13 @@ class HallsController extends AppController
 {
     public function index()
     {
+        $keyword = $this->request->query('keyword');
+
+        if(!empty($keyword)){
+            $this->paginate = [
+                'conditions'=>['name LIKE '=>'%'.$keyword.'%']
+            ];
+        }
 
         $halls = $this->paginate($this->Halls);
         $this->set(compact('halls'));
