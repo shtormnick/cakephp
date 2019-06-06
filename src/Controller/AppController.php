@@ -8,6 +8,7 @@ class AppController extends Controller{
         parent::initialize();
         $this->loadComponent('RequestHandler');
         $this->loadComponent('Flash');
+        $this->loadComponent('CakeDC/Users.UsersAuth');
     }
     public function beforeRender(Event $event){
         if (!array_key_exists('_serialize', $this->viewVars) &&
@@ -15,4 +16,5 @@ class AppController extends Controller{
             $this->set('_serialize', true);
          }
       }
+
    }

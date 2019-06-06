@@ -6,6 +6,7 @@
     "license": "MIT",
     "require": {
         "php": ">=5.6",
+        "cakedc/users": "8.1",
         "cakephp/cakephp": "3.6.*",
         "cakephp/migrations": "@stable",
         "cakephp/plugin-installer": "^1.0",
