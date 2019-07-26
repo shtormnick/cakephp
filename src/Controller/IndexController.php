@@ -16,10 +16,4 @@ class IndexController extends AppController
 
     }
 
-    public function view($id = null)
-    {
-        $film = $this->Films->get($id);
-        $this->set('film', $film);
-    }
-
 }

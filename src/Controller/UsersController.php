@@ -41,11 +41,6 @@ class UsersController extends AppController
     use SocialTrait;
     use U2fTrait;
 
-    /**
-     * Initialize
-     *
-     * @return void
-     */
     public function initialize()
     {
         parent::initialize();
