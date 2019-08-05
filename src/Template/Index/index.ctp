@@ -22,4 +22,4 @@ Our service is designed to improve customer service of our cinema.
 </div>>
 <hr>
 </body>
-</html>
+</html> 
