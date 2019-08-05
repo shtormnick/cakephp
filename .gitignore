@@ -1,3 +1,5 @@
 logs
 tmp
 vendor
+dbexport.sql
+config/Migrations/schema-dump-default.lock
