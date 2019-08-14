@@ -69,5 +69,22 @@ class HallsController extends AppController
             $this->Flash->error(__('The hall could not be deleted. Please, try again.'));
         }
         return $this->redirect(['action' => 'index']);
+
+        if (isset($user['role']) && $user['role'] === 'cashier') {
+            return false;
+        }
+    }
+
+    public function isAuthorized($user)
+    {
+
+        if (in_array($this->request->getParam('action'), ['edit', 'delete', 'add'])) {
+            $film = (int)$this->request->getParam('pass.0');
+            if (isset($user['role']) && $user['role'] === 'moderator') {
+                return true;
+            }
+        }
+
+        return parent::isAuthorized($user);
     }
 }

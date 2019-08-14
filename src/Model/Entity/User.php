@@ -19,7 +19,6 @@ class User extends Entity
         'id' => false
     ];
 
-    // ...
 
     protected function _setPassword($password)
     {
@@ -28,5 +27,4 @@ class User extends Entity
         }
     }
 
-    // ...
 }

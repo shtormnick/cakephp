@@ -5,7 +5,7 @@
         <?= $this->Form->control('username') ?>
         <?= $this->Form->control('password') ?>
         <?= $this->Form->control('role', [
-            'options' => ['admin' => 'Admin', 'author' => 'Author']
+            'options' => ['admin' => 'Admin', 'moderator' => 'Moderator' , 'cashier' => 'Cashier']
         ]) ?>
     </fieldset>
     <?= $this->Form->button(__('Submit')); ?>

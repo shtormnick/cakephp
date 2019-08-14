@@ -59,9 +59,6 @@ class CategoriesController extends AppController
             $this->Flash->error(__('The category could not be saved. Please, try again.'));
         }
         $this->set('category', $category);
-        // $users = $this->Actors->Users->find('list', ['limit' => 200]);
-        // $tags = $this->Actors->Tags->find('list', ['limit' => 200]);
-        // $this->set(compact('actor', 'users', 'tags'));
     }
 
     public function delete($id = null)
@@ -74,5 +71,22 @@ class CategoriesController extends AppController
             $this->Flash->error(__('The category could not be deleted. Please, try again.'));
         }
         return $this->redirect(['action' => 'index']);
+
+        if (isset($user['role']) && $user['role'] === 'cashier') {
+            return false;
+        }
+    }
+
+    public function isAuthorized($user)
+    {
+
+        if (in_array($this->request->getParam('action'), ['edit', 'delete', 'add'])) {
+            $film = (int)$this->request->getParam('pass.0');
+            if (isset($user['role']) && $user['role'] === 'moderator') {
+                return true;
+            }
+        }
+
+        return parent::isAuthorized($user);
     }
 }

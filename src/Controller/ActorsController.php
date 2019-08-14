@@ -58,7 +58,6 @@ class ActorsController extends AppController
             $this->Flash->error(__('The actor could not be saved. Please, try again.'));
         }
         $this->set('actor', $actor);
-
     }
 
     public function delete($id = null)
@@ -71,5 +70,24 @@ class ActorsController extends AppController
             $this->Flash->error(__('The actor could not be deleted. Please, try again.'));
         }
         return $this->redirect(['action' => 'index']);
+
+        if (isset($user['role']) && $user['role'] === 'cashier') {
+            return false;
+        }
+
     }
+
+    public function isAuthorized($user)
+    {
+
+        if (in_array($this->request->getParam('action'), ['edit', 'delete', 'add'])) {
+            $film = (int)$this->request->getParam('pass.0');
+            if (isset($user['role']) && $user['role'] === 'moderator') {
+                return true;
+            }
+        }
+
+        return parent::isAuthorized($user);
+    }
+
 }
