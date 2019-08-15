@@ -71,10 +71,6 @@ class ActorsController extends AppController
         }
         return $this->redirect(['action' => 'index']);
 
-        if (isset($user['role']) && $user['role'] === 'cashier') {
-            return false;
-        }
-
     }
 
     public function isAuthorized($user)
