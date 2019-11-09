@@ -13,12 +13,19 @@ class FilmsController extends AppController
 {
     public function index()
     {
+        $day = $this->request->query('day');
+        $month = $this->request->query('month');
+        $year = $this->request->query('year');
         $keyword = $this->request->query('keyword');
-
+        $this->paginate = [
+            'conditions'=>[]
+        ];
         if(!empty($keyword)){
-            $this->paginate = [
-                'conditions'=>['title LIKE '=>'%'.$keyword.'%']
-            ];
+//            $this->paginate ['conditions'=>['title LIKE '=>'%'.$keyword.'%']];
+            echo $this->paginate["conditions"];
+            $sss = [$day];
+            $aaa = array_combine($this->paginate, $sss);
+            die();
         }
         $films = $this->paginate($this->Films);
         $this->set(compact('films'));

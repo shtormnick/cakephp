@@ -1,12 +1,27 @@
-<?php
-/**
- * @var \App\View\AppView $this
- * @var \App\Model\Entity\Bookmark[]|\Cake\Collection\CollectionInterface $bookmarks
- */
-?>
+<?php $this->start('script'); ?>
+<script src="https://unpkg.com/simple-jscalendar@1.4.3/source/jsCalendar.min.js" integrity="sha384-JqNLUzAxpw7zEu6rKS/TNPZ5ayCWPUY601zaig7cUEVfL+pBoLcDiIEkWHjl07Ot" crossorigin="anonymous"></script>
+<link rel="stylesheet" href="https://unpkg.com/simple-jscalendar@1.4.3/source/jsCalendar.min.css" integrity="sha384-+OB2CadpqXIt7AheMhNaVI99xKH8j8b+bHC8P5m2tkpFopGBklD3IRvYjPekeWIJ" crossorigin="anonymous">
+<?php $this->end(); ?>
 
 <div class="sessions index large-9 medium-8 columns content">
     <h3><?= __('Session') ?></h3>
+
+    <div id="my-calendar"  >
+        <script type="text/javascript">
+            // Get the element
+            var element = document.getElementById("my-calendar");
+            // Create the calendar
+            var myCalendar = jsCalendar.new(element);
+            // Add events
+            myCalendar.onDateClick(function(event, date){
+                console.log(date.getDate());
+                console.log(date.getFullYear());
+                console.log(date.getMonth());
+                window.location.href ="?year="+date.getFullYear()+"&month="+date.getMonth()+"&day="+date.getDate();
+            });
+        </script>
+    </div>
+
     <div class="search index large-4 medium-3 column content">
         <?= $this->Form->create("",['type'=>'get']) ?>
         <?= $this->Form->control('keyword', ['default'=> $this->request->query('keyword')]); ?>

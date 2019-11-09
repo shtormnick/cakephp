@@ -13,8 +13,11 @@ class SessionsController extends AppController
 {
     public function index()
     {
-   $keyword = $this->request->query('keyword');
 
+        $keyword = $this->request->query('keyword');
+        $day = $this->request->query('day');
+        $month = $this->request->query('month');
+        $year = $this->request->query('year');
         if(!empty($keyword)){
             $this->paginate = [
                 'conditions'=>['first_name LIKE '=>'%'.$keyword.'%']
