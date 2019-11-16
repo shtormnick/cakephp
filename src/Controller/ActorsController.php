@@ -15,9 +15,9 @@ class ActorsController extends AppController
     {
         $keyword = $this->request->query('keyword');
 
-        if(!empty($keyword)){
+        if (!empty($keyword)) {
             $this->paginate = [
-                'conditions'=>['first_name LIKE '=>'%'.$keyword.'%']
+                'conditions' => ['first_name LIKE ' => '%' . $keyword . '%']
             ];
         }
 

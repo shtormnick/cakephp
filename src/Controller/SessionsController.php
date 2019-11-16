@@ -13,15 +13,15 @@ class SessionsController extends AppController
 {
     public function index()
     {
-
-        $keyword = $this->request->query('keyword');
         $day = $this->request->query('day');
         $month = $this->request->query('month');
         $year = $this->request->query('year');
+        $keyword = $this->request->query('keyword');
         if(!empty($keyword)){
             $this->paginate = [
                 'conditions'=>['first_name LIKE '=>'%'.$keyword.'%']
             ];
+
         }
 
         $sessions = $this->paginate($this->Sessions);
@@ -36,16 +36,18 @@ class SessionsController extends AppController
 
     public function add()
     {
+        $films = $this->Sessions->Films->find('list', ['limit' => 200]);
         $session = $this->Sessions->newEntity();
         if ($this->request->is('post')) {
             $session = $this->Sessions->patchEntity($session, $this->request->getData());
             if ($this->Sessions->save($session)) {
-                $this->Flash->success(__('The actor has been saved.'));
+                $this->Flash->success(__('The sessions has been saved.'));
                 return $this->redirect(['action' => 'index']);
             }
-            $this->Flash->error(__('The actor could not be saved. Please, try again.'));
+            $this->Flash->error(__('The sessions could not be saved. Please, try again.'));
         }
         $this->set('session', $session);
+        $this->set('films', $films);
 
     }
 
