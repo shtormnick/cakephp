@@ -10,6 +10,9 @@ echo $this->Form->create($film)
         echo $this->Form->control('title');
         echo $this->Form->control('description');
         echo $this->Form->control('release_year');
+        echo $this->Form->control('actors._ids', ['options' => $actors]);
+        echo $this->Form->control('producers._ids', ['options' => $producers]);
+        echo $this->Form->control('categories._ids', ['options' => $categories]);
         ?>
     </fieldset>
     <?= $this->Form->button(__('Submit')) ?>

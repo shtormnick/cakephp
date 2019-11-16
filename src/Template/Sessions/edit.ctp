@@ -20,7 +20,7 @@ $this->start('links')
     echo $this->Form->control('hall_id');
     echo $this->Form->control('start');
     echo $this->Form->control('finish');
-    echo $this->Form->control('film_id');
+    echo $this->Form->control('film_id', ['options' => $film]);
     ?>
 </fieldset>
 <?= $this->Form->button(__('Submit')) ?>

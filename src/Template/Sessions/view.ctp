@@ -17,16 +17,21 @@ $this->start('links')
         <td><?= $this->Number->format($session->id) ?></td>
     </tr>
     <tr>
-        <th scope="row"><?= __('Name') ?></th>
+        <th scope="row"><?= __('Hall') ?></th>
         <td><?= h($session->hall_id) ?></td>
     </tr>
     <tr>
-        <th scope="row"><?= __('Surname') ?></th>
+        <th scope="row"><?= __('Film') ?></th>
+        <td><?= h($session->film_id) ?></td>
+    </tr>
+    <tr>
+        <th scope="row"><?= __('Start time') ?></th>
         <td><?= h($session->start) ?></td>
     </tr>
     <tr>
-        <th scope="row"><?= __('Birthday') ?></th>
+        <th scope="row"><?= __('Finish time') ?></th>
         <td><?= h($session->finish) ?></td>
     </tr>
+
 </table>
 

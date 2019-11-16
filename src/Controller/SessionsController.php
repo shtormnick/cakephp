@@ -13,17 +13,33 @@ class SessionsController extends AppController
 {
     public function index()
     {
+        $conditions = [];
         $day = $this->request->query('day');
         $month = $this->request->query('month');
         $year = $this->request->query('year');
         $keyword = $this->request->query('keyword');
-        if(!empty($keyword)){
-            $this->paginate = [
-                'conditions'=>['first_name LIKE '=>'%'.$keyword.'%']
-            ];
-
+        if (!empty($keyword)) {
+            $conditions['title LIKE '] = '%' . $keyword . '%';
         }
-
+        if (!empty($year)) {
+            $conditions['to_char(start,\'YYYY\') ='] = $year;
+        }
+        if (!empty($month)) {
+            $conditions['to_char(start,\'MM\') ='] = $month;
+        }
+        if (!empty($day)) {
+            $conditions['to_char(start,\'DD\') ='] = $day;
+        }
+        if (!empty($year)) {
+            $conditions['to_char(finish,\'YYYY\') ='] = $year;
+        }
+        if (!empty($month)) {
+            $conditions['to_char(finish,\'MM\') ='] = $month;
+        }
+        if (!empty($day)) {
+            $conditions['to_char(finish,\'DD\') ='] = $day;
+        }
+        $this->paginate = ['conditions' => $conditions];
         $sessions = $this->paginate($this->Sessions);
         $this->set(compact('sessions'));
     }
@@ -50,11 +66,12 @@ class SessionsController extends AppController
         $this->set('session', $session);
         $this->set('halls', $halls);
         $this->set('films', $films);
-
     }
 
     public function edit($id = null)
     {
+        $halls = $this->Sessions->Halls->find('list', ['limit' => 200]);
+        $films = $this->Sessions->Films->find('list', ['limit' => 200]);
         $session = $this->Sessions->get($id);
         if ($this->request->is(['patch', 'post', 'put'])) {
             $session = $this->Sessions->patchEntity($session, $this->request->getData());
@@ -65,6 +82,8 @@ class SessionsController extends AppController
             $this->Flash->error(__('The actor could not be saved. Please, try again.'));
         }
         $this->set('session', $session);
+        $this->set('halls', $halls);
+        $this->set('film', $films);
     }
 
     public function delete($id = null)

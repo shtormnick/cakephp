@@ -37,12 +37,22 @@ class FilmsController extends AppController
 
     public function view($id = null)
     {
+
         $film = $this->Films->get($id);
         $this->set('film', $film);
+        $actors = $this->Films->Actors->find('list', ['limit' => 200]);
+        $this->set('actors', $actors);
+        $producers=$this->Films->Producers->find('list', ['limit' => 200]);
+        $this->set('producers', $producers);
+        $categories = $this->Films->Categories->find('list', ['limit' => 200]);
+        $this->set('categories', $categories);
     }
 
     public function add()
     {
+        $producers=$this->Films->Producers->find('list', ['limit' => 200]);
+        $categories = $this->Films->Categories->find('list', ['limit' => 200]);
+        $actors = $this->Films->Actors->find('list', ['limit' => 200]);
         $film = $this->Films->newEntity();
         if ($this->request->is('post')) {
             $film = $this->Films->patchEntity($film, $this->request->getData());
@@ -53,11 +63,16 @@ class FilmsController extends AppController
             $this->Flash->error(__('The film could not be saved. Please, try again.'));
         }
         $this->set('film', $film);
-
+        $this->set('actors', $actors);
+        $this->set('producers', $producers);
+        $this->set('categories', $categories);
     }
 
     public function edit($id = null)
     {
+        $producers=$this->Films->Producers->find('list', ['limit' => 200]);
+        $categories = $this->Films->Categories->find('list', ['limit' => 200]);
+        $actors = $this->Films->Actors->find('list', ['limit' => 200]);
         $film = $this->Films->get($id, ['contain' => ['Actors']]);
         if ($this->request->is(['patch', 'post', 'put'])) {
             $film = $this->Films->patchEntity($film, $this->request->getData());
@@ -68,8 +83,9 @@ class FilmsController extends AppController
             $this->Flash->error(__('The film could not be saved. Please, try again.'));
         }
         $this->set('film', $film);
-        $actors = $this->Films->Actors->find('list', ['limit' => 200]);
         $this->set('actors', $actors);
+        $this->set('producers', $producers);
+        $this->set('categories', $categories);
 
     }
 

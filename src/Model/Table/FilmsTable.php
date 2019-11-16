@@ -16,8 +16,8 @@ class FilmsTable extends Table
     {
         $this->addBehavior('Timestamp');
         $this->belongsToMany('Actors');
-
-
+        $this->belongsToMany('Producers');
+        $this->belongsToMany('Categories');
     }
 
 

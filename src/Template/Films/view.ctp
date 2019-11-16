@@ -28,5 +28,17 @@ $this->start('links')
         <th scope="row"><?= __('Release Year') ?></th>
         <td><?= h($film->release_year) ?></td>
     </tr>
+    <tr>
+        <th scope="row"><?= __('Actors') ?></th>
+        <td><?=  $this->Number->format('actors._ids',['options' => $actors]) ?></td>
+    </tr>
+    <tr>
+        <th scope="row"><?= __('Producers') ?></th>
+        <td><?=  $this->Number->format('producers._ids',['options' => $producers]) ?></td>
+    </tr>
+    <tr>
+        <th scope="row"><?= __('Categories') ?></th>
+        <td><?=  $this->Number->format('categories._ids',['options' => $categories]) ?></td>
+    </tr>
 </table>
 
