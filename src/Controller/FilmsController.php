@@ -13,20 +13,24 @@ class FilmsController extends AppController
 {
     public function index()
     {
+        $conditions = [];
         $day = $this->request->query('day');
         $month = $this->request->query('month');
         $year = $this->request->query('year');
         $keyword = $this->request->query('keyword');
-        $this->paginate = [
-            'conditions'=>[]
-        ];
-        if(!empty($keyword)){
-//            $this->paginate ['conditions'=>['title LIKE '=>'%'.$keyword.'%']];
-            echo $this->paginate["conditions"];
-            $sss = [$day];
-            $aaa = array_combine($this->paginate, $sss);
-            die();
+        if (!empty($keyword)) {
+            $conditions['title LIKE '] = '%' . $keyword . '%';
         }
+        if (!empty($year)) {
+            $conditions['to_char(release_year,\'YYYY\') ='] = $year;
+        }
+        if (!empty($month)) {
+            $conditions['to_char(release_year,\'MM\') ='] = $month;
+        }
+        if (!empty($day)) {
+            $conditions['to_char(release_year,\'DD\') ='] = $day;
+        }
+        $this->paginate = ['conditions' => $conditions];
         $films = $this->paginate($this->Films);
         $this->set(compact('films'));
     }
@@ -54,9 +58,8 @@ class FilmsController extends AppController
 
     public function edit($id = null)
     {
-        $film = $this->Films->get($id,['contain' => ['Actors']]);
-        if ($this->request->is(['patch', 'post', 'put']))
-        {
+        $film = $this->Films->get($id, ['contain' => ['Actors']]);
+        if ($this->request->is(['patch', 'post', 'put'])) {
             $film = $this->Films->patchEntity($film, $this->request->getData());
             if ($this->Films->save($film)) {
                 $this->Flash->success(__('The film has been saved.'));
@@ -97,7 +100,6 @@ class FilmsController extends AppController
 
         return parent::isAuthorized($user);
     }
-
 
 
 }
