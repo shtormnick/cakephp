@@ -36,6 +36,7 @@ class SessionsController extends AppController
 
     public function add()
     {
+        $halls = $this->Sessions->Halls->find('list', ['limit' => 200]);
         $films = $this->Sessions->Films->find('list', ['limit' => 200]);
         $session = $this->Sessions->newEntity();
         if ($this->request->is('post')) {
@@ -47,6 +48,7 @@ class SessionsController extends AppController
             $this->Flash->error(__('The sessions could not be saved. Please, try again.'));
         }
         $this->set('session', $session);
+        $this->set('halls', $halls);
         $this->set('films', $films);
 
     }
