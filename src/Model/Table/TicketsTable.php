@@ -2,19 +2,23 @@
 /**
  * Created by PhpStorm.
  * User: lorix
- * Date: 22.02.19
- * Time: 13:48
+ * Date: 24.02.19
+ * Time: 22:47
  */
 
 namespace App\Model\Table;
 
 use Cake\ORM\Table;
 
-class ActorsTable extends Table
+class TicketsTable extends Table
 {
     public function initialize(array $config)
     {
         $this->addBehavior('Timestamp');
+        $this->hasOne('Sessions');
+//        $this->hasOne('Places');
 
     }
+
+
 }

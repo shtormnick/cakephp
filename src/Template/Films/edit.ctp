@@ -20,9 +20,9 @@ $this->start('links');
     echo $this->Form->control('title');
     echo $this->Form->control('description');
     echo $this->Form->control('release_year');
-    echo $this->Form->control('actors._ids', ['options' => $actors]);
-    echo $this->Form->control('producers._ids', ['options' => $producers]);
-    echo $this->Form->control('categories._ids', ['options' => $categories]);
+    echo $this->Form->control('actors._ids');
+    echo $this->Form->control('producers._ids');
+    echo $this->Form->control('categories._ids');
     ?>
 </fieldset>
 <?= $this->Form->button(__('Submit')) ?>

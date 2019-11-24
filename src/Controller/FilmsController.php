@@ -38,14 +38,8 @@ class FilmsController extends AppController
     public function view($id = null)
     {
 
-        $film = $this->Films->get($id);
+        $film = $this->Films->get($id, ['contain' => ['Actors','Categories','Producers']]);
         $this->set('film', $film);
-        $actors = $this->Films->Actors->find('list', ['limit' => 200]);
-        $this->set('actors', $actors);
-        $producers=$this->Films->Producers->find('list', ['limit' => 200]);
-        $this->set('producers', $producers);
-        $categories = $this->Films->Categories->find('list', ['limit' => 200]);
-        $this->set('categories', $categories);
     }
 
     public function add()
@@ -73,7 +67,7 @@ class FilmsController extends AppController
         $producers=$this->Films->Producers->find('list', ['limit' => 200]);
         $categories = $this->Films->Categories->find('list', ['limit' => 200]);
         $actors = $this->Films->Actors->find('list', ['limit' => 200]);
-        $film = $this->Films->get($id, ['contain' => ['Actors']]);
+        $film = $this->Films->get($id, ['contain' => ['Actors','Categories','Producers']]);
         if ($this->request->is(['patch', 'post', 'put'])) {
             $film = $this->Films->patchEntity($film, $this->request->getData());
             if ($this->Films->save($film)) {

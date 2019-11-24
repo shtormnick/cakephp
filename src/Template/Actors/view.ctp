@@ -10,7 +10,7 @@ $this->start('links')
 <?php $this->end()?>
 
 
-<h3><?= h($actor->title) ?></h3>
+<h3><?= h($actor->first_name) ?></h3>
 <table class="vertical-table">
     <tr>
         <th scope="row"><?= __('Id') ?></th>

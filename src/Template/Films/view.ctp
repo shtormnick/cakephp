@@ -30,15 +30,33 @@ $this->start('links')
     </tr>
     <tr>
         <th scope="row"><?= __('Actors') ?></th>
-        <td><?=  $this->Number->format('actors._ids',['options' => $actors]) ?></td>
+        <td>
+            <ul>
+            <?php foreach ($film->actors as $actor): ?>
+            <li><?=  h($actor->first_name) ?></li>
+            <?php endforeach; ?>
+            </ul>
+        </td>
     </tr>
     <tr>
         <th scope="row"><?= __('Producers') ?></th>
-        <td><?=  $this->Number->format('producers._ids',['options' => $producers]) ?></td>
+        <td>
+            <ul>
+                <?php foreach ($film->producers as $producer): ?>
+                    <li><?=  h($producer->first_name) ?></li>
+                <?php endforeach; ?>
+            </ul>
+        </td>
     </tr>
     <tr>
         <th scope="row"><?= __('Categories') ?></th>
-        <td><?=  $this->Number->format('categories._ids',['options' => $categories]) ?></td>
+        <td>
+            <ul>
+            <?php foreach ($film->categories as $category): ?>
+                <li><?=  h($category->name) ?></li>
+            <?php endforeach; ?>
+             <ul>
+        </td>
     </tr>
 </table>
 
