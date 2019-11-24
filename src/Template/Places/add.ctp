@@ -5,7 +5,7 @@ echo $this->Form->create($place)
     <fieldset>
         <legend><?= __('Add Place') ?></legend>
         <?php
-        echo $this->Form->control('Number');
+        echo $this->Form->control('number');
         ?>
     </fieldset>
 <?= $this->Form->button(__('Submit')) ?>

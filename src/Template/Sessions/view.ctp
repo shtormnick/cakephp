@@ -34,7 +34,7 @@ $this->start('links')
     </tr>
 
 </table>
-<?= $this->Html->link('Create Ticket', [
+<?= $this->Html->link('Create a Ticket', [
     "controller" => "Tickets",
     "action" => "add",
     "?" => ["session" => $session->id],

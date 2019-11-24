@@ -42,10 +42,8 @@ class PlacesController extends AppController
             }
             $this->Flash->error(__('The place could not be saved. Please, try again.'));
         }
+
         $this->set('place', $place);
-        //$users = $this->Actors->Users->find('list', ['limit' => 200]);
-        //$tags = $this->Actors->Tags->find('list', ['limit' => 200]);
-        //$this->set(compact('actor', 'users', 'tags'));
     }
 
     public function edit($id = null)

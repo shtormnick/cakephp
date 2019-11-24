@@ -3,34 +3,34 @@ $this->extend('/maine');
 $this->start('links')
 ?>
 <li class="heading"><?= __('Actions') ?></li>
-<li><?= $this->Html->link(__('Edit Session'), ['action' => 'edit', $session->id]) ?> </li>
-<li><?= $this->Form->postLink(__('Delete Session'), ['action' => 'delete', $session->id], ['confirm' => __('Are you sure you want to delete # {0}?', $session->id)]) ?> </li>
-<li><?= $this->Html->link(__('List Sessions'), ['action' => 'index']) ?> </li>
-<li><?= $this->Html->link(__('New Session'), ['action' => 'add']) ?> </li>
+<li><?= $this->Html->link(__('Edit Ticket'), ['action' => 'edit', $ticket->id]) ?> </li>
+<li><?= $this->Form->postLink(__('Delete Ticket'), ['action' => 'delete', $ticket->id], ['confirm' => __('Are you sure you want to delete # {0}?', $ticket->id)]) ?> </li>
+<li><?= $this->Html->link(__('List Ticket'), ['action' => 'index']) ?> </li>
+<li><?= $this->Html->link(__('New Ticket'), ['action' => 'add']) ?> </li>
 <?php $this->end()?>
 
 
-<h3><?= h($session->title) ?></h3>
+<h3><?= h($ticket->id) ?></h3>
 <table class="vertical-table">
     <tr>
         <th scope="row"><?= __('Id') ?></th>
-        <td><?= $this->Number->format($session->id) ?></td>
+        <td><?= $this->Number->format($ticket->id) ?></td>
+    </tr>
+<!--    <tr>-->
+<!--        <th scope="row">--><?//= __('Hall') ?><!--</th>-->
+<!--        <td>--><?//= h($ticket->hall_id) ?><!--</td>-->
+<!--    </tr>-->
+    <tr>
+        <th scope="row"><?= __('Price') ?></th>
+        <td><?= h($ticket->price) ?></td>
     </tr>
     <tr>
-        <th scope="row"><?= __('Hall') ?></th>
-        <td><?= h($session->hall_id) ?></td>
+        <th scope="row"><?= __('Sell time') ?></th>
+        <td><?= h($ticket->sell_time) ?></td>
     </tr>
     <tr>
-        <th scope="row"><?= __('Film') ?></th>
-        <td><?= h($session->film_id) ?></td>
-    </tr>
-    <tr>
-        <th scope="row"><?= __('Start time') ?></th>
-        <td><?= h($session->start) ?></td>
-    </tr>
-    <tr>
-        <th scope="row"><?= __('Finish time') ?></th>
-        <td><?= h($session->finish) ?></td>
+        <th scope="row"><?= __('Place') ?></th>
+        <td><?= h($ticket->place_id) ?></td>
     </tr>
 
 </table>

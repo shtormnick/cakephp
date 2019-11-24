@@ -18,7 +18,6 @@ $this->start('links')
     <legend><?= __('Edit Places') ?></legend>
     <?php
     echo $this->Form->control('number');
-
     ?>
 </fieldset>
 <?= $this->Form->button(__('Submit')) ?>

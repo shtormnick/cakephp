@@ -16,6 +16,8 @@ class TicketsTable extends Table
     {
         $this->addBehavior('Timestamp');
         $this->hasOne('Sessions');
+        $this->hasOne('Places');
+
 //        $this->hasOne('Places');
 
     }
