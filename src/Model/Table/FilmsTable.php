@@ -19,6 +19,4 @@ class FilmsTable extends Table
         $this->belongsToMany('Producers');
         $this->belongsToMany('Categories');
     }
-
-
 }

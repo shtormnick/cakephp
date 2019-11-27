@@ -18,6 +18,11 @@ Our service is designed to improve customer service of our cinema.
     <h3>Actors list</h3>
     <a href="http://homestead.test/actors">Click here</a>
     <hr>
+    <h3>Sessions list</h3>
+    <a href="http://homestead.test/sessions">Click here</a>
+    <hr>
+    <h3>Users list</h3>
+    <a href="http://homestead.test/users">Click here</a>
 </div>
 
 
