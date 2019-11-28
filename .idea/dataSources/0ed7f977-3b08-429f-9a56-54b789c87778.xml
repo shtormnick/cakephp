@@ -1,0 +1,1114 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<dataSource name="PostgreSQL - homestead@localhost [2]">
+  <database-model serializer="dbm" dbms="POSTGRES" family-id="POSTGRES" format-version="4.16">
+    <root id="1">
+      <ServerVersion>11.5</ServerVersion>
+    </root>
+    <database id="2" parent="1" name="homestead">
+      <ObjectId>16385</ObjectId>
+      <Owner>homestead</Owner>
+      <IntrospectionStateNumber>1079</IntrospectionStateNumber>
+      <Current>1</Current>
+      <Relations>sequence|table|16428|16425|1
+sequence|table|16476|16467|1
+sequence|table|16479|16406|1
+sequence|table|16485|16415|1
+sequence|table|16491|16435|1
+sequence|table|16497|16388|1
+sequence|table|16504|16449|1
+sequence|table|16510|16397|1
+</Relations>
+    </database>
+    <database id="3" parent="1" name="postgres">
+      <ObjectId>13125</ObjectId>
+      <Comment>default administrative connection database</Comment>
+      <Owner>postgres</Owner>
+    </database>
+    <role id="4" parent="1" name="homestead">
+      <ObjectId>16384</ObjectId>
+      <SuperRole>1</SuperRole>
+      <Inherit>1</Inherit>
+      <CanLogin>1</CanLogin>
+      <ConnectionLimit>-1</ConnectionLimit>
+    </role>
+    <role id="5" parent="1" name="pg_execute_server_program">
+      <ObjectId>4571</ObjectId>
+      <Inherit>1</Inherit>
+      <ConnectionLimit>-1</ConnectionLimit>
+    </role>
+    <role id="6" parent="1" name="pg_monitor">
+      <ObjectId>3373</ObjectId>
+      <Inherit>1</Inherit>
+      <ConnectionLimit>-1</ConnectionLimit>
+    </role>
+    <role id="7" parent="1" name="pg_read_all_settings">
+      <ObjectId>3374</ObjectId>
+      <Inherit>1</Inherit>
+      <ConnectionLimit>-1</ConnectionLimit>
+    </role>
+    <role id="8" parent="1" name="pg_read_all_stats">
+      <ObjectId>3375</ObjectId>
+      <Inherit>1</Inherit>
+      <ConnectionLimit>-1</ConnectionLimit>
+    </role>
+    <role id="9" parent="1" name="pg_read_server_files">
+      <ObjectId>4569</ObjectId>
+      <Inherit>1</Inherit>
+      <ConnectionLimit>-1</ConnectionLimit>
+    </role>
+    <role id="10" parent="1" name="pg_signal_backend">
+      <ObjectId>4200</ObjectId>
+      <Inherit>1</Inherit>
+      <ConnectionLimit>-1</ConnectionLimit>
+    </role>
+    <role id="11" parent="1" name="pg_stat_scan_tables">
+      <ObjectId>3377</ObjectId>
+      <Inherit>1</Inherit>
+      <ConnectionLimit>-1</ConnectionLimit>
+    </role>
+    <role id="12" parent="1" name="pg_write_server_files">
+      <ObjectId>4570</ObjectId>
+      <Inherit>1</Inherit>
+      <ConnectionLimit>-1</ConnectionLimit>
+    </role>
+    <role id="13" parent="1" name="postgres">
+      <ObjectId>10</ObjectId>
+      <SuperRole>1</SuperRole>
+      <Inherit>1</Inherit>
+      <CreateRole>1</CreateRole>
+      <CreateDb>1</CreateDb>
+      <CanLogin>1</CanLogin>
+      <ConnectionLimit>-1</ConnectionLimit>
+      <Replication>1</Replication>
+      <BypassRls>1</BypassRls>
+    </role>
+    <schema id="14" parent="2" name="information_schema">
+      <ObjectId>12830</ObjectId>
+      <StateNumber>365</StateNumber>
+      <Owner>postgres</Owner>
+    </schema>
+    <schema id="15" parent="2" name="pg_catalog">
+      <ObjectId>11</ObjectId>
+      <Comment>system catalog schema</Comment>
+      <StateNumber>358</StateNumber>
+      <Owner>postgres</Owner>
+    </schema>
+    <schema id="16" parent="2" name="public">
+      <ObjectId>2200</ObjectId>
+      <Comment>standard public schema</Comment>
+      <StateNumber>359</StateNumber>
+      <Owner>postgres</Owner>
+      <IntrospectionStateNumber>1080</IntrospectionStateNumber>
+      <Current>1</Current>
+    </schema>
+    <access-method id="17" parent="2" name="btree">
+      <ObjectId>403</ObjectId>
+      <Comment>b-tree index access method</Comment>
+      <StateNumber>1</StateNumber>
+      <Handler>pg_catalog.bthandler</Handler>
+      <HandlerId>330</HandlerId>
+      <Type>index</Type>
+    </access-method>
+    <access-method id="18" parent="2" name="hash">
+      <ObjectId>405</ObjectId>
+      <Comment>hash index access method</Comment>
+      <StateNumber>1</StateNumber>
+      <Handler>pg_catalog.hashhandler</Handler>
+      <HandlerId>331</HandlerId>
+      <Type>index</Type>
+    </access-method>
+    <access-method id="19" parent="2" name="gist">
+      <ObjectId>783</ObjectId>
+      <Comment>GiST index access method</Comment>
+      <StateNumber>1</StateNumber>
+      <Handler>pg_catalog.gisthandler</Handler>
+      <HandlerId>332</HandlerId>
+      <Type>index</Type>
+    </access-method>
+    <access-method id="20" parent="2" name="gin">
+      <ObjectId>2742</ObjectId>
+      <Comment>GIN index access method</Comment>
+      <StateNumber>1</StateNumber>
+      <Handler>pg_catalog.ginhandler</Handler>
+      <HandlerId>333</HandlerId>
+      <Type>index</Type>
+    </access-method>
+    <access-method id="21" parent="2" name="spgist">
+      <ObjectId>4000</ObjectId>
+      <Comment>SP-GiST index access method</Comment>
+      <StateNumber>1</StateNumber>
+      <Handler>pg_catalog.spghandler</Handler>
+      <HandlerId>334</HandlerId>
+      <Type>index</Type>
+    </access-method>
+    <access-method id="22" parent="2" name="brin">
+      <ObjectId>3580</ObjectId>
+      <Comment>block range index (BRIN) access method</Comment>
+      <StateNumber>1</StateNumber>
+      <Handler>pg_catalog.brinhandler</Handler>
+      <HandlerId>335</HandlerId>
+      <Type>index</Type>
+    </access-method>
+    <extension id="23" parent="2" name="plpgsql">
+      <ObjectId>13111</ObjectId>
+      <Comment>PL/pgSQL procedural language</Comment>
+      <StateNumber>518</StateNumber>
+      <Version>1.0</Version>
+      <SchemaName>pg_catalog</SchemaName>
+      <SchemaId>11</SchemaId>
+    </extension>
+    <sequence id="24" parent="16" name="actor_actor_id_seq">
+      <ObjectId>16386</ObjectId>
+      <StateNumber>573</StateNumber>
+      <Owner>homestead</Owner>
+      <SequenceIdentity>1</SequenceIdentity>
+      <CacheSize>1</CacheSize>
+      <DataType>bigint</DataType>
+    </sequence>
+    <sequence id="25" parent="16" name="category_category_id_seq">
+      <ObjectId>16395</ObjectId>
+      <StateNumber>576</StateNumber>
+      <Owner>homestead</Owner>
+      <SequenceIdentity>1</SequenceIdentity>
+      <CacheSize>1</CacheSize>
+      <DataType>bigint</DataType>
+    </sequence>
+    <sequence id="26" parent="16" name="film_film_id_seq">
+      <ObjectId>16404</ObjectId>
+      <StateNumber>579</StateNumber>
+      <Owner>homestead</Owner>
+      <SequenceIdentity>1</SequenceIdentity>
+      <CacheSize>1</CacheSize>
+      <DataType>bigint</DataType>
+    </sequence>
+    <sequence id="27" parent="16" name="hall_hall_id_seq">
+      <ObjectId>16413</ObjectId>
+      <StateNumber>581</StateNumber>
+      <Owner>homestead</Owner>
+      <SequenceIdentity>1</SequenceIdentity>
+      <CacheSize>1</CacheSize>
+      <DataType>bigint</DataType>
+    </sequence>
+    <sequence id="28" parent="16" name="place_place_id_seq">
+      <ObjectId>16423</ObjectId>
+      <StateNumber>584</StateNumber>
+      <Owner>homestead</Owner>
+      <SequenceIdentity>1</SequenceIdentity>
+      <CacheSize>1</CacheSize>
+      <DataType>bigint</DataType>
+    </sequence>
+    <sequence id="29" parent="16" name="producer_producer_id_seq">
+      <ObjectId>16433</ObjectId>
+      <StateNumber>589</StateNumber>
+      <Owner>homestead</Owner>
+      <SequenceIdentity>1</SequenceIdentity>
+      <CacheSize>1</CacheSize>
+      <DataType>bigint</DataType>
+    </sequence>
+    <sequence id="30" parent="16" name="session_session_id_seq">
+      <ObjectId>16439</ObjectId>
+      <StateNumber>591</StateNumber>
+      <Owner>homestead</Owner>
+      <SequenceIdentity>1</SequenceIdentity>
+      <CacheSize>1</CacheSize>
+      <DataType>bigint</DataType>
+    </sequence>
+    <sequence id="31" parent="16" name="tiket_tiket_id_seq">
+      <ObjectId>16447</ObjectId>
+      <StateNumber>593</StateNumber>
+      <Owner>homestead</Owner>
+      <SequenceIdentity>1</SequenceIdentity>
+      <CacheSize>1</CacheSize>
+      <DataType>bigint</DataType>
+    </sequence>
+    <sequence id="32" parent="16" name="users_created_seq">
+      <ObjectId>16465</ObjectId>
+      <StateNumber>620</StateNumber>
+      <Owner>homestead</Owner>
+      <SequenceIdentity>1</SequenceIdentity>
+      <CacheSize>1</CacheSize>
+      <DataType>bigint</DataType>
+    </sequence>
+    <sequence id="33" parent="16" name="actors_id_seq">
+      <ObjectId>16497</ObjectId>
+      <StateNumber>681</StateNumber>
+      <Owner>homestead</Owner>
+      <SequenceIdentity>1</SequenceIdentity>
+      <CacheSize>1</CacheSize>
+      <DataType>bigint</DataType>
+    </sequence>
+    <sequence id="34" parent="16" name="categories_id_seq">
+      <ObjectId>16510</ObjectId>
+      <StateNumber>696</StateNumber>
+      <Owner>homestead</Owner>
+      <SequenceIdentity>1</SequenceIdentity>
+      <CacheSize>1</CacheSize>
+      <DataType>bigint</DataType>
+    </sequence>
+    <sequence id="35" parent="16" name="films_id_seq">
+      <ObjectId>16479</ObjectId>
+      <StateNumber>655</StateNumber>
+      <Owner>homestead</Owner>
+      <SequenceIdentity>1</SequenceIdentity>
+      <CacheSize>1</CacheSize>
+      <DataType>bigint</DataType>
+    </sequence>
+    <sequence id="36" parent="16" name="halls_id_seq">
+      <ObjectId>16485</ObjectId>
+      <StateNumber>667</StateNumber>
+      <Owner>homestead</Owner>
+      <SequenceIdentity>1</SequenceIdentity>
+      <CacheSize>1</CacheSize>
+      <DataType>bigint</DataType>
+    </sequence>
+    <sequence id="37" parent="16" name="places_id_seq">
+      <ObjectId>16428</ObjectId>
+      <StateNumber>586</StateNumber>
+      <Owner>homestead</Owner>
+      <SequenceIdentity>1..32767</SequenceIdentity>
+      <CacheSize>1</CacheSize>
+      <DataType>smallint</DataType>
+    </sequence>
+    <sequence id="38" parent="16" name="producers_id_seq">
+      <ObjectId>16491</ObjectId>
+      <StateNumber>674</StateNumber>
+      <Owner>homestead</Owner>
+      <SequenceIdentity>1</SequenceIdentity>
+      <CacheSize>1</CacheSize>
+      <DataType>bigint</DataType>
+    </sequence>
+    <sequence id="39" parent="16" name="tikets_tiket_id_seq">
+      <ObjectId>16504</ObjectId>
+      <StateNumber>689</StateNumber>
+      <Owner>homestead</Owner>
+      <SequenceIdentity>1</SequenceIdentity>
+      <CacheSize>1</CacheSize>
+      <DataType>bigint</DataType>
+    </sequence>
+    <sequence id="40" parent="16" name="users_id_seq">
+      <ObjectId>16476</ObjectId>
+      <StateNumber>648</StateNumber>
+      <Owner>homestead</Owner>
+      <SequenceIdentity>1</SequenceIdentity>
+      <CacheSize>1</CacheSize>
+      <DataType>bigint</DataType>
+    </sequence>
+    <table id="41" parent="16" name="actors">
+      <ObjectId>16388</ObjectId>
+      <Owner>homestead</Owner>
+      <StateNumber>711</StateNumber>
+    </table>
+    <table id="42" parent="16" name="actors_films">
+      <ObjectId>24578</ObjectId>
+      <Owner>homestead</Owner>
+      <StateNumber>711</StateNumber>
+    </table>
+    <table id="43" parent="16" name="categories">
+      <ObjectId>16397</ObjectId>
+      <Owner>homestead</Owner>
+      <StateNumber>821</StateNumber>
+    </table>
+    <table id="44" parent="16" name="categories_films">
+      <ObjectId>16401</ObjectId>
+      <Owner>homestead</Owner>
+      <StateNumber>911</StateNumber>
+    </table>
+    <table id="45" parent="16" name="films">
+      <ObjectId>16406</ObjectId>
+      <Owner>homestead</Owner>
+      <StateNumber>711</StateNumber>
+    </table>
+    <table id="46" parent="16" name="films_producers">
+      <ObjectId>16430</ObjectId>
+      <Owner>homestead</Owner>
+      <StateNumber>920</StateNumber>
+    </table>
+    <table id="47" parent="16" name="halls">
+      <ObjectId>16415</ObjectId>
+      <Owner>homestead</Owner>
+      <StateNumber>833</StateNumber>
+    </table>
+    <table id="48" parent="16" name="halls_places">
+      <ObjectId>49191</ObjectId>
+      <Owner>homestead</Owner>
+      <StateNumber>1055</StateNumber>
+    </table>
+    <table id="49" parent="16" name="phinxlog">
+      <ObjectId>16419</ObjectId>
+      <Owner>homestead</Owner>
+      <StateNumber>583</StateNumber>
+    </table>
+    <table id="50" parent="16" name="places">
+      <ObjectId>16425</ObjectId>
+      <Owner>homestead</Owner>
+      <StateNumber>839</StateNumber>
+    </table>
+    <table id="51" parent="16" name="producers">
+      <ObjectId>16435</ObjectId>
+      <Owner>homestead</Owner>
+      <StateNumber>830</StateNumber>
+    </table>
+    <table id="52" parent="16" name="sessions">
+      <ObjectId>16441</ObjectId>
+      <Owner>homestead</Owner>
+      <StateNumber>1042</StateNumber>
+    </table>
+    <table id="53" parent="16" name="tickets">
+      <ObjectId>16449</ObjectId>
+      <Owner>homestead</Owner>
+      <StateNumber>1035</StateNumber>
+    </table>
+    <table id="54" parent="16" name="users">
+      <ObjectId>16467</ObjectId>
+      <Owner>homestead</Owner>
+      <StateNumber>629</StateNumber>
+    </table>
+    <column id="55" parent="41" name="id">
+      <Position>1</Position>
+      <DataType>integer|0s</DataType>
+      <NotNull>1</NotNull>
+      <StateNumber>682</StateNumber>
+      <DefaultExpression>nextval(&apos;actors_id_seq&apos;::regclass)</DefaultExpression>
+      <TypeId>23</TypeId>
+    </column>
+    <column id="56" parent="41" name="first_name">
+      <Position>2</Position>
+      <DataType>varchar(45)|0s</DataType>
+      <NotNull>1</NotNull>
+      <StateNumber>574</StateNumber>
+      <TypeId>1043</TypeId>
+    </column>
+    <column id="57" parent="41" name="last_name">
+      <Position>3</Position>
+      <DataType>varchar(45)|0s</DataType>
+      <NotNull>1</NotNull>
+      <StateNumber>574</StateNumber>
+      <TypeId>1043</TypeId>
+    </column>
+    <column id="58" parent="41" name="birthday">
+      <Position>4</Position>
+      <DataType>date|0s</DataType>
+      <NotNull>1</NotNull>
+      <StateNumber>574</StateNumber>
+      <TypeId>1082</TypeId>
+    </column>
+    <index id="59" parent="41" name="actors_id_uindex">
+      <ObjectId>16500</ObjectId>
+      <StateNumber>684</StateNumber>
+      <ColNames>id</ColNames>
+      <Unique>1</Unique>
+    </index>
+    <index id="60" parent="41" name="actors_pk">
+      <ObjectId>16501</ObjectId>
+      <StateNumber>685</StateNumber>
+      <ColNames>id</ColNames>
+      <Unique>1</Unique>
+      <Primary>1</Primary>
+    </index>
+    <key id="61" parent="41" name="actors_pk">
+      <ObjectId>16502</ObjectId>
+      <StateNumber>685</StateNumber>
+      <ColNames>id</ColNames>
+      <Primary>1</Primary>
+      <UnderlyingIndexName>actors_pk</UnderlyingIndexName>
+    </key>
+    <column id="62" parent="42" name="actor_id">
+      <Position>1</Position>
+      <DataType>smallint|0s</DataType>
+      <NotNull>1</NotNull>
+      <StateNumber>734</StateNumber>
+      <TypeId>21</TypeId>
+    </column>
+    <column id="63" parent="42" name="film_id">
+      <Position>2</Position>
+      <DataType>smallint|0s</DataType>
+      <NotNull>1</NotNull>
+      <StateNumber>738</StateNumber>
+      <TypeId>21</TypeId>
+    </column>
+    <index id="64" parent="42" name="actors_films_actor_id_uindex">
+      <ObjectId>49182</ObjectId>
+      <StateNumber>990</StateNumber>
+      <ColNames>actor_id
+film_id</ColNames>
+      <Unique>1</Unique>
+    </index>
+    <index id="65" parent="42" name="actors_films_actors_id_pk_films_id_pk">
+      <ObjectId>49186</ObjectId>
+      <StateNumber>1004</StateNumber>
+      <ColNames>actor_id
+film_id</ColNames>
+      <Unique>1</Unique>
+      <Primary>1</Primary>
+    </index>
+    <key id="66" parent="42" name="actors_films_actors_id_pk_films_id_pk">
+      <ObjectId>49187</ObjectId>
+      <StateNumber>1004</StateNumber>
+      <ColNames>actor_id
+film_id</ColNames>
+      <Primary>1</Primary>
+      <UnderlyingIndexName>actors_films_actors_id_pk_films_id_pk</UnderlyingIndexName>
+    </key>
+    <foreign-key id="67" parent="42" name="film_actor_actor_id_fkey">
+      <ObjectId>24619</ObjectId>
+      <StateNumber>815</StateNumber>
+      <ColNames>actor_id</ColNames>
+      <RefTableId>16388</RefTableId>
+      <RefColPositions>1</RefColPositions>
+      <RefTableName>actors</RefTableName>
+      <RefKeyName>actors_pk</RefKeyName>
+      <RefColNames>id</RefColNames>
+      <OnDelete>restrict</OnDelete>
+      <OnUpdate>cascade</OnUpdate>
+    </foreign-key>
+    <foreign-key id="68" parent="42" name="film_actor_film_id_fkey">
+      <ObjectId>24624</ObjectId>
+      <StateNumber>818</StateNumber>
+      <ColNames>film_id</ColNames>
+      <RefTableId>16406</RefTableId>
+      <RefColPositions>1</RefColPositions>
+      <RefTableName>films</RefTableName>
+      <RefKeyName>films_pk</RefKeyName>
+      <RefColNames>id</RefColNames>
+      <OnDelete>restrict</OnDelete>
+      <OnUpdate>cascade</OnUpdate>
+    </foreign-key>
+    <column id="69" parent="43" name="id">
+      <Position>1</Position>
+      <DataType>integer|0s</DataType>
+      <NotNull>1</NotNull>
+      <StateNumber>697</StateNumber>
+      <DefaultExpression>nextval(&apos;categories_id_seq&apos;::regclass)</DefaultExpression>
+      <TypeId>23</TypeId>
+    </column>
+    <column id="70" parent="43" name="name">
+      <Position>2</Position>
+      <DataType>varchar(255)|0s</DataType>
+      <NotNull>1</NotNull>
+      <StateNumber>577</StateNumber>
+      <TypeId>1043</TypeId>
+    </column>
+    <index id="71" parent="43" name="categories_id_uindex">
+      <ObjectId>16513</ObjectId>
+      <StateNumber>699</StateNumber>
+      <ColNames>id</ColNames>
+      <Unique>1</Unique>
+    </index>
+    <index id="72" parent="43" name="categories_pk">
+      <ObjectId>16514</ObjectId>
+      <StateNumber>700</StateNumber>
+      <ColNames>id</ColNames>
+      <Unique>1</Unique>
+      <Primary>1</Primary>
+    </index>
+    <key id="73" parent="43" name="categories_pk">
+      <ObjectId>16515</ObjectId>
+      <StateNumber>700</StateNumber>
+      <ColNames>id</ColNames>
+      <Primary>1</Primary>
+      <UnderlyingIndexName>categories_pk</UnderlyingIndexName>
+    </key>
+    <column id="74" parent="44" name="film_id">
+      <Position>1</Position>
+      <DataType>smallint|0s</DataType>
+      <NotNull>1</NotNull>
+      <StateNumber>578</StateNumber>
+      <TypeId>21</TypeId>
+    </column>
+    <column id="75" parent="44" name="category_id">
+      <Position>2</Position>
+      <DataType>smallint|0s</DataType>
+      <NotNull>1</NotNull>
+      <StateNumber>578</StateNumber>
+      <TypeId>21</TypeId>
+    </column>
+    <index id="76" parent="44" name="categories_films_film_id_pk_category_id_pk">
+      <ObjectId>49184</ObjectId>
+      <StateNumber>1000</StateNumber>
+      <ColNames>film_id
+category_id</ColNames>
+      <Unique>1</Unique>
+      <Primary>1</Primary>
+    </index>
+    <index id="77" parent="44" name="category_films_category_id_uindex">
+      <ObjectId>40985</ObjectId>
+      <StateNumber>938</StateNumber>
+      <ColNames>category_id
+film_id</ColNames>
+      <Unique>1</Unique>
+    </index>
+    <key id="78" parent="44" name="categories_films_film_id_pk_category_id_pk">
+      <ObjectId>49185</ObjectId>
+      <StateNumber>1000</StateNumber>
+      <ColNames>film_id
+category_id</ColNames>
+      <Primary>1</Primary>
+      <UnderlyingIndexName>categories_films_film_id_pk_category_id_pk</UnderlyingIndexName>
+    </key>
+    <foreign-key id="79" parent="44" name="film_categories_film_id_fkey">
+      <ObjectId>24634</ObjectId>
+      <StateNumber>824</StateNumber>
+      <ColNames>film_id</ColNames>
+      <RefTableId>16406</RefTableId>
+      <RefColPositions>1</RefColPositions>
+      <RefTableName>films</RefTableName>
+      <RefKeyName>films_pk</RefKeyName>
+      <RefColNames>id</RefColNames>
+      <OnDelete>restrict</OnDelete>
+      <OnUpdate>cascade</OnUpdate>
+    </foreign-key>
+    <foreign-key id="80" parent="44" name="film_categories_category_id_fkey">
+      <ObjectId>24629</ObjectId>
+      <StateNumber>821</StateNumber>
+      <ColNames>category_id</ColNames>
+      <RefTableId>16397</RefTableId>
+      <RefColPositions>1</RefColPositions>
+      <RefTableName>categories</RefTableName>
+      <RefKeyName>categories_pk</RefKeyName>
+      <RefColNames>id</RefColNames>
+      <OnDelete>restrict</OnDelete>
+      <OnUpdate>cascade</OnUpdate>
+    </foreign-key>
+    <column id="81" parent="45" name="id">
+      <Position>1</Position>
+      <DataType>integer|0s</DataType>
+      <NotNull>1</NotNull>
+      <StateNumber>656</StateNumber>
+      <DefaultExpression>nextval(&apos;films_id_seq&apos;::regclass)</DefaultExpression>
+      <TypeId>23</TypeId>
+    </column>
+    <column id="82" parent="45" name="title">
+      <Position>2</Position>
+      <DataType>varchar(255)|0s</DataType>
+      <NotNull>1</NotNull>
+      <StateNumber>580</StateNumber>
+      <TypeId>1043</TypeId>
+    </column>
+    <column id="83" parent="45" name="description">
+      <Position>3</Position>
+      <DataType>text|0s</DataType>
+      <StateNumber>580</StateNumber>
+      <TypeId>25</TypeId>
+    </column>
+    <column id="84" parent="45" name="release_year">
+      <Position>4</Position>
+      <DataType>date|0s</DataType>
+      <NotNull>1</NotNull>
+      <StateNumber>580</StateNumber>
+      <TypeId>1082</TypeId>
+    </column>
+    <index id="85" parent="45" name="films_id_uindex">
+      <ObjectId>16482</ObjectId>
+      <StateNumber>658</StateNumber>
+      <ColNames>id</ColNames>
+      <Unique>1</Unique>
+    </index>
+    <index id="86" parent="45" name="films_pk">
+      <ObjectId>16483</ObjectId>
+      <StateNumber>659</StateNumber>
+      <ColNames>id</ColNames>
+      <Unique>1</Unique>
+      <Primary>1</Primary>
+    </index>
+    <key id="87" parent="45" name="films_pk">
+      <ObjectId>16484</ObjectId>
+      <StateNumber>659</StateNumber>
+      <ColNames>id</ColNames>
+      <Primary>1</Primary>
+      <UnderlyingIndexName>films_pk</UnderlyingIndexName>
+    </key>
+    <column id="88" parent="46" name="film_id">
+      <Position>1</Position>
+      <DataType>smallint|0s</DataType>
+      <NotNull>1</NotNull>
+      <StateNumber>588</StateNumber>
+      <TypeId>21</TypeId>
+    </column>
+    <column id="89" parent="46" name="producer_id">
+      <Position>2</Position>
+      <DataType>smallint|0s</DataType>
+      <NotNull>1</NotNull>
+      <StateNumber>929</StateNumber>
+      <TypeId>21</TypeId>
+    </column>
+    <index id="90" parent="46" name="films_producers_film_id_pk_producer_id-pk">
+      <ObjectId>49188</ObjectId>
+      <StateNumber>1026</StateNumber>
+      <ColNames>film_id
+producer_id</ColNames>
+      <Unique>1</Unique>
+      <Primary>1</Primary>
+    </index>
+    <key id="91" parent="46" name="films_producers_film_id_pk_producer_id-pk">
+      <ObjectId>49189</ObjectId>
+      <StateNumber>1026</StateNumber>
+      <ColNames>film_id
+producer_id</ColNames>
+      <Primary>1</Primary>
+      <UnderlyingIndexName>films_producers_film_id_pk_producer_id-pk</UnderlyingIndexName>
+    </key>
+    <foreign-key id="92" parent="46" name="film_producers_film_id_fkey">
+      <ObjectId>24639</ObjectId>
+      <StateNumber>827</StateNumber>
+      <ColNames>film_id</ColNames>
+      <RefTableId>16406</RefTableId>
+      <RefColPositions>1</RefColPositions>
+      <RefTableName>films</RefTableName>
+      <RefKeyName>films_pk</RefKeyName>
+      <RefColNames>id</RefColNames>
+      <OnDelete>restrict</OnDelete>
+      <OnUpdate>cascade</OnUpdate>
+    </foreign-key>
+    <foreign-key id="93" parent="46" name="film_producers_producer_id_fkey">
+      <ObjectId>24644</ObjectId>
+      <StateNumber>830</StateNumber>
+      <ColNames>producer_id</ColNames>
+      <RefTableId>16435</RefTableId>
+      <RefColPositions>1</RefColPositions>
+      <RefTableName>producers</RefTableName>
+      <RefKeyName>producers_pk</RefKeyName>
+      <RefColNames>id</RefColNames>
+      <OnDelete>restrict</OnDelete>
+      <OnUpdate>cascade</OnUpdate>
+    </foreign-key>
+    <column id="94" parent="47" name="id">
+      <Position>1</Position>
+      <DataType>integer|0s</DataType>
+      <NotNull>1</NotNull>
+      <StateNumber>668</StateNumber>
+      <DefaultExpression>nextval(&apos;halls_id_seq&apos;::regclass)</DefaultExpression>
+      <TypeId>23</TypeId>
+    </column>
+    <column id="95" parent="47" name="name">
+      <Position>2</Position>
+      <DataType>varchar(100)|0s</DataType>
+      <NotNull>1</NotNull>
+      <StateNumber>582</StateNumber>
+      <TypeId>1043</TypeId>
+    </column>
+    <index id="96" parent="47" name="halls_id_uindex">
+      <ObjectId>16488</ObjectId>
+      <StateNumber>670</StateNumber>
+      <ColNames>id</ColNames>
+      <Unique>1</Unique>
+    </index>
+    <index id="97" parent="47" name="halls_pk">
+      <ObjectId>16489</ObjectId>
+      <StateNumber>671</StateNumber>
+      <ColNames>id</ColNames>
+      <Unique>1</Unique>
+      <Primary>1</Primary>
+    </index>
+    <index id="98" parent="47" name="hall_name_uindex">
+      <ObjectId>24618</ObjectId>
+      <StateNumber>812</StateNumber>
+      <ColNames>name</ColNames>
+      <Unique>1</Unique>
+    </index>
+    <key id="99" parent="47" name="halls_pk">
+      <ObjectId>16490</ObjectId>
+      <StateNumber>671</StateNumber>
+      <ColNames>id</ColNames>
+      <Primary>1</Primary>
+      <UnderlyingIndexName>halls_pk</UnderlyingIndexName>
+    </key>
+    <column id="100" parent="48" name="hall_id">
+      <Position>1</Position>
+      <DataType>integer|0s</DataType>
+      <NotNull>1</NotNull>
+      <StateNumber>1055</StateNumber>
+      <TypeId>23</TypeId>
+    </column>
+    <column id="101" parent="48" name="place_id">
+      <Position>2</Position>
+      <DataType>integer|0s</DataType>
+      <NotNull>1</NotNull>
+      <StateNumber>1055</StateNumber>
+      <TypeId>23</TypeId>
+    </column>
+    <index id="102" parent="48" name="halls_places_halls_id_pk-places_id_pk">
+      <ObjectId>49194</ObjectId>
+      <StateNumber>1055</StateNumber>
+      <ColNames>hall_id
+place_id</ColNames>
+      <Unique>1</Unique>
+      <Primary>1</Primary>
+    </index>
+    <key id="103" parent="48" name="halls_places_halls_id_pk-places_id_pk">
+      <ObjectId>49195</ObjectId>
+      <StateNumber>1055</StateNumber>
+      <ColNames>hall_id
+place_id</ColNames>
+      <Primary>1</Primary>
+      <UnderlyingIndexName>halls_places_halls_id_pk-places_id_pk</UnderlyingIndexName>
+    </key>
+    <foreign-key id="104" parent="48" name="halls_places_halls_id_fk">
+      <ObjectId>49206</ObjectId>
+      <StateNumber>1062</StateNumber>
+      <ColNames>hall_id</ColNames>
+      <RefTableId>16415</RefTableId>
+      <RefColPositions>1</RefColPositions>
+      <RefTableName>halls</RefTableName>
+      <RefKeyName>halls_pk</RefKeyName>
+      <RefColNames>id</RefColNames>
+    </foreign-key>
+    <foreign-key id="105" parent="48" name="halls_places_places_id_fk">
+      <ObjectId>49201</ObjectId>
+      <StateNumber>1058</StateNumber>
+      <ColNames>place_id</ColNames>
+      <RefTableId>16425</RefTableId>
+      <RefColPositions>1</RefColPositions>
+      <RefTableName>places</RefTableName>
+      <RefKeyName>places_pkey</RefKeyName>
+      <RefColNames>id</RefColNames>
+    </foreign-key>
+    <column id="106" parent="49" name="version">
+      <Position>1</Position>
+      <DataType>bigint|0s</DataType>
+      <NotNull>1</NotNull>
+      <StateNumber>583</StateNumber>
+      <TypeId>20</TypeId>
+    </column>
+    <column id="107" parent="49" name="migration_name">
+      <Position>2</Position>
+      <DataType>varchar(100)|0s</DataType>
+      <StateNumber>583</StateNumber>
+      <TypeId>1043</TypeId>
+    </column>
+    <column id="108" parent="49" name="start_time">
+      <Position>3</Position>
+      <DataType>timestamp|0s</DataType>
+      <StateNumber>583</StateNumber>
+      <TypeId>1114</TypeId>
+    </column>
+    <column id="109" parent="49" name="end_time">
+      <Position>4</Position>
+      <DataType>timestamp|0s</DataType>
+      <StateNumber>583</StateNumber>
+      <TypeId>1114</TypeId>
+    </column>
+    <column id="110" parent="49" name="breakpoint">
+      <Position>5</Position>
+      <DataType>boolean|0s</DataType>
+      <NotNull>1</NotNull>
+      <StateNumber>583</StateNumber>
+      <DefaultExpression>false</DefaultExpression>
+      <TypeId>16</TypeId>
+    </column>
+    <index id="111" parent="49" name="phinxlog_pkey">
+      <ObjectId>24612</ObjectId>
+      <StateNumber>794</StateNumber>
+      <ColNames>version</ColNames>
+      <Unique>1</Unique>
+      <Primary>1</Primary>
+    </index>
+    <key id="112" parent="49" name="phinxlog_pkey">
+      <ObjectId>24613</ObjectId>
+      <StateNumber>794</StateNumber>
+      <ColNames>version</ColNames>
+      <Primary>1</Primary>
+      <UnderlyingIndexName>phinxlog_pkey</UnderlyingIndexName>
+    </key>
+    <column id="113" parent="50" name="id">
+      <Position>1</Position>
+      <DataType>smallint|0s</DataType>
+      <NotNull>1</NotNull>
+      <StateNumber>598</StateNumber>
+      <DefaultExpression>nextval(&apos;public.places_id_seq&apos;::regclass)</DefaultExpression>
+      <TypeId>21</TypeId>
+    </column>
+    <column id="114" parent="50" name="number">
+      <Position>2</Position>
+      <DataType>smallint|0s</DataType>
+      <NotNull>1</NotNull>
+      <StateNumber>585</StateNumber>
+      <TypeId>21</TypeId>
+    </column>
+    <index id="115" parent="50" name="places_pkey">
+      <ObjectId>24614</ObjectId>
+      <StateNumber>797</StateNumber>
+      <ColNames>id</ColNames>
+      <Unique>1</Unique>
+      <Primary>1</Primary>
+    </index>
+    <index id="116" parent="50" name="places_number_uindex">
+      <ObjectId>24669</ObjectId>
+      <StateNumber>871</StateNumber>
+      <ColNames>number</ColNames>
+      <Unique>1</Unique>
+    </index>
+    <key id="117" parent="50" name="places_pkey">
+      <ObjectId>24615</ObjectId>
+      <StateNumber>797</StateNumber>
+      <ColNames>id</ColNames>
+      <Primary>1</Primary>
+      <UnderlyingIndexName>places_pkey</UnderlyingIndexName>
+    </key>
+    <column id="118" parent="51" name="id">
+      <Position>1</Position>
+      <DataType>integer|0s</DataType>
+      <NotNull>1</NotNull>
+      <StateNumber>675</StateNumber>
+      <DefaultExpression>nextval(&apos;producers_id_seq&apos;::regclass)</DefaultExpression>
+      <TypeId>23</TypeId>
+    </column>
+    <column id="119" parent="51" name="first_name">
+      <Position>2</Position>
+      <DataType>varchar(45)|0s</DataType>
+      <NotNull>1</NotNull>
+      <StateNumber>590</StateNumber>
+      <TypeId>1043</TypeId>
+    </column>
+    <column id="120" parent="51" name="last_name">
+      <Position>3</Position>
+      <DataType>varchar(45)|0s</DataType>
+      <NotNull>1</NotNull>
+      <StateNumber>590</StateNumber>
+      <TypeId>1043</TypeId>
+    </column>
+    <column id="121" parent="51" name="birthday">
+      <Position>4</Position>
+      <DataType>date|0s</DataType>
+      <NotNull>1</NotNull>
+      <StateNumber>590</StateNumber>
+      <TypeId>1082</TypeId>
+    </column>
+    <index id="122" parent="51" name="producers_id_uindex">
+      <ObjectId>16494</ObjectId>
+      <StateNumber>677</StateNumber>
+      <ColNames>id</ColNames>
+      <Unique>1</Unique>
+    </index>
+    <index id="123" parent="51" name="producers_pk">
+      <ObjectId>16495</ObjectId>
+      <StateNumber>678</StateNumber>
+      <ColNames>id</ColNames>
+      <Unique>1</Unique>
+      <Primary>1</Primary>
+    </index>
+    <key id="124" parent="51" name="producers_pk">
+      <ObjectId>16496</ObjectId>
+      <StateNumber>678</StateNumber>
+      <ColNames>id</ColNames>
+      <Primary>1</Primary>
+      <UnderlyingIndexName>producers_pk</UnderlyingIndexName>
+    </key>
+    <column id="125" parent="52" name="id">
+      <Position>1</Position>
+      <DataType>integer|0s</DataType>
+      <NotNull>1</NotNull>
+      <StateNumber>592</StateNumber>
+      <DefaultExpression>nextval(&apos;public.session_session_id_seq&apos;::regclass)</DefaultExpression>
+      <TypeId>23</TypeId>
+    </column>
+    <column id="126" parent="52" name="hall_id">
+      <Position>2</Position>
+      <DataType>smallint|0s</DataType>
+      <NotNull>1</NotNull>
+      <StateNumber>592</StateNumber>
+      <TypeId>21</TypeId>
+    </column>
+    <column id="127" parent="52" name="start">
+      <Position>3</Position>
+      <DataType>timestamp|0s</DataType>
+      <NotNull>1</NotNull>
+      <StateNumber>592</StateNumber>
+      <TypeId>1114</TypeId>
+    </column>
+    <column id="128" parent="52" name="finish">
+      <Position>4</Position>
+      <DataType>timestamp|0s</DataType>
+      <NotNull>1</NotNull>
+      <StateNumber>592</StateNumber>
+      <TypeId>1114</TypeId>
+    </column>
+    <column id="129" parent="52" name="film_id">
+      <Position>5</Position>
+      <DataType>smallint|0s</DataType>
+      <NotNull>1</NotNull>
+      <StateNumber>592</StateNumber>
+      <TypeId>21</TypeId>
+    </column>
+    <column id="130" parent="52" name="price">
+      <Position>6</Position>
+      <DataType>integer|0s</DataType>
+      <NotNull>1</NotNull>
+      <StateNumber>1045</StateNumber>
+      <TypeId>23</TypeId>
+    </column>
+    <index id="131" parent="52" name="session_pkey">
+      <ObjectId>24616</ObjectId>
+      <StateNumber>803</StateNumber>
+      <ColNames>id</ColNames>
+      <Unique>1</Unique>
+      <Primary>1</Primary>
+    </index>
+    <key id="132" parent="52" name="session_pkey">
+      <ObjectId>24617</ObjectId>
+      <StateNumber>803</StateNumber>
+      <ColNames>id</ColNames>
+      <Primary>1</Primary>
+      <UnderlyingIndexName>session_pkey</UnderlyingIndexName>
+    </key>
+    <foreign-key id="133" parent="52" name="fk_hall">
+      <ObjectId>24649</ObjectId>
+      <StateNumber>833</StateNumber>
+      <ColNames>hall_id</ColNames>
+      <RefTableId>16415</RefTableId>
+      <RefColPositions>1</RefColPositions>
+      <RefTableName>halls</RefTableName>
+      <RefKeyName>halls_pk</RefKeyName>
+      <RefColNames>id</RefColNames>
+    </foreign-key>
+    <foreign-key id="134" parent="52" name="session_film_fk">
+      <ObjectId>24654</ObjectId>
+      <StateNumber>836</StateNumber>
+      <ColNames>film_id</ColNames>
+      <RefTableId>16406</RefTableId>
+      <RefColPositions>1</RefColPositions>
+      <RefTableName>films</RefTableName>
+      <RefKeyName>films_pk</RefKeyName>
+      <RefColNames>id</RefColNames>
+    </foreign-key>
+    <check id="135" parent="52" name="time_cross_check">
+      <ObjectId>16446</ObjectId>
+      <StateNumber>592</StateNumber>
+      <ColNames>start
+finish</ColNames>
+      <Predicate>start &lt; finish</Predicate>
+    </check>
+    <check id="136" parent="52" name="start_time_limit_check">
+      <ObjectId>16445</ObjectId>
+      <StateNumber>592</StateNumber>
+      <ColNames>start</ColNames>
+      <Predicate>start &gt; now()</Predicate>
+    </check>
+    <column id="137" parent="53" name="ticket_id">
+      <Position>1</Position>
+      <DataType>integer|0s</DataType>
+      <NotNull>1</NotNull>
+      <StateNumber>1075</StateNumber>
+      <DefaultExpression>nextval(&apos;tikets_tiket_id_seq&apos;::regclass)</DefaultExpression>
+      <TypeId>23</TypeId>
+    </column>
+    <column id="138" parent="53" name="price">
+      <Position>2</Position>
+      <DataType>numeric(5,2 digit)|0s</DataType>
+      <NotNull>1</NotNull>
+      <StateNumber>594</StateNumber>
+      <TypeId>1700</TypeId>
+    </column>
+    <column id="139" parent="53" name="sell_time">
+      <Position>3</Position>
+      <DataType>timestamp|0s</DataType>
+      <NotNull>1</NotNull>
+      <StateNumber>594</StateNumber>
+      <DefaultExpression>now()</DefaultExpression>
+      <TypeId>1114</TypeId>
+    </column>
+    <column id="140" parent="53" name="session_id">
+      <Position>4</Position>
+      <DataType>smallint|0s</DataType>
+      <StateNumber>594</StateNumber>
+      <TypeId>21</TypeId>
+    </column>
+    <column id="141" parent="53" name="place_id">
+      <Position>5</Position>
+      <DataType>smallint|0s</DataType>
+      <NotNull>1</NotNull>
+      <StateNumber>1052</StateNumber>
+      <TypeId>21</TypeId>
+    </column>
+    <index id="142" parent="53" name="tickets_pk">
+      <ObjectId>49211</ObjectId>
+      <StateNumber>1075</StateNumber>
+      <ColNames>ticket_id</ColNames>
+      <Unique>1</Unique>
+      <Primary>1</Primary>
+    </index>
+    <key id="143" parent="53" name="tickets_pk">
+      <ObjectId>49212</ObjectId>
+      <StateNumber>1075</StateNumber>
+      <ColNames>ticket_id</ColNames>
+      <Primary>1</Primary>
+      <UnderlyingIndexName>tickets_pk</UnderlyingIndexName>
+    </key>
+    <foreign-key id="144" parent="53" name="tiket_session_fk">
+      <ObjectId>24664</ObjectId>
+      <StateNumber>842</StateNumber>
+      <ColNames>session_id</ColNames>
+      <RefTableId>16441</RefTableId>
+      <RefColPositions>1</RefColPositions>
+      <RefTableName>sessions</RefTableName>
+      <RefKeyName>session_pkey</RefKeyName>
+      <RefColNames>id</RefColNames>
+    </foreign-key>
+    <foreign-key id="145" parent="53" name="tiket_place_fk">
+      <ObjectId>24659</ObjectId>
+      <StateNumber>839</StateNumber>
+      <ColNames>place_id</ColNames>
+      <RefTableId>16425</RefTableId>
+      <RefColPositions>1</RefColPositions>
+      <RefTableName>places</RefTableName>
+      <RefKeyName>places_pkey</RefKeyName>
+      <RefColNames>id</RefColNames>
+    </foreign-key>
+    <column id="146" parent="54" name="id">
+      <Position>1</Position>
+      <DataType>integer|0s</DataType>
+      <NotNull>1</NotNull>
+      <StateNumber>649</StateNumber>
+      <DefaultExpression>nextval(&apos;users_id_seq&apos;::regclass)</DefaultExpression>
+      <TypeId>23</TypeId>
+    </column>
+    <column id="147" parent="54" name="username">
+      <Position>2</Position>
+      <DataType>varchar(50)|0s</DataType>
+      <NotNull>1</NotNull>
+      <StateNumber>629</StateNumber>
+      <TypeId>1043</TypeId>
+    </column>
+    <column id="148" parent="54" name="password">
+      <Position>3</Position>
+      <DataType>varchar(255)|0s</DataType>
+      <NotNull>1</NotNull>
+      <StateNumber>629</StateNumber>
+      <TypeId>1043</TypeId>
+    </column>
+    <column id="149" parent="54" name="role">
+      <Position>4</Position>
+      <DataType>varchar(20)|0s</DataType>
+      <NotNull>1</NotNull>
+      <StateNumber>629</StateNumber>
+      <TypeId>1043</TypeId>
+    </column>
+    <column id="150" parent="54" name="created">
+      <Position>5</Position>
+      <DataType>timestamp with time zone|0s</DataType>
+      <NotNull>1</NotNull>
+      <StateNumber>629</StateNumber>
+      <DefaultExpression>CURRENT_TIMESTAMP</DefaultExpression>
+      <TypeId>1184</TypeId>
+    </column>
+    <column id="151" parent="54" name="modified">
+      <Position>6</Position>
+      <DataType>timestamp|0s</DataType>
+      <StateNumber>629</StateNumber>
+      <TypeId>1114</TypeId>
+    </column>
+    <index id="152" parent="54" name="users_pk">
+      <ObjectId>16471</ObjectId>
+      <StateNumber>632</StateNumber>
+      <ColNames>id</ColNames>
+      <Unique>1</Unique>
+      <Primary>1</Primary>
+    </index>
+    <key id="153" parent="54" name="users_pk">
+      <ObjectId>16472</ObjectId>
+      <StateNumber>632</StateNumber>
+      <ColNames>id</ColNames>
+      <Primary>1</Primary>
+      <UnderlyingIndexName>users_pk</UnderlyingIndexName>
+    </key>
+  </database-model>
+</dataSource>

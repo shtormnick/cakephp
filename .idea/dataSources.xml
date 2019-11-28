@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="DataSourceManagerImpl" format="xml" multifile-model="true">
+    <data-source source="LOCAL" name="cinema@localhost" uuid="5dc18a58-fe6a-4ef0-ab4e-a87cc9b1f703">
+      <driver-ref>postgresql</driver-ref>
+      <synchronize>true</synchronize>
+      <jdbc-driver>org.postgresql.Driver</jdbc-driver>
+      <jdbc-url>jdbc:postgresql://localhost:5432/cinema</jdbc-url>
+    </data-source>
+    <data-source source="LOCAL" name="PostgreSQL - homestead@localhost [2]" uuid="0ed7f977-3b08-429f-9a56-54b789c87778">
+      <driver-ref>postgresql</driver-ref>
+      <synchronize>true</synchronize>
+      <jdbc-driver>org.postgresql.Driver</jdbc-driver>
+      <jdbc-url>jdbc:postgresql://localhost:5432/homestead</jdbc-url>
+    </data-source>
+  </component>
+</project>

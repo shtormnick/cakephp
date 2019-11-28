@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="dataSourceStorageLocal">
+    <data-source name="cinema@localhost" uuid="5dc18a58-fe6a-4ef0-ab4e-a87cc9b1f703">
+      <database-info product="PostgreSQL" version="10.5 (Ubuntu 10.5-0ubuntu0.18.04)" jdbc-version="4.2" driver-name="PostgreSQL JDBC Driver" driver-version="42.2.2" dbms="POSTGRES" exact-version="10.5">
+        <identifier-quote-string>&quot;</identifier-quote-string>
+      </database-info>
+      <case-sensitivity plain-identifiers="lower" quoted-identifiers="exact" />
+      <secret-storage>master_key</secret-storage>
+      <user-name>homestead</user-name>
+      <schema-mapping>
+        <introspection-scope>
+          <node kind="database" qname="cinema">
+            <node kind="schema" qname="public" />
+          </node>
+        </introspection-scope>
+      </schema-mapping>
+      <ssh-properties>
+        <enabled>true</enabled>
+        <proxy-host>192.168.10.10</proxy-host>
+        <proxy-port>22</proxy-port>
+        <user>vagrant</user>
+        <use-password>false</use-password>
+        <auth-type>KEY_PAIR</auth-type>
+        <private-key-path>~/.ssh/id_rsa</private-key-path>
+      </ssh-properties>
+    </data-source>
+    <data-source name="PostgreSQL - homestead@localhost [2]" uuid="0ed7f977-3b08-429f-9a56-54b789c87778">
+      <database-info product="PostgreSQL" version="11.5 (Ubuntu 11.5-1.pgdg18.04+1)" jdbc-version="4.2" driver-name="PostgreSQL JDBC Driver" driver-version="42.2.5" dbms="POSTGRES" exact-version="11.5" exact-driver-version="42.2">
+        <identifier-quote-string>&quot;</identifier-quote-string>
+      </database-info>
+      <case-sensitivity plain-identifiers="lower" quoted-identifiers="exact" />
+      <secret-storage>master_key</secret-storage>
+      <user-name>homestead</user-name>
+      <schema-mapping>
+        <introspection-scope>
+          <node kind="database" qname="homestead">
+            <node kind="schema" qname="public" />
+          </node>
+        </introspection-scope>
+      </schema-mapping>
+      <ssh-properties>
+        <enabled>true</enabled>
+        <proxy-host>192.168.10.10</proxy-host>
+        <proxy-port>22</proxy-port>
+        <secret-storage>master_key</secret-storage>
+        <user>vagrant</user>
+        <use-password>true</use-password>
+        <auth-type>PASSWORD</auth-type>
+        <private-key-path>~/.ssh/id_rsa</private-key-path>
+      </ssh-properties>
+    </data-source>
+  </component>
+</project>
