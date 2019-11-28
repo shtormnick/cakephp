@@ -4,21 +4,21 @@
 <?php $this->end(); ?>
 <div class="films index large-9 medium-8 columns content">
     <h3><?= __('Films') ?></h3>
-    <div id="my-calendar"  >
-        <script type="text/javascript">
-            // Get the element
-            var element = document.getElementById("my-calendar");
-            // Create the calendar
-            var myCalendar = jsCalendar.new(element);
-            // Add events
-            myCalendar.onDateClick(function(event, date){
-                console.log(date.getDate());
-                console.log(date.getFullYear());
-                console.log(date.getMonth());
-                window.location.href ="?year="+date.getFullYear()+"&month="+date.getMonth()+"&day="+date.getDate();
-            });
-        </script>
-    </div>
+<!--    <div id="my-calendar"  >-->
+<!--        <script type="text/javascript">-->
+<!--            // Get the element-->
+<!--            var element = document.getElementById("my-calendar");-->
+<!--            // Create the calendar-->
+<!--            var myCalendar = jsCalendar.new(element);-->
+<!--            // Add events-->
+<!--            myCalendar.onDateClick(function(event, date){-->
+<!--                console.log(date.getDate());-->
+<!--                console.log(date.getFullYear());-->
+<!--                console.log(date.getMonth());-->
+<!--                window.location.href ="?year="+date.getFullYear()+"&month="+date.getMonth()+"&day="+date.getDate();-->
+<!--            });-->
+<!--        </script>-->
+<!--    </div>-->
     <div class="search index large-4 medium-3 column content">
         <?= $this->Form->create("",['type'=>'get']) ?>
         <?= $this->Form->control('keyword', ['default'=> $this->request->query('keyword')]); ?>

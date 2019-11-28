@@ -13,23 +13,23 @@ class FilmsController extends AppController
 {
     public function index()
     {
-        $conditions = [];
-        $day = $this->request->query('day');
-        $month = $this->request->query('month');
-        $year = $this->request->query('year');
+       $conditions = [];
+//        $day = $this->request->query('day');
+//        $month = $this->request->query('month');
+//        $year = $this->request->query('year');
         $keyword = $this->request->query('keyword');
         if (!empty($keyword)) {
             $conditions['title LIKE '] = '%' . $keyword . '%';
         }
-        if (!empty($year)) {
-            $conditions['to_char(release_year,\'YYYY\') ='] = $year;
-        }
-        if (!empty($month)) {
-            $conditions['to_char(release_year,\'MM\') ='] = $month;
-        }
-        if (!empty($day)) {
-            $conditions['to_char(release_year,\'DD\') ='] = $day;
-        }
+//        if (!empty($year)) {
+//            $conditions['to_char(release_year,\'YYYY\') ='] = $year;
+//        }
+//        if (!empty($month)) {
+//            $conditions['to_char(release_year,\'MM\') ='] = $month;
+//        }
+//        if (!empty($day)) {
+//            $conditions['to_char(release_year,\'DD\') ='] = $day;
+//        }
         $this->paginate = ['conditions' => $conditions];
         $films = $this->paginate($this->Films);
         $this->set(compact('films'));
