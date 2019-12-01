@@ -37,10 +37,10 @@ class TicketsController extends AppController
         $stmt = $conn->execute(
             'SELECT p.*
 FROM places p 
-inner join halls_places hp on p.id = hp.place_id
-inner join sessions s on hp.hall_id = s.hall_id
+INNER JOIN halls_places hp ON p.id = hp.place_id
+INNER JOIN sessions s ON hp.hall_id = s.hall_id
 WHERE s.id = ? AND p.id NOT IN (SELECT place_id
-                                 FROM tickets t inner join sessions s on t.session_id = s.id
+                                 FROM tickets t INNER JOIN sessions s ON t.session_id = s.id
                                  WHERE s.id = ? );',
             [$session_id, $session_id],
             ['integer', 'integer']
