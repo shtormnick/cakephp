@@ -6,7 +6,8 @@ echo $this->Form->create($ticket)
         <legend><?= __('Add Ticket') ?></legend>
         <?php
         echo $this->Form->control('session_id', ['type' => 'hidden', 'required' => true, 'value' => $session->id]);
-        echo $this->Form->control('price', ['type' => 'hidden', 'required' => true, 'value' => $session->price]);
+        echo $this->Form->control('price', [ 'required' => true, 'value' => $session->price]);
+        echo $this->Form->control('place_id', [ 'required' => true, 'options' => $places]);
         ?>
     </fieldset>
 <?= $this->Form->button(__('Submit')) ?>

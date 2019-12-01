@@ -8,6 +8,8 @@
 
 namespace App\Controller;
 
+use Cake\Datasource\ConnectionManager;
+
 
 class TicketsController extends AppController
 {
@@ -27,12 +29,29 @@ class TicketsController extends AppController
     {
 
         $session_id = $this->request->query('session');
-        if (empty($session_id)){
+        if (empty($session_id)) {
             $this->Flash->error(__('The session has no set'));
-            return $this->redirect(['controller'=>'Sessions','action' => 'index']);
+            return $this->redirect(['controller' => 'Sessions', 'action' => 'index']);
         }
-        $session = $this->Tickets->Sessions->get($session_id);
+        $conn = ConnectionManager::get('default');
+        $stmt = $conn->execute(
+            'SELECT p.*
+FROM places p 
+inner join halls_places hp on p.id = hp.place_id
+inner join sessions s on hp.hall_id = s.hall_id
+WHERE s.id = ? AND p.id NOT IN (SELECT place_id
+                                 FROM tickets t inner join sessions s on t.session_id = s.id
+                                 WHERE s.id = ? );',
+            [$session_id, $session_id],
+            ['integer', 'integer']
+        );
+        $rows = $stmt->fetchAll('assoc');
+        $places = [];
+        foreach ($rows as $row){
+            $places[$row['id']]=$row['number'];
+        }
 
+        $session = $this->Tickets->Sessions->get($session_id);
         $ticket = $this->Tickets->newEntity();
         if ($this->request->is('post')) {
             $ticket = $this->Tickets->patchEntity($ticket, $this->request->getData());
@@ -44,6 +63,7 @@ class TicketsController extends AppController
         }
         $this->set('ticket', $ticket);
         $this->set('session', $session);
+        $this->set('places', $places);
 
     }
 
@@ -88,6 +108,11 @@ class TicketsController extends AppController
         }
 
         return parent::isAuthorized($user);
+    }
+
+    public function sqlLog($sql)
+    {
+
     }
 
 }
