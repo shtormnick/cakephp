@@ -6,7 +6,6 @@
 <div class="sessions index large-9 medium-8 columns content">
     <h3><?= __('Session') ?></h3>
 <div class = "content">
-
     <div id="my-calendar">
         <script type="text/javascript">
             // Get the element
@@ -18,7 +17,7 @@
                 console.log(date.getDate());
                 console.log(date.getFullYear());
                 console.log(date.getMonth());
-                window.location.href ="?year="+date.getFullYear()+"&month="+date.getMonth()+"&day="+date.getDate();
+                window.location.href ="?year="+date.getFullYear()+"&month="+(date.getMonth()+1)+"&day="+date.getDate();
             });
         </script>
     </div>

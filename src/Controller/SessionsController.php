@@ -30,15 +30,6 @@ class SessionsController extends AppController
         if (!empty($day)) {
             $conditions['to_char(start,\'DD\') ='] = $day;
         }
-        if (!empty($year)) {
-            $conditions['to_char(finish,\'YYYY\') ='] = $year;
-        }
-        if (!empty($month)) {
-            $conditions['to_char(finish,\'MM\') ='] = $month;
-        }
-        if (!empty($day)) {
-            $conditions['to_char(finish,\'DD\') ='] = $day;
-        }
         $this->paginate = ['conditions' => $conditions];
         $sessions = $this->paginate($this->Sessions);
         $this->set(compact('sessions'));

@@ -49,11 +49,7 @@
                 <td><?= h($ticket->session_id) ?></td>
                 <td><?= h($ticket->place_id) ?></td>
                 <td class="actions">
-                    <?= $this->Html->link(__('View'), ['action' => 'view', $ticket->id]) ?>
-                    <?= $this->Html->link(__('Add'), ['action' => 'add', $ticket->id]) ?>
-                    <?= $this->Html->link(__('Edit'), ['action' => 'edit', $ticket->id]) ?>
-                    <?= $this->Form->postLink(__('Delete'), ['action' => 'delete', $ticket->id], ['confirm' => __('Are you sure you want to delete # {0}?', $ticket->id)]) ?>
-
+                    <?= $this->Html->link(__('View'), ['action' => 'view', $ticket->ticket_id]) ?>
                 </td>
             </tr>
         <?php endforeach; ?>
