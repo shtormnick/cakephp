@@ -8,6 +8,7 @@
 
 namespace App\Controller;
 
+use Cake\Database\Type\DateTimeType;
 use Cake\Datasource\ConnectionManager;
 
 
@@ -54,6 +55,11 @@ WHERE s.id = ? AND p.id NOT IN (SELECT place_id
         $session = $this->Tickets->Sessions->get($session_id);
         $ticket = $this->Tickets->newEntity();
         if ($this->request->is('post')) {
+            $start = $session->get('start');
+            if (new \DateTime('now') > $start){
+                $this->Flash->error('Film has been started , you can`t sell tickets on this film');
+                return $this->redirect(['action' => 'index']);
+            }
             $ticket = $this->Tickets->patchEntity($ticket, $this->request->getData());
             if ($this->Tickets->save($ticket)) {
                 $this->Flash->success(__('The ticket has been saved.'));
